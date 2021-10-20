@@ -1,0 +1,137 @@
+﻿@using NamNung.Web.Factories
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var pageContentDetails = PageContentFactory.GetAllSubPageDetailWithHighight(Model).ToList();
+    if (pageContentDetails is null || !pageContentDetails.Any())
+    {
+        return;
+    }
+
+    var firstItem = pageContentDetails.FirstOrDefault();
+
+    pageContentDetails.Remove(firstItem);
+}
+
+@helper RenderItem(NamNung.Web.Factories.Models.PageContentDetail pageContentDetail)
+{
+    if (pageContentDetail == null)
+    {
+        return;
+    }
+
+    <div class="news-group">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="blog-left ">
+                    <div class="inspire-blog-image">
+                        <a href="@pageContentDetail.Url">
+                            <img src="@(pageContentDetail.Image?.Url)" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 pl-0">
+                <div class="blog-right">
+                    @if (!pageContentDetail.CreatedDate.Equals(DateTime.MinValue))
+                    {
+                        <div class="post-date">
+                            @pageContentDetail.CreatedDate.ToString(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.FormatDateTime))
+                        </div>
+                    }
+
+                    <h4>
+                        <a href="@pageContentDetail.Url">
+                            @pageContentDetail.Title
+                        </a>
+                    </h4>
+                    @if (!string.IsNullOrWhiteSpace(pageContentDetail.Description))
+                    {
+                        var maxSub = Math.Min(125, pageContentDetail.Description.Length);
+                        var endLine = maxSub < pageContentDetail.Description.Length ? "..." : string.Empty;
+
+                        <div class="blog-desc">
+                            @pageContentDetail.Description.Substring(0, maxSub) @endLine
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="news-hot">
+    <div class="container">
+        <div class="row tintuc-row">
+            <div class="col-md-6 col-sm-6 col-xs-12 hot-left">
+                <div class="news-group">
+                    <div class="blog-left">
+                        <div class="inspire-blog-image">
+                            <a href="@firstItem.Url">
+                                <img src="@(firstItem.Image?.Url)" class="img-responsive">
+                            </a>
+                        </div>
+                        @if (!firstItem.CreatedDate.Equals(DateTime.MinValue))
+                        {
+                            <div class="post-date">
+                                @firstItem.CreatedDate.ToString(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.FormatDateTime))
+                            </div>
+                        }
+                    </div>
+                    <div class="blog-right">
+                        <h4>
+                            <a href="@firstItem.Url">
+                                @firstItem.Title
+                            </a>
+                        </h4>
+                        @if (!string.IsNullOrWhiteSpace(firstItem.Description))
+                        {
+                            var maxSub = Math.Min(125, firstItem.Description.Length);
+                            var endLine = maxSub < firstItem.Description.Length ? "..." : string.Empty;
+
+                            <div class="blog-desc">
+                                @firstItem.Description.Substring(0, maxSub) @endLine
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 hot-right pro-nepr">
+                <div id="hotnews" class="owl-theme owl-carousel" style="opacity: 1; display: block;">
+                    @for (int i = 0; i < pageContentDetails.Count(); i += 2)
+                    {
+                        var currentItem = pageContentDetails[i];
+                        var hasNext = i + 1 <= pageContentDetails.Count() - 1;
+                        var nextItem = hasNext ? pageContentDetails[i + 1] : null;
+
+                        <div>
+
+                            @RenderItem(currentItem)
+
+                            @RenderItem(nextItem)
+
+                        </div>
+                    }
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $(".hot-right #hotnews").owlCarousel({
+                            itemsCustom: [
+                                [0, 1],
+                                [375, 1],
+                                [600, 1],
+                                [768, 1],
+                                [992, 1],
+                                [1200, 1]
+                            ],
+                            // autoPlay: 1000,
+                            navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+                            navigation: true,
+                            pagination: false
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>

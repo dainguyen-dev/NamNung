@@ -1,0 +1,23 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var root = Umbraco.ContentAtRoot().FirstOrDefault();
+    var metadata = SeoFactory.GetMetadata(Model, root);
+}
+
+<meta name="description" content="@metadata.Descripton">
+<meta name="keywords" content="@metadata.Keywords">
+<meta name="author" content="@metadata.Author">
+<meta property="og:title" content="@metadata.Title" />
+<meta property="og:url" content="@metadata.FullUrl" />
+
+@foreach (var imageUrl in metadata.Images)
+{
+    <meta property="og:image" content="@imageUrl" />
+}
+
+<title>@metadata.BrowserTitle</title>
+
+<link rel="icon" href="@metadata.IconUrl">
+<link href="@Model.Url()" rel="canonical">

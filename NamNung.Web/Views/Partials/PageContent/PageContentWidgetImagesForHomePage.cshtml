@@ -1,0 +1,57 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    const string libraryItemId = "ff9eaa87-3e3e-4fba-a4d2-8ba9cc75a789";
+    var libraryItem = Umbraco.Content(Guid.Parse(libraryItemId));
+
+    var libraryPageDetail = PageContentFactory.GetPageContentDetail(libraryItem);
+    var libraryPageDetails = PageContentFactory.GetAllSubPageDetailWithShowOnHomePage(libraryItem);
+}
+
+<div class="container-lg">
+    <div class="box box-album pro-nepr">
+        <div class="box-title text-center">
+            <h2 class="text-uppercase">
+                @libraryPageDetail.Title
+            </h2>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane fade active in" id="tab-1">
+                <div class="row thummargin">
+                    <div id="cattab" class="owl-theme owl-carousel" style="opacity: 1; display: block;">
+                        @foreach (var pageDetail in libraryPageDetails)
+                        {
+                            <div class="product-layout col-xs-12">
+                                <a href="@pageDetail.Url">
+                                    <div class="image">
+                                        <img src="@(pageDetail.Image?.Url)" alt="" title="" class="img-responsive">
+                                        <h4 class="text-title text-uppercase">@pageDetail.Title</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".tab-content .tab-pane #cattab").owlCarousel({
+            itemsCustom: [
+                [0, 2],
+                [375, 2],
+                [600, 3],
+                [768, 4],
+                [992, 4],
+                [1200, 4]
+            ],
+
+            navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            navigation: true,
+            pagination: false
+        });
+    });
+</script>

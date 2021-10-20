@@ -1,0 +1,47 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    const string heritageItemId = "24e857c2-f308-45a7-bc7a-804ad237dd3d";
+    var heritageItem = Umbraco.Content(Guid.Parse(heritageItemId));
+
+    var heritagePageDetail = PageContentFactory.GetPageContentDetail(heritageItem);
+    var heritagePageDetails = PageContentFactory.GetAllSubPageDetailWithShowOnHomePage(heritageItem).Take(6).OrderBy(detail => Guid.NewGuid()).Take(3);
+}
+
+<div class="box box-3">
+    <div class="box-title">
+        <h2 class="text-uppercase">
+            @heritagePageDetail.Title
+        </h2>
+        <a href="@heritagePageDetail.Url" class="view-more">
+            @Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.SeeAll) <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+    <div class="row ">
+        @foreach (var pageDetail in heritagePageDetails)
+        {
+            <div class="col-lg-4 col-sm-4 col-xs-12">
+                <div class="news-group">
+                    <a href="@pageDetail.Url">
+                        <img class="img-responsive" src="@(pageDetail.Image?.Url)" alt=" ">
+                    </a>
+                    <h4 class="text-title">
+                        <a href="@pageDetail.Url">
+                            @pageDetail.Title
+                        </a>
+                    </h4>
+                    @if (!string.IsNullOrWhiteSpace(pageDetail.Description))
+                    {
+                        var maxSub = Math.Min(125, pageDetail.Description.Length);
+                        var endLine = maxSub < pageDetail.Description.Length ? "..." : string.Empty;
+
+                        <div class="text-desc">
+                            @pageDetail.Description.Substring(0, maxSub) @endLine
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,151 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var pageContentDetails = PageContentFactory.GetAllSubPageDetail(Model).ToArray();
+    var pageContentDetail = PageContentFactory.GetPageContentDetail(Model);
+}
+
+@{
+    var pageSize = Model.Value<int>(NamNung.Web.Constants.Fields.NumberOfItemsPerPage, fallback: Fallback.ToAncestors);
+    pageSize = pageSize.Equals(0) ? int.MaxValue : pageSize;
+
+    var page = 1;
+    int.TryParse(Request.QueryString["page"], out page);
+    var items = pageContentDetails.ToList();
+    var totalPages = (int)Math.Ceiling((double)items.Count() / (double)pageSize);
+
+    if (page > totalPages)
+    {
+        page = totalPages;
+    }
+    else if (page < 1)
+    {
+        page = 1;
+    }
+
+    var results = items.Skip((page - 1) * pageSize).Take(pageSize).ToArray();
+}
+
+@helper RenderPagination(int page, int totalPages)
+{
+    if (totalPages > 1)
+    {
+        <div class="pagi">
+            <ul class="pagination">
+                @if (page > 1)
+                {
+                    <li class="first">
+                        <a href="?page=@(page-1)">
+                            <i class="fa fa-long-arrow-left"></i>
+                        </a>
+                    </li>
+                }
+
+                @for (int p = 1; p < totalPages + 1; p++)
+                {
+                    <li class="@(p == page ? "active" : string.Empty)">
+                        <a href="?page=@p">@p</a>
+                    </li>
+                }
+
+                @if (page < totalPages)
+                {
+                    <li class="last">
+                        <a href="?page=@(page+1)">
+                            <i class="fa fa-long-arrow-right"></i>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+}
+
+@helper RenderDetail(NamNung.Web.Factories.Models.PageContentDetail currentItem)
+{
+    if (currentItem == null)
+    {
+        return;
+    }
+
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="news-group doitac-group">
+            <div class="blog-left">
+                <div class="inspire-blog-image">
+                    <a href="@currentItem.Url">
+                        <img src="@(currentItem?.Image.Url)" class="img-responsive">
+                    </a>
+                </div>
+                <div class="doitac-scope">
+                    @{
+                        var groupItem = PageContentFactory.GetPageContentDetail(currentItem.PublishedContent.Parent);
+                        @groupItem.Title
+                    }
+                </div>
+
+                @if (!currentItem.CreatedDate.Equals(DateTime.MinValue))
+                {
+                    <div class="post-date">
+                        @currentItem.CreatedDate.ToString(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.FormatDateTime))
+                    </div>
+                }
+            </div>
+            <div class="blog-right">
+                <h4>
+                    <a href="@currentItem.Url">
+                        @currentItem.Title
+                    </a>
+                </h4>
+                @if (!string.IsNullOrEmpty(currentItem.Partner.Address))
+                {
+                    var addressDisplay = string.Format(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.ContactAddress), currentItem.Partner.Address);
+                    <div class="doitac-add">
+                        <div class="add-icon">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="add-text">
+                            @addressDisplay
+                        </div>
+                    </div>
+                }
+
+                @if (!string.IsNullOrEmpty(currentItem.Partner.PhoneNumber))
+                {
+                    var phoneNumberDisplay = string.Format(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.ContactPhoneNumber), currentItem.Partner.PhoneNumber);
+                    <div class="doitac-add">
+                        <div class="add-icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="add-text">
+                            @phoneNumberDisplay
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+<div class="container">
+    <div class="doitac-list">
+        @{
+            for (int i = 0; i < results.Count(); i += 2)
+            {
+                var currentItem = results[i];
+                var hasNext = i + 1 <= results.Count() - 1;
+                var nextItem = hasNext ? results[i + 1] : null;
+
+                <div class="doitac-row">
+                    <div class="row tintuc-row">
+                        @RenderDetail(currentItem)
+                        @RenderDetail(nextItem)
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    
+    @RenderPagination(page, totalPages)
+
+</div>	

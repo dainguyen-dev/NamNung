@@ -1,0 +1,16 @@
+﻿{
+  "dashboards": [
+    {
+      "alias": "ContentDashboard",
+      "view": "/App_Plugins/CustomContentDashboard/ContentDashboard.html",
+      "sections": [ "content" ],
+      "weight": -10
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/CustomContentDashboard/customcontentdashboard.controller.js"
+  ],
+  "css": [
+    "~/App_Plugins/CustomContentDashboard/customcontentdashboard.css"
+  ]
+}

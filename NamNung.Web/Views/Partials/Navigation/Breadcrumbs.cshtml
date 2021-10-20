@@ -1,0 +1,26 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var breadcrumbs = NavigationFactory.GetBreadcrumbs(Model);
+}
+
+<ul class="breadcrumb">
+    @foreach (var breadcrumb in breadcrumbs)
+    {
+        var nextPoint = breadcrumbs.IndexOf(breadcrumb).Equals(breadcrumbs.Count() - 1);
+
+        <li>
+            @if (nextPoint)
+            {
+                @breadcrumb.Title
+            }
+            else
+            {
+                <a href="@breadcrumb.PublishedContent.Url()">
+                    @breadcrumb.Title
+                </a>
+            }
+        </li>
+    }
+</ul>

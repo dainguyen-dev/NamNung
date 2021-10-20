@@ -1,0 +1,34 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var banners = MediaFactory.GetBanners(Model, NamNung.Web.Constants.Fields.BannersHeritage);
+    if (banners is null || !banners.Any())
+    {
+        return;
+    }
+}
+
+@foreach (var banner in banners)
+{
+    <div class="banner-disan text-center">
+        <div class="banner-full">
+            <a href="@banner.LinkUrl" target="@banner.LinkTarget">
+                <img src="@banner.ImageUrl" alt="@banner.ImageAlt" class="img-responsive">
+            </a>
+        </div>
+        <div class="full-news">
+            <h4 class="text-title text-uppercase">
+                <a href="@banner.LinkUrl" target="@banner.LinkTarget">
+                    @banner.Title
+                </a>
+            </h4>
+            <div class="text-des">
+                @banner.SubTitle
+            </div>
+            <a href="@banner.LinkUrl" target="@banner.LinkTarget" class="btn btn-primary">
+                @banner.LinkTitle
+            </a>
+        </div>
+    </div>
+}

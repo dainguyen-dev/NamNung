@@ -1,0 +1,102 @@
+﻿@using NamNung.Web.Factories
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var pageContentDetail = PageContentFactory.GetPageContentDetail(Model);
+    var pageContentDetails = PageContentFactory.GetAllRelatedPageDetailByCategory(Model.Parent, pageContentDetail);
+
+    if (pageContentDetail is null || !pageContentDetails.Any())
+    {
+        return;
+    }
+}
+
+<div class="container container-slider">
+    <div class="tin-lienquan">
+        <div class="box-title">
+            <h2 class="text-uppercase">
+                @Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.RelatedNews)
+            </h2>
+        </div>
+        <div class="lienquan-group">
+            <div class="disan-slider pro-nepr">
+                <div id="disan" class="owl-theme owl-carousel" style="opacity: 1; display: block;">
+                    @foreach (var detail in pageContentDetails)
+                    {
+                        <div>
+                            <div class="blog-disan">
+                                <div class="inspire-blog-image">
+                                    <a href="@detail.Url">
+                                        <img src="@(detail.Image?.Url)" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="doitac-scope">
+                                    @{
+                                        var groupItem = PageContentFactory.GetPageContentDetail(detail.PublishedContent.Parent);
+                                        @groupItem.Title
+                                    }
+                                </div>
+
+                                @if (!detail.CreatedDate.Equals(DateTime.MinValue))
+                                {
+                                    <div class="post-date">
+                                        @detail.CreatedDate.ToString(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.FormatDateTime))
+                                    </div>
+                                }
+                                <h4>
+                                    <a href="@detail.Url">
+                                        @detail.Title
+                                    </a>
+                                </h4>
+
+                                @if (!string.IsNullOrEmpty(detail.Partner.Address))
+                                {
+                                    var addressDisplay = string.Format(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.ContactAddress), detail.Partner.Address);
+                                    <div class="doitac-add">
+                                        <div class="add-icon">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="add-text">
+                                            @addressDisplay
+                                        </div>
+                                    </div>
+                                }
+
+                                @if (!string.IsNullOrEmpty(detail.Partner.PhoneNumber))
+                                {
+                                    var phoneNumberDisplay = string.Format(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.ContactPhoneNumber), detail.Partner.PhoneNumber);
+                                    <div class="doitac-add">
+                                        <div class="add-icon">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="add-text">
+                                            @phoneNumberDisplay
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $(".disan-slider #disan").owlCarousel({
+                            itemsCustom: [
+                                [0, 1],
+                                [375, 1],
+                                [600, 2],
+                                [768, 2],
+                                [992, 3],
+                                [1200, 3]
+                            ],
+                            // autoPlay: 1000,
+                            navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+                            navigation: true,
+                            pagination: false
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>

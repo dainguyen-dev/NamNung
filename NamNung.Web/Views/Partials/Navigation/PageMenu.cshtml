@@ -1,0 +1,24 @@
+﻿@using NamNung.Web.Extensions;
+@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var root = Umbraco.ContentAtRoot().FirstOrDefault();
+    var pageMenus = NavigationFactory.GetPageMenu(root);
+}
+
+<div class="col-sm-8">
+    <h5>
+        @root.GetStringData(NamNung.Web.Constants.Fields.PageLinksTitle)
+    </h5>
+    <ul class="list-unstyled lastb">
+        @foreach (var pageMenu in pageMenus)
+        {
+            <li>
+                <a href="@pageMenu.Url" target="@pageMenu.Target">
+                    @pageMenu.Title
+                </a>
+            </li>
+        }
+    </ul>
+</div>

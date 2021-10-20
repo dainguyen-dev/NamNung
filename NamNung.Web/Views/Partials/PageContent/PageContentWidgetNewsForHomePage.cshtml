@@ -1,0 +1,59 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    const string newsItemId = "e7a63696-bb7b-432f-9d95-c786733cb60c";
+    var newsItem = Umbraco.Content(Guid.Parse(newsItemId));
+
+    var newsPageDetail = PageContentFactory.GetPageContentDetail(newsItem);
+    var newsPageDetails = PageContentFactory.GetAllSubPageDetailWithShowOnHomePage(newsItem).Take(4);
+}
+
+
+<div class="box blog">
+    <div class="box-title">
+        <h2 class="text-uppercase">
+            @newsPageDetail.Title
+        </h2>
+        <a href="@newsPageDetail.Url" class="view-more">
+            @Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.SeeAll) <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+    <div class="row">
+        @foreach (var pageDetail in newsPageDetails)
+        {
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="news-group">
+                    <div class="blog-left">
+                        <div class="inspire-blog-image">
+                            <a href="@pageDetail.Url">
+                                <img src="@(pageDetail.Image?.Url)" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="post-date">
+                            @pageDetail.CreatedDate.ToString(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.FormatDateTime))
+                        </div>
+                    </div>
+                    <div class="blog-right">
+                        <h4>
+                            <a href="@pageDetail.Url">
+                                @pageDetail.Title
+                            </a>
+                        </h4>
+                        @if (!string.IsNullOrWhiteSpace(pageDetail.Description))
+                        {
+                            var maxSub = Math.Min(125, pageDetail.Description.Length);
+                            var endLine = maxSub < pageDetail.Description.Length ? "..." : string.Empty;
+
+                            <div class="blog-desc">
+                                @pageDetail.Description.Substring(0, maxSub) @endLine
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+

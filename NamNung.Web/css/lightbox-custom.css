@@ -1,0 +1,12 @@
+.lb-nav a.lb-next{
+  width: 100px;
+  position: relative;
+  right: -90px;
+  opacity: 0.6;
+}
+.lb-nav a.lb-prev{
+  width: 100px;
+  position: relative;
+  left: -90px;
+  opacity: 0.6;
+}

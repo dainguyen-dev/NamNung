@@ -1,0 +1,17 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var root = Umbraco.ContentAtRoot().FirstOrDefault();
+    var siteSettings = SiteSettingsFactory.GetSiteSettings(root);
+
+    var contactAddressDisplay = string.Format(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.ContactAddress), siteSettings.ContactAddress);
+    var contactPhoneNumberDisplay = string.Format(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.ContactPhoneNumber), siteSettings.ContactPhoneNumber);
+    var contactFaxNumberDisplay = string.Format(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.ContactFaxNumber), siteSettings.ContactFaxNumber);
+    var contactEmailsDisplay = string.Format(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.ContactEmail), siteSettings.ContactEmail);
+}
+
+<li>@contactAddressDisplay</li>
+<li>@contactPhoneNumberDisplay</li>
+<li>@contactFaxNumberDisplay</li>
+<li>@contactEmailsDisplay</li>

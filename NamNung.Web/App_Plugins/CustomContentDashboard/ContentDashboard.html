@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="welcome-dashboard" ng-controller="CustomContentDashboardController as vm">
+        <table class="umb-table" cellpadding="10%">
+            <tr style="text-align:left">
+                <th class="umb-table-cell">
+                    Id
+                </th>
+                <th>
+                    Bài viết
+                </th>
+                <th>
+                    Loại bài viết
+                </th>
+                <th>
+                    Ngày giờ cập nhật
+                </th>
+                <th>
+                    Trạng thái xuất bản
+                </th>
+                <th>
+                    Trạng thái chỉnh sửa
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <input ng-model="f.Id" placeholder="Tìm theo Id" style="width:100%">
+                </td>
+                <td>
+                    <input ng-model="f.Name" placeholder="Tìm theo tên">
+                </td>
+                <td>
+                    <select ng-model="f.Category">
+                        <option selected value="">Tất cả</option>
+                        <option ng-repeat="category in vm.DataApi.Categories" value="{{category}}">{{category}}</option>
+                    </select>
+                </td>
+                <td>
+                </td>
+                <td>
+                    <select ng-model="f.Status">
+                        <option selected value="">Tất cả</option>
+                        <option ng-repeat="status in vm.DataApi.Status" value="{{status}}">{{status}}</option>
+                    </select>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr ng-repeat="data in vm.DataApi.Contents | filter:f">
+                <td class="umb-table-cell">
+                    <a href="/Umbraco/#/{{data.Url}}">
+                        <span class="text-muted">{{data.Id}}</span>
+                    </a>
+                </td>
+                <td>
+                    <a href="/Umbraco/#/{{data.Url}}">
+                        {{data.Name}}
+                    </a>
+                </td>
+                <td>
+                    {{data.Category}}
+                </td>
+                <td>
+                    <a href="/Umbraco/#/{{data.Url}}">
+                        <span class="text-muted">{{data.UpdateDate}}</span>
+                    </a>
+                </td>
+                <td>
+                    <a href="/Umbraco/#/{{data.Url}}">
+                        <span class="text-muted">{{data.Status}}</span>
+                    </a>
+                </td>
+                <td>
+                    Trạng thái chờ duyệt
+                </td>
+            </tr>
+            <tr ng-show="!vm.DataApi.Contents.length">
+                <td colspan="6">
+                    <strong>Không có nội dung nào cần xử lý.</strong>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+</body>
+</html>

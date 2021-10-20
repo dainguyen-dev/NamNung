@@ -1,0 +1,24 @@
+﻿@using NamNung.Web.Extensions;
+@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var root = Umbraco.ContentAtRoot().FirstOrDefault();
+    var categoryMenus = NavigationFactory.GetCategoryMenu(root);
+}
+
+<div class="col-sm-4">
+    <h5>
+        @root.GetStringData(NamNung.Web.Constants.Fields.CategoryLinksTitle)
+    </h5>
+    <ul class="list-unstyled footer-menu">
+        @foreach (var categoryMenu in categoryMenus)
+        {
+            <li>
+                <a href="@categoryMenu.Url" target="@categoryMenu.Target">
+                    @categoryMenu.Title
+                </a>
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,11 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var root = Umbraco.ContentAtRoot().FirstOrDefault();
+    var siteSettings = SiteSettingsFactory.GetSiteSettings(root);
+}
+
+<div class="logo" id="logo">
+    <a href="@root.Url"><img src="@siteSettings.LogoUrl" title="@siteSettings.LogoAlt>" alt="@siteSettings.LogoAlt"></a>
+</div>

@@ -1,0 +1,56 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    const string partnerItemId = "49e86fcf-f767-475d-9e5f-f3f42c806916";
+    var partnerItem = Umbraco.Content(Guid.Parse(partnerItemId));
+
+    var partnerPageDetail = PageContentFactory.GetPageContentDetail(partnerItem);
+    var partnerPageDetails = partnerPageDetail.PublishedContent.Children()
+        .Select(pageDetail => PageContentFactory.GetPageContentDetail(pageDetail))
+        .Where(detail => detail.ShowOnHomePage)
+        .ToArray();
+}
+
+@helper RenderItem(NamNung.Web.Factories.Models.PageContentDetail pageDetail)
+{
+    if (pageDetail == null)
+    {
+        return;
+    }
+
+    <div class="col-lg-6 col-sm-6 col-xs-12">
+        <div class="doitac-item">
+            <a href="@pageDetail.Url">
+                <div class="image">
+                    <img class="img-responsive" src="@(pageDetail.Image?.Url)" alt="@(pageDetail.Image?.Alt)">
+                    <h4 class="text-title text-uppercase">@pageDetail.Title</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+}
+
+<div class="container">
+    <div class="box box-doitac">
+        <div class="box-title">
+            <h2 class="text-uppercase">
+                @partnerPageDetail.Title
+            </h2>
+        </div>
+        @for (int i = 0; i < partnerPageDetails.Count(); i += 2)
+        {
+            var currentItem = partnerPageDetails[i];
+            var hasNext = i + 1 <= partnerPageDetails.Count() - 1;
+            var nextItem = hasNext ? partnerPageDetails[i + 1] : null;
+
+            <div class="row ">
+
+                @RenderItem(currentItem)
+
+                @RenderItem(nextItem)
+
+            </div>
+        }
+    </div>
+</div>

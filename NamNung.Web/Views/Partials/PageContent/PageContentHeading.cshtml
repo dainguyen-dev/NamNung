@@ -1,0 +1,18 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var pageContentDetail = PageContentFactory.GetPageContentDetail(Model);
+    var bannerImage = pageContentDetail.Images.FirstOrDefault();
+}
+
+<div class="banner-header text-center">
+    <div class="banner-full">
+        <img src="@(bannerImage?.Url)" class="img-responsive">
+    </div>
+    <div class="full-news">
+        <h4 class="text-title text-uppercase">
+            @pageContentDetail.HeadingTitle
+        </h4>
+    </div>
+</div>

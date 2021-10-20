@@ -1,0 +1,7 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = null;
+    Response.StatusCode = 404;
+    Response.Redirect(Model.Parent.Url());
+}
+

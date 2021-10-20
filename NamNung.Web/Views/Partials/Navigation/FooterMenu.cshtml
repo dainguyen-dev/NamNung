@@ -1,0 +1,18 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var root = Umbraco.ContentAtRoot().FirstOrDefault();
+    var footerMenus = NavigationFactory.GetFooterMenu(root);
+}
+
+<div class="copy-right text-right">
+    @foreach (var footerMenu in footerMenus)
+    {
+        var endLine = footerMenus.LastOrDefault().Equals(footerMenu) ? string.Empty : "|";
+
+        <a href="@footerMenu.Url" target="@footerMenu.Target">
+            @footerMenu.Title
+        </a> @endLine
+    }
+</div>

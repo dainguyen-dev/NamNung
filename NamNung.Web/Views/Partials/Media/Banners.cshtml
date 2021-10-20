@@ -1,0 +1,80 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var banners = MediaFactory.GetBanners(Model, NamNung.Web.Constants.Fields.Banners);
+    if (banners is null || !banners.Any())
+    {
+        return;
+    }
+}
+
+<div class="homeslide container-fluid">
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function () {
+            var jssor_1_SlideshowTransitions = [
+                { $Duration: 1200, x: 0.2, y: -0.1, $Delay: 16, $Cols: 10, $Rows: 5, $Opacity: 2, $Clip: 15, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 260, $Easing: { $Left: $Jease$.$InWave, $Top: $Jease$.$InWave, $Clip: $Jease$.$OutQuad }, $Round: { $Left: 1.3, $Top: 2.5 } },
+                { $Duration: 1500, x: 0.3, y: -0.3, $Delay: 20, $Cols: 10, $Rows: 5, $Opacity: 2, $Clip: 15, $During: { $Left: [0.2, 0.8], $Top: [0.2, 0.8] }, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 260, $Easing: { $Left: $Jease$.$InJump, $Top: $Jease$.$InJump, $Clip: $Jease$.$OutQuad }, $Round: { $Left: 0.8, $Top: 2.5 } },
+                { $Duration: 1500, x: 0.3, y: -0.3, $Delay: 20, $Cols: 10, $Rows: 5, $Opacity: 2, $Clip: 15, $During: { $Left: [0.1, 0.9], $Top: [0.1, 0.9] }, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 260, $Easing: { $Left: $Jease$.$InJump, $Top: $Jease$.$InJump, $Clip: $Jease$.$OutQuad }, $Round: { $Left: 0.8, $Top: 2.5 } }
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: jssor_1_SlideshowTransitions,
+                    $TransitionsOrder: 1
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$,
+                    $SpacingX: 16,
+                    $SpacingY: 16
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+        };
+    </script>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1920px;height:500px;overflow:hidden;visibility:hidden;">
+        <div data-u="slides" class="jssor-slides" style="cursor:default;position:relative;top:0px;left:0px;width:1920px;height:500px;overflow:hidden;">
+            @foreach (var banner in banners)
+            {
+                <div>
+                    <img data-u="image" src="@banner.ImageUrl" alt="@banner.ImageAlt" />
+                    <div class="slide-news">
+                        <h4 class="text-title text-uppercase">
+                            <a href="disan.html">
+                                @banner.Title
+                            </a>
+                        </h4>
+                        <div class="text-des">
+                            @banner.SubTitle
+                        </div>
+                        <a href="@banner.LinkUrl" target="@banner.LinkTarget" class="btn btn-primary">
+                            @banner.LinkTitle
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+        <div data-u="navigator" class="jssorb053" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:12px;height:12px;">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div data-u="arrowleft" class="jssora093 arrow-left" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <i class="fa fa-angle-left " aria-hidden="true"></i>
+        </div>
+        <div data-u="arrowright" class="jssora093 arrow-right" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <i class="fa fa-angle-right " aria-hidden="true"></i>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        jssor_1_slider_init();
+    </script>
+</div>

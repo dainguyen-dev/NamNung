@@ -1,0 +1,12 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var pageContentDetail = PageContentFactory.GetPageContentDetail(Model);
+}
+
+<div class="box-title">
+    <h2 class="text-uppercase">
+        @pageContentDetail.Title
+    </h2>
+</div>

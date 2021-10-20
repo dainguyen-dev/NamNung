@@ -1,0 +1,32 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var root = Umbraco.ContentAtRoot().FirstOrDefault();
+    var socialMenus = NavigationFactory.GetSocialMenu(root);
+}
+
+<div class="header-social">
+    <div class="header-social">
+        <div class="socials-block">
+            <ul>
+                @foreach (var socialMenu in socialMenus)
+                {
+                    <li>
+                        <a href="@socialMenu.Url" target="@socialMenu.Target">
+                            @if (!string.IsNullOrEmpty(socialMenu.Image?.Url))
+                            {
+                                <img style="width:20px" src="@(socialMenu.Image?.Url)" alt="@(socialMenu.Image?.Alt)" />
+                            }
+                            else
+                            {
+                                <i class="fa fa-@socialMenu.Title.ToLower()"></i>
+                            }
+                        </a>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </div>
+</div>

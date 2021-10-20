@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var root = Umbraco.ContentAtRoot().FirstOrDefault();
+    var siteSettings = SiteSettingsFactory.GetSiteSettings(root);
+}
+
+<div class="copy">
+    @siteSettings.Copyright
+</div>

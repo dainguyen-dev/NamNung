@@ -1,0 +1,121 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = null;
+}
+
+<html dir="ltr" lang="@System.Threading.Thread.CurrentThread.CurrentCulture.Name">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    @Html.Partial("SEO/Metadata")
+
+
+    <script src="~/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="~/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/js/jquery.elevatezoom.js" type="text/javascript"></script>
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="~/css/stylesheet.css" rel="stylesheet">
+    <script src="~/js/jquery.plugin.min.js" type="text/javascript"></script>
+    <script src="~/js/jquery.countdown.min.js" type="text/javascript"></script>
+    <link href="~/css/owl.carousel.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="~/css/owl.theme.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="~/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="~/css/opencart.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="~/css/magnific-popup.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="~/css/inspirenewsletter.css" type="text/css" rel="stylesheet" media="screen">
+    <script src="~/js/lightbox-2.6.min.js" type="text/javascript"></script>
+    <link href="~/css/lightbox.css" rel="stylesheet" type="text/css">
+    <script src="~/js/custom.js" type="text/javascript"></script>
+    <script src="~/js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="~/js/swiper.jquery.js" type="text/javascript"></script>
+    <script src="~/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="~/js/common.js" type="text/javascript"></script>
+    <script src="~/js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="index-head">
+        <div class="banner allmenu">
+            <div class="container">
+                <div class="menuTop">
+
+                    @Html.Partial("Identification/Logo")
+
+                    @Html.Partial("Navigation/HeaderMenu")
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="common-home" class="container-fluid">
+        <div id="content" class="page-tintuc">
+
+            @Html.Partial("PageContent/PageContentHeading")
+
+            <div class="container breadrum">
+
+                @Html.Partial("Navigation/Breadcrumbs")
+
+                @Html.Partial("PageContent/PageContentTitleList")
+
+            </div>
+
+            @Html.Partial("PageContent/PageContentBlockList")
+           
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 footer-left">
+                    <h1>
+                        <span>
+                            @Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.ContactFooterMenuTitle)
+                        </span>
+                    </h1>
+                    <div class="footcontact">
+                        <ul class="list-unstyled">
+
+                            @Html.Partial("Identification/ContactInformationWidget")
+
+                            @Html.Partial("Navigation/SocialsMenu")
+
+                            @Html.Partial("Navigation/LanguaMenu")
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="middle-footer">
+
+                            @Html.Partial("Navigation/CategoryMenu")
+
+                            @Html.Partial("Navigation/PageMenu")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-power">
+            <div class="container">
+
+                @Html.Partial("Identification/Copyright")
+
+                @Html.Partial("Navigation/FooterMenu")
+
+            </div>
+        </div>
+    </footer>
+    <a href="/" id="scroll" title="Scroll to Top" style="display: block;">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</body>
+</html>

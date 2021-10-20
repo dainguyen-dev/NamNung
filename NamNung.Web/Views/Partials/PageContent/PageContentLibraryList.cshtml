@@ -1,0 +1,106 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var pageContentDetails = PageContentFactory.GetAllSubPageDetail(Model);
+    var pageContentDetail = PageContentFactory.GetPageContentDetail(Model);
+
+    var pageSize = Model.Value<int>(NamNung.Web.Constants.Fields.NumberOfItemsPerPage, fallback: Fallback.ToAncestors);
+    pageSize = pageSize.Equals(0) ? int.MaxValue : pageSize;
+}
+
+@helper RenderItem(KeyValuePair<string, string> data)
+{
+    if (string.IsNullOrEmpty(data.Key))
+    {
+        return;
+    }
+
+    <div class="height-180px">
+        <a href="@data.Value" data-lightbox="album-slider-@data.Key">
+            <div class="img-album">
+                <img src="@data.Value" class="img-responsive">
+                <i class="fa fa-search-plus"></i>
+            </div>
+        </a>
+    </div>
+}
+
+<div class="container album-tab">
+    <ul class="nav nav-tabs pro-tab pull-right">
+        <li class="active">
+            <a href="#albumall" data-toggle="tab">
+                @Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.AllLibrary)
+            </a>
+        </li>
+        @foreach (var pageContentDetailItem in pageContentDetails)
+        {
+            var id = pageContentDetailItem.PublishedContent.Id;
+
+            <li>
+                <a href="#@id" data-toggle="tab">
+                    @pageContentDetailItem.Title
+                </a>
+            </li>
+        }
+    </ul>
+</div>
+<div class="tab-content pro-nepr">
+    <div class="tab-pane active" id="albumall">
+        @{
+            var allImages = new List<KeyValuePair<string, string>>();
+            foreach (var pageContentDetailItem in pageContentDetails)
+            {
+                foreach (var image in pageContentDetailItem.Images)
+                {
+                    allImages.Add(new KeyValuePair<string, string>(pageContentDetailItem.PublishedContent.Id.ToString(), image.Url));
+                }
+            }
+
+            var allImagesArray = allImages.ToArray();
+        }
+
+        <div class="container album-list">
+            <div class="masonry masonry--h">
+                @foreach (var data in allImages)
+                {
+                    <figure class="masonry-brick masonry-brick--h">
+                        <a href="@data.Value" class="fancy-btn open" data-lightbox="album-silder">
+                            <img src="@data.Value" class="masonry-img"><i class="fa fa-search-plus"></i>
+                        </a>
+                    </figure>
+                }
+            </div>
+        </div>
+    </div>
+
+    @foreach (var pageContentDetailItem in pageContentDetails)
+    {
+        var id = pageContentDetailItem.PublishedContent.Id;
+
+        var allImagesInAlbum = new List<KeyValuePair<string, string>>();
+        foreach (var image in pageContentDetailItem.Images)
+        {
+            allImagesInAlbum.Add(new KeyValuePair<string, string>(pageContentDetailItem.Url, image.Url));
+        }
+
+        var allImagesInAlbumArray = allImagesInAlbum.ToArray();
+
+        <div class="tab-pane" id="@id">
+            <div class="container album-list">
+                <div class="container album-list">
+                    <div class="masonry masonry--h">
+                        @foreach (var data in allImagesInAlbum)
+                        {
+                        <figure class="masonry-brick masonry-brick--h">
+                            <a href="@data.Value" class="fancy-btn open" data-lightbox="album-silder-@data.Key">
+                                <img src="@data.Value" class="masonry-img"><i class="fa fa-search-plus"></i>
+                            </a>
+                        </figure>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

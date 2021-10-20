@@ -1,0 +1,19 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var pageContentDetail = PageContentFactory.GetPageContentDetail(Model);
+}
+
+<div class="page-title">
+    <h4>
+        @pageContentDetail.Title
+    </h4>
+
+    @if (!pageContentDetail.CreatedDate.Equals(DateTime.MinValue))
+    {
+        <div class="post-date">
+            @pageContentDetail.CreatedDate.ToString(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.FormatDateTime))
+        </div>
+    }
+</div>

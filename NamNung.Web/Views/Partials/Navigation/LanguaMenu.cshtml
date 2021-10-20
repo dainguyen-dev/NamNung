@@ -1,0 +1,26 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var languageLinks = NavigationFactory.GetLanguageMenu(Model);
+    string path = HttpContext.Current.Request.Url.AbsolutePath;
+    if (!languageLinks.Any(link => link.Url.Equals(path)))
+    {
+        Response.Redirect(languageLinks.LastOrDefault()?.Url);
+    }
+}
+
+<div class="change-lang">
+    <label>@Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.LanguageFooterMenuTitle)</label>
+    <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        @foreach (var languageLink in languageLinks.Reverse())
+        {
+            var selected = System.Threading.Thread.CurrentThread.CurrentCulture.Name.ToLower().Contains(languageLink.CultureKey) ? "selected" : string.Empty;
+            <option @selected value="@languageLink.Url">
+                @Umbraco.GetDictionaryValue(languageLink.CultureKey)
+            </option>
+        }
+    </select>
+</div>
+
+

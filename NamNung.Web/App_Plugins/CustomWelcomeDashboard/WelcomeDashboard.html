@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="welcome-dashboard" ng-controller="CustomWelcomeDashboardController as vm">
+        <h5>{{vm.UserName}}</h5>
+        <table class="umb-table">
+            <tr ng-repeat="logEntry in vm.UserLogHistory.items">
+                <td class="umb-table-cell">
+                    <a href="/Umbraco/#/{{logEntry.editUrl}}">
+                        <i class="{{logEntry.Content.icon}}"></i>  {{logEntry.Content.name}} <span ng-if="logEntry.comment">- {{logEntry.comment}}</span>
+                    </a>
+                </td>
+                <td>
+                    <span class="text-muted">{{logEntry.timestamp  | date:'medium'}}</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

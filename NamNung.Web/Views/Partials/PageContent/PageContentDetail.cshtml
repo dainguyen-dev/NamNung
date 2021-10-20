@@ -1,0 +1,8 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var pageContentDetail = PageContentFactory.GetPageContentDetail(Model);
+}
+
+@Html.Raw(pageContentDetail.Body)

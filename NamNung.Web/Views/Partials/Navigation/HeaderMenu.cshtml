@@ -1,0 +1,66 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var root = Umbraco.ContentAtRoot().FirstOrDefault();
+    var headerMenuItems = NavigationFactory.GetHeaderMenu(root);
+}
+
+<nav id="menu" class="navbar">
+    <div class="navbar-header">
+        <button type="button" class="btn btn-navbar" onclick="openNav()" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                @foreach (var headerMenuItem in headerMenuItems)
+                {
+                    var moreMenuClass = headerMenuItem.ChildLinks.Any() ? "dropdown moremenu" : "moremenu";
+                    var activeMenu = Model.Url().StartsWith(headerMenuItem.Url) && !Model.Id.Equals(1072) ? "active" : string.Empty;
+                    <li class="@moreMenuClass @activeMenu">
+                        <a href="@headerMenuItem.Url" target="@headerMenuItem.Target">
+                            @headerMenuItem.Title
+                            @if (headerMenuItem.ChildLinks.Any())
+                            {
+                                <i class="fa fa-angle-down pull-right enangle"></i>
+                            }
+                        </a>
+                        @if (headerMenuItem.ChildLinks.Any())
+                        {
+                            <div class="dropdown-menu">
+                                <div class="dropdown-inner">
+                                    <ul class="list-unstyled">
+                                        @foreach (var childLink in headerMenuItem.ChildLinks)
+                                        {
+                                            <li class="dropdown-submenu">
+                                                <a href="@childLink.Url" class="submenu-title" target="@childLink.Target">
+                                                    @childLink.Title
+                                                </a>
+                                                @if (childLink.ChildLinks.Any())
+                                                {
+                                                    <ul class="submenu-level3">
+                                                        @foreach (var level3 in childLink.ChildLinks)
+                                                        {
+                                                            <li>
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <a href="@level3.Url" target="@level3.Target" class="submenu-title">
+                                                                    @level3.Title
+                                                                </a>
+                                                            </li>
+                                                        }
+                                                    </ul>
+                                                }
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        }
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,136 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var pageContentDetails = PageContentFactory.GetAllSubPageDetail(Model).ToArray();
+    var pageContentDetail = PageContentFactory.GetPageContentDetail(Model);
+}
+
+@{
+    var pageSize = Model.Value<int>(NamNung.Web.Constants.Fields.NumberOfItemsPerPage, fallback: Fallback.ToAncestors);
+    pageSize = pageSize.Equals(0) ? int.MaxValue : pageSize;
+
+    var page = 1;
+    int.TryParse(Request.QueryString["page"], out page);
+    var items = pageContentDetails.ToList();
+    var totalPages = (int)Math.Ceiling((double)items.Count() / (double)pageSize);
+
+    if (page > totalPages)
+    {
+        page = totalPages;
+    }
+    else if (page < 1)
+    {
+        page = 1;
+    }
+
+    var results = items.Skip((page - 1) * pageSize).Take(pageSize).ToArray();
+}
+
+@helper RenderPagination(int page, int totalPages)
+{
+    if (totalPages > 1)
+    {
+        <div class="pagi">
+            <ul class="pagination">
+                @if (page > 1)
+                {
+                    <li class="first">
+                        <a href="?page=@(page-1)">
+                            <i class="fa fa-long-arrow-left"></i>
+                        </a>
+                    </li>
+                }
+
+                @for (int p = 1; p < totalPages + 1; p++)
+                {
+                    <li class="@(p == page ? "active" : string.Empty)">
+                        <a href="?page=@p">@p</a>
+                    </li>
+                }
+
+                @if (page < totalPages)
+                {
+                    <li class="last">
+                        <a href="?page=@(page+1)">
+                            <i class="fa fa-long-arrow-right"></i>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+}
+
+@helper RenderItem(NamNung.Web.Factories.Models.PageContentDetail pageContentDetail)
+{
+    if (pageContentDetail == null)
+    {
+        return;
+    }
+
+    <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="news-group">
+            <div class="blog-left">
+                <div class="inspire-blog-image">
+                    <a href="@pageContentDetail.Url">
+                        <img src="@(pageContentDetail.Image?.Url)" class="img-responsive">
+                    </a>
+                </div>
+
+                @if (!pageContentDetail.CreatedDate.Equals(DateTime.MinValue))
+                {
+                    <div class="post-date">
+                        @pageContentDetail.CreatedDate.ToString(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.FormatDateTime))
+                    </div>
+                }
+
+            </div>
+            <div class="blog-right">
+                <h4>
+                    <a href="@pageContentDetail.Url">
+                        @pageContentDetail.Title
+                    </a>
+                </h4>
+
+                @if (!string.IsNullOrWhiteSpace(pageContentDetail.Description))
+                {
+                    var maxSub = Math.Min(125, pageContentDetail.Description.Length);
+                    var endLine = maxSub < pageContentDetail.Description.Length ? "..." : string.Empty;
+
+                    <div class="blog-desc">
+                        @pageContentDetail.Description.Substring(0, maxSub) @endLine
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+<div class="container">
+    <div class="box blog blog-list">
+        @for (int i = 0; i < results.Count(); i += 3)
+        {
+            var currentItem = results[i];
+
+            var hasTwo = i + 1 <= results.Count() - 1;
+            var twoItem = hasTwo ? results[i + 1] : null;
+
+            var hasThree = i + 2 <= results.Count() - 1;
+            var threeItem = hasThree ? results[i + 2] : null;
+
+            <div class="row tintuc-row">
+
+                @RenderItem(currentItem)
+
+                @RenderItem(twoItem)
+
+                @RenderItem(threeItem)
+
+            </div>
+        }
+    </div>
+
+    @RenderPagination(page, totalPages)
+    
+</div>

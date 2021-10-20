@@ -1,0 +1,47 @@
+﻿@using NamNung.Web.Factories;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var banners = MediaFactory.GetBannersWitRichText(Model, NamNung.Web.Constants.Fields.BannersIntroduction);
+    if (banners is null || !banners.Any())
+    {
+        return;
+    }
+}
+
+@foreach (var banner in banners)
+{
+    <div class="box blog-gioithieu">
+        <div class="box-title">
+            <h2 class="text-uppercase">
+                @banner.Title
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 gioithieu-left">
+                <div class="news-block">
+                    @Html.Raw(banner.Body)
+                    <a href="@banner.LinkUrl" target="@banner.LinkTarget" class="btn btn-primary">
+                        @banner.LinkTitle
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 gioithieu-right">
+                <div class="row">
+                    @{
+                            var isClass = false;
+                            foreach (var image in banner.Images)
+                            {
+                                var imgClass = isClass ? "img-2" : string.Empty;
+                                isClass = !isClass;
+
+                                <div class="col-md-6 col-sm-6 col-xs-6 @imgClass">
+                                <img src="@image.Url" alt="@image.Alt" class="img-responsive">
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}

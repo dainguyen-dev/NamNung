@@ -1,10 +1,4 @@
-function albumSlider() {
-    lightbox.option({
-        'resizeDuration': 100,
-        'wrapAround': true,
-        'maxWidth': 1024
-      })
-}
+
  /* loader */
 $(document).ready(function(){
     var o = $('#page-preloader');
@@ -13,8 +7,6 @@ $(document).ready(function(){
             $('#page-preloader').removeClass('visible');
         });
     }
-    //call album slider
-    albumSlider();
 });
 
 //go to top

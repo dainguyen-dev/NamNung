@@ -1,0 +1,2710 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="vi_vn" intName="Vietnamese" localName="Vietnamese" lcid="" culture="vi-VN">
+  <creator>
+    <name>Admin cộng đồng</name>
+    <link>https://our.umbraco.com/documentation/Extending-Umbraco/Language-Files</link>
+  </creator>
+  <area alias="actions">
+    <key alias="assignDomain">Văn hóa và Tên máy chủ</key>
+    <key alias="auditTrail">Đường mòn kiểm tra</key>
+    <key alias="browse">Nút Duyệt qua</key>
+    <key alias="changeDocType">Thay đổi loại tài liệu</key>
+    <key alias="changeDataType">Thay đổi kiểu dữ liệu</key>
+    <key alias="copy">Sao chép</key>
+    <key alias="create">Tạo</key>
+    <key alias="export">Xuất</key>
+    <key alias="createPackage">Tạo gói</key>
+    <key alias="createGroup">Tạo nhóm</key>
+    <key alias="delete">Xóa</key>
+    <key alias="disable">Tắt</key>
+    <key alias="editSettings">Chỉnh sửa cài đặt</key>
+    <key alias="emptyRecycleBin">Thùng rác trống</key>
+    <key alias="enable">Bật</key>
+    <key alias="exportDocumentType">Xuất loại tài liệu</key>
+    <key alias="importDocumentType">Nhập loại tài liệu</key>
+    <key alias="importPackage">Nhập gói</key>
+    <key alias="liveEdit">Chỉnh sửa trong Canvas</key>
+    <key alias="logout">Thoát</key>
+    <key alias="move">Di chuyển</key>
+    <key alias="notify">Thông báo</key>
+    <key alias="protect">Hạn chế quyền truy cập công khai</key>
+    <key alias="publish">Xuất bản</key>
+    <key alias="unpublish">Hủy xuất bản</key>
+    <key alias="refreshNode">Tải lại</key>
+    <key alias="republish">Tái xuất bản toàn bộ trang web</key>
+    <key alias="remove">Xóa</key>
+    <key alias="rename" version="7.3.0">Đổi tên</key>
+    <key alias="restore" version="7.3.0">Khôi phục</key>
+    <key alias="SetPermissionsForThePage">Đặt quyền cho trang %0%</key>
+    <key alias="chooseWhereToCopy">Chọn nơi để sao chép</key>
+    <key alias="chooseWhereToMove">Chọn nơi di chuyển</key>
+    <key alias="toInTheTreeStructureBelow">đến trong cấu trúc cây bên dưới</key>
+    <key alias="infiniteEditorChooseWhereToCopy ">Chọn nơi sao chép (các) mục đã chọn</key>
+    <key alias="infiniteEditorChooseWhereToMove ">Chọn vị trí để di chuyển (các) mục đã chọn</key>
+    <key alias="wasMovedTo">đã được chuyển đến</key>
+    <key alias="wasCopiedTo">đã được sao chép vào</key>
+    <key alias="wasDeleted">đã bị xóa</key>
+    <key alias="rights">Quyền</key>
+    <key alias="rollback">Khôi phục</key>
+    <key alias="sendtopublish">Gửi để xuất bản</key>
+    <key alias="sendToTranslate">Gửi đến bản dịch</key>
+    <key alias="setGroup">Đặt nhóm</key>
+    <key alias="sort">Sắp xếp</key>
+    <key alias="translate">Dịch</key>
+    <key alias="update">Cập nhật</key>
+    <key alias="setPermissions">Đặt quyền</key>
+    <key alias="unlock">Mở khóa</key>
+    <key alias="createblueprint">Tạo Mẫu Nội dung</key>
+    <key alias="resendInvite">Gửi lại lời mời</key>
+  </area>
+  <area alias="actionCategories">
+    <key alias="content">Nội dung</key>
+    <key alias="administration">Quản trị</key>
+    <key alias="structure">Cấu trúc</key>
+    <key alias="other">Khác</key>
+  </area>
+  <area alias="actionDescriptions">
+    <key alias="assignDomain">Cho phép truy cập để chỉ định văn hóa và tên máy chủ</key>
+    <key alias="auditTrail">Cho phép truy cập để xem nhật ký lịch sử của nút</key>
+    <key alias="browse">Cho phép truy cập để xem một nút</key>
+    <key alias="changeDocType">Cho phép truy cập để thay đổi Loại tài liệu cho một nút</key>
+    <key alias="copy">Cho phép truy cập để sao chép một nút</key>
+    <key alias="create">Cho phép truy cập để tạo các nút</key>
+    <key alias="delete">Cho phép truy cập để xóa các nút</key>
+    <key alias="move">Cho phép truy cập để di chuyển một nút</key>
+    <key alias="protect">Cho phép truy cập để đặt và thay đổi các giới hạn truy cập cho một nút</key>
+    <key alias="publish">Cho phép truy cập để xuất bản một nút</key>
+    <key alias="unpublish">Cho phép truy cập để hủy xuất bản một nút</key>
+    <key alias="rights">Cho phép truy cập để thay đổi quyền cho một nút</key>
+    <key alias="rollback">Cho phép truy cập để khôi phục nút về trạng thái trước đó</key>
+    <key alias="sendtopublish">Cho phép truy cập để gửi một nút để phê duyệt trước khi xuất bản</key>
+    <key alias="sendToTranslate">Cho phép truy cập để gửi một nút để dịch</key>
+    <key alias="sort">Cho phép truy cập để thay đổi thứ tự sắp xếp cho các nút</key>
+    <key alias="translate">Cho phép truy cập để dịch một nút</key>
+    <key alias="update">Cho phép truy cập để lưu một nút</key>
+    <key alias="createblueprint">Cho phép truy cập để tạo Mẫu nội dung</key>
+  </area>
+  <area alias="apps">
+    <key alias="umbContent">Nội dung</key>
+    <key alias="umbInfo">Thông tin</key>
+  </area>
+  <area alias="assignDomain">
+    <key alias="permissionDenied">Quyền bị từ chối.</key>
+    <key alias="addNew">Thêm tên miền mới</key>
+    <key alias="remove">remove</key>
+    <key alias="invalidNode">Nút không hợp lệ.</key>
+    <key alias="invalidDomain">Một hoặc nhiều tên miền có định dạng không hợp lệ.</key>
+    <key alias="duplicateDomain">Miền đã được chỉ định.</key>
+    <key alias="language">Ngôn ngữ</key>
+    <key alias="domain">Tên miền</key>
+    <key alias="domainCreate">Tên miền mới '%0%' đã được tạo</key>
+    <key alias="domainDeleted">Miền '%0%' đã bị xóa</key>
+    <key alias="domainExists">Tên miền '%0%' đã được chỉ định</key>
+    <key alias="domainUpdated">Tên miền '%0%' đã được cập nhật</key>
+    <key alias="orEdit">Chỉnh sửa tên miền hiện tại</key>
+    <key alias="domainHelpWithVariants">
+      <![CDATA[Tên miền hợp lệ là: "example.com", "www.example.com", "example.com:8080" hoặc "https://www.example.com/". Hơn nữa, 
+      các đường dẫn một cấp trong các miền cũng được hỗ trợ, ví dụ. "example.com/en" hoặc "/ en".]]></key>
+    <key alias="inherit">Kế thừa</key>
+    <key alias="setLanguage">Văn hóa</key>
+    <key alias="setLanguageHelp">​​<![CDATA[Đặt văn hóa cho các nút bên dưới nút hiện tại, <br /> hoặc kế thừa văn hóa từ các nút mẹ. Cũng sẽ áp dụng <br /> cho nút hiện tại, trừ khi một miền bên dưới cũng áp dụng.]]></key>
+    <key alias="setDomains">Miền</key>
+  </area>
+  <area alias="buttons">
+    <key alias="clearSelection">Xóa lựa chọn</key>
+    <key alias="select">Chọn</key>
+    <key alias="somethingElse">Làm việc khác</key>
+    <key alias="bold">In đậm</key>
+    <key alias="deindent">Hủy thụt lề đoạn văn</key>
+    <key alias="formFieldInsert">Chèn trường biểu mẫu</key>
+    <key alias="graphicHeadline">Chèn dòng tiêu đề đồ họa</key>
+    <key alias="htmlEdit">Chỉnh sửa Html</key>
+    <key alias="indent">Thụt lề đoạn văn</key>
+    <key alias="italic">In nghiêng</key>
+    <key alias="justifyCenter">Trung tâm</key>
+    <key alias="justifyLeft">Căn trái</key>
+    <key alias="justifyRight">Căn phải</key>
+    <key alias="linkInsert">Chèn liên kết</key>
+    <key alias="linkLocal">Chèn liên kết cục bộ (neo)</key>
+    <key alias="listBullet">Danh sách Dấu đầu dòng</key>
+    <key alias="listNumeric">Danh sách số</key>
+    <key alias="macroInsert">Chèn macro</key>
+    <key alias="pictureInsert">Chèn ảnh</key>
+    <key alias="publishAndClose">Xuất bản và đóng</key>
+    <key alias="publishDescendants">Xuất bản với con cháu</key>
+    <key alias="relations">Chỉnh sửa quan hệ</key>
+    <key alias="returnToList">Quay lại danh sách</key>
+    <key alias="save">Lưu</key>
+    <key alias="saveAndClose">Lưu và đóng</key>
+    <key alias="saveAndPublish">Lưu và xuất bản</key>
+    <key alias="saveAndSchedule">Lưu và lên lịch</key>
+    <key alias="saveToPublish">Gửi để phê duyệt</key>
+    <key alias="saveListView">Lưu chế độ xem danh sách</key>
+    <key alias="schedulePublish">Lên lịch</key>
+    <key alias="showPage">Xem trước</key>
+    <key alias="saveAndPreview">Lưu và xem trước</key>
+    <key alias="showPageDisabled">Xem trước bị tắt vì không có mẫu nào được chỉ định</key>
+    <key alias="styleChoose">Chọn kiểu</key>
+    <key alias="styleShow">Hiển thị kiểu</key>
+    <key alias="tableInsert">Chèn bảng</key>
+    <key alias="generateModelsAndClose">Tạo mô hình và đóng</key>
+    <key alias="saveAndGenerateModels">Lưu và tạo mô hình</key>
+    <key alias="undo">Hoàn tác</key>
+    <key alias="redo">Làm lại</key>
+    <key alias="rollback">Khôi phục</key>
+    <key alias="deleteTag">Xóa thẻ</key>
+    <key alias="confirmActionCancel">Hủy</key>
+    <key alias="confirmActionConfirm">Xác nhận</key>
+    <key alias="morePublishingOptions">Các tùy chọn xuất bản khác</key>
+    <key alias="submitChanges">Gửi</key>
+    <key alias="submitChangesAndClose">Gửi và đóng</key>
+  </area>
+  <area alias="auditTrails">
+    <key alias="atViewingFor">Đang xem cho</key>
+    <key alias="delete">Nội dung đã bị xóa</key>
+    <key alias="unpublish">Nội dung chưa được xuất bản</key>
+    <key alias="unpublishvariant">Nội dung chưa được xuất bản cho các ngôn ngữ: %0%</key>
+    <key alias="publish">Nội dung được xuất bản</key>
+    <key alias="publishingvariant">Nội dung được xuất bản cho các ngôn ngữ: %0%</key>
+    <key alias="save">Nội dung đã lưu</key>
+    <key alias="savevariant">Nội dung được lưu cho các ngôn ngữ: %0%</key>
+    <key alias="move">Nội dung đã di chuyển</key>
+    <key alias="copy">Nội dung được sao chép</key>
+    <key alias="rollback">Nội dung được khôi phục</key>
+    <key alias="sendtopublish">Nội dung được gửi để xuất bản</key>
+    <key alias="sendtopublishvariant">Nội dung được gửi để xuất bản cho các ngôn ngữ: %0%</key>
+    <key alias="sort">Sắp xếp các mục con do người dùng thực hiện</key>
+    <key alias="custom">%0%</key>
+    <key alias="smallCopy">Sao chép</key>
+    <key alias="smallPublish">Xuất bản</key>
+    <key alias="smallPublishVariant">Xuất bản</key>
+    <key alias="smallMove">Di chuyển</key>
+    <key alias="smallSave">Lưu</key>
+    <key alias="smallSaveVariant">Lưu</key>
+    <key alias="smallDelete">Xóa</key>
+    <key alias="smallUnpublish">Hủy xuất bản</key>
+    <key alias="smallUnpublishVariant">Hủy xuất bản</key>
+    <key alias="smallRollBack">Khôi phục</key>
+    <key alias="smallSendToPublish">Gửi để xuất bản</key>
+    <key alias="smallSendToPublishVariant">Gửi để xuất bản</key>
+    <key alias="smallSort">Sắp xếp</key>
+    <key alias="smallCustom">Tùy chỉnh</key>
+    <key alias="historyIncludingVariants">Lịch sử (tất cả các biến thể)</key>
+  </area>
+  <area alias="codefile">
+    <key alias="createFolderFailedById">Không tạo được thư mục dưới gốc có ID %0%</key>
+    <key alias="createFolderFailedByName">Không tạo được thư mục dưới gốc có tên %0%</key>
+    <key alias="createFolderIllegalChars">Tên thư mục không được chứa các ký tự không hợp lệ.</key>
+    <key alias="deleteItemFailed">Không xóa được mục: %0%</key>
+  </area>
+  <area alias="content">
+    <key alias="isPublished" version="7.2">Đã được Xuất bản</key>
+    <key alias="about">Giới thiệu về trang này</key>
+    <key alias="alias">Bí danh</key>
+    <key alias="alternativeTextHelp">(bạn sẽ mô tả bức ảnh qua điện thoại như thế nào)</key>
+    <key alias="alternativeUrls">Liên kết Thay thế</key>
+    <key alias="clickToEdit">Nhấp để chỉnh sửa mục này</key>
+    <key alias="createBy">Được tạo bởi</key>
+    <key alias="createByDesc" version="7.0">Tác giả gốc</key>
+    <key alias="updatedBy" version="7.0">Được cập nhật bởi</key>
+    <key alias="createDate">Đã tạo</key>
+    <key alias="createDateDesc" version="7.0">Ngày / giờ tài liệu này được tạo</key>
+    <key alias="documentType">Loại tài liệu</key>
+    <key alias="editing">Chỉnh sửa</key>
+    <key alias="expireDate">Xóa lúc</key>
+    <key alias="itemChanged">Mục này đã được thay đổi sau khi xuất bản</key>
+    <key alias="itemNotPublished">Mục này chưa được xuất bản</key>
+    <key alias="lastPublished">Xuất bản lần cuối</key>
+    <key alias="noItemsToShow">Không có mục nào để hiển thị</key>
+    <key alias="listViewNoItems" version="7.1.5">Không có mục nào để hiển thị trong danh sách.</key>
+    <key alias="listViewNoContent">Không có mục con nào được thêm vào</key>
+    <key alias="listViewNoMembers">Không có thành viên nào được thêm vào</key>
+    <key alias="mediatype">Loại phương tiện</key>
+    <key alias="mediaLinks">Liên kết đến (các) mục phương tiện</key>
+    <key alias="membergroup">Nhóm thành viên</key>
+    <key alias="memberrole">Vai trò</key>
+    <key alias="membertype">Loại thành viên</key>
+    <key alias="noChanges">Không có thay đổi nào được thực hiện</key>
+    <key alias="noDate">Không chọn ngày nào</key>
+    <key alias="nodeName">Tiêu đề trang</key>
+    <key alias="noMediaLink">Mục phương tiện này không có liên kết</key>
+    <key alias="noProperties">Không thể thêm nội dung nào cho mục này</key>
+    <key alias="otherElements">Thuộc tính</key>
+    <key alias="parentNotPublished">Tài liệu này đã được xuất bản nhưng không hiển thị vì tài liệu gốc '%0%' chưa được xuất bản</key>
+    <key alias="parentCultureNotPublished">Văn hóa này đã được xuất bản nhưng không hiển thị vì nó chưa được xuất bản trên trang gốc '%0%'</key>
+    <key alias="parentNotPublishedAnomaly">Tài liệu này đã được xuất bản nhưng không có trong bộ nhớ cache</key>
+    <key alias="getUrlException">Không thể lấy URL</key>
+    <key alias="routeError">Tài liệu này đã được xuất bản nhưng URL của nó sẽ xung đột với nội dung %0%</key>
+    <key alias="routeErrorCannotRoute">Tài liệu này đã được xuất bản nhưng không thể định tuyến URL của nó</key>
+    <key alias="publish">Xuất bản</key>
+    <key alias="published">Đã xuất bản</key>
+    <key alias="publishedPendingChanges">Đã xuất bản (thay đổi đang chờ xử lý)</key>
+    <key alias="publishStatus">Trạng thái Xuất bản</key>
+    <key alias="publishDescendantsHelp">​​<![CDATA[Xuất bản <strong>%0%</strong> và tất cả các mục nội dung bên dưới và do đó công khai nội dung của chúng.]]></key>
+    <key alias="publishDescendantsWithVariantsHelp">​​<![CDATA[Xuất bản các biến thể và các biến thể cùng loại bên dưới và do đó công khai nội dung của chúng.]]></key>
+    <key alias="releaseDate">Xuất bản tại</key>
+    <key alias="unpublishDate">Hủy xuất bản tại</key>
+    <key alias="removeDate">Xóa ngày</key>
+    <key alias="setDate">Đặt ngày</key>
+    <key alias="sortDone">Sắp xếp thứ tự đã được cập nhật</key>
+    <key alias="sortHelp">Để sắp xếp các nút, chỉ cần kéo các nút hoặc nhấp vào một trong các tiêu đề cột. Bạn có thể chọn nhiều nút bằng cách giữ phím "shift" hoặc "control" trong khi chọn</key>
+    <key alias="statistics">Thống kê</key>
+    <key alias="titleOptional">Tiêu đề (tùy chọn)</key>
+    <key alias="altTextOptional">Văn bản thay thế (tùy chọn)</key>
+    <key alias="captionTextOptional">Chú thích (tùy chọn)</key>
+    <key alias="type">Loại</key>
+    <key alias="unpublish">Hủy xuất bản</key>
+    <key alias="unpublished">Bản nháp</key>
+    <key alias="notCreated">Không được tạo</key>
+    <key alias="updateDate">Lần sửa cuối</key>
+    <key alias="updateDateDesc" version="7.0">Ngày / giờ tài liệu này được chỉnh sửa</key>
+    <key alias="uploadClear">Xóa (các) tệp</key>
+    <key alias="uploadClearImageContext">Nhấp vào đây để xóa hình ảnh khỏi mục phương tiện</key>
+    <key alias="uploadClearFileContext">Nhấp vào đây để xóa tệp khỏi mục phương tiện</key>
+    <key alias="urls">Liên kết tới tài liệu</key>
+    <key alias="memberof">Thành viên của (các) nhóm</key>
+    <key alias="notmemberof">Không phải là thành viên của (các) nhóm</key>
+    <key alias="childItems" version="7.0">Mục con</key>
+    <key alias="target" version="7.0">Mục tiêu</key>
+    <key alias="scheduledPublishServerTime">Điều này chuyển sang thời gian sau trên máy chủ:</key>
+    <key alias="scheduledPublishDocumentation ">​​<![CDATA[<a href =" https://our.umbraco.com/documentation/Getting-Started/Data/Schedised-Publishing/#timezones "target =" _ blank "rel = "noopener"> Điều này có nghĩa là gì? </a>]]></key>
+    <key alias="nestedContentDeleteItem">Bạn có chắc chắn muốn xóa mục này không?</key>
+    <key alias="nestedContentDeleteAllItems">Bạn có chắc chắn muốn xóa tất cả các mục không?</key>
+    <key alias="nestedContentEditorNotSupported">Thuộc tính %0% sử dụng trình chỉnh sửa%1%không được Nội dung lồng nhau hỗ trợ.</key>
+    <key alias="nestedContentNoContentTypes">Không có Loại Nội dung nào được định cấu hình cho thuộc tính này.</key>
+    <key alias="nestedContentAddElementType">Thêm loại phần tử</key>
+    <key alias="nestedContentSelectElementTypeModalTitle">Chọn loại phần tử</key>
+    <key alias="nestedContentGroupHelpText">Chọn nhóm có thuộc tính sẽ được hiển thị. Nếu để trống, nhóm đầu tiên trên Loại phần tử sẽ được sử dụng.</key>
+    <key alias="nestedContentTemplateHelpTextPart1">Nhập một biểu thức góc để đánh giá theo từng mục cho tên của nó. Sử dụng</key>
+    <key alias="nestedContentTemplateHelpTextPart2">để hiển thị chỉ mục mục</key>
+    <key alias="addTextBox">Thêm một hộp văn bản khác</key>
+    <key alias="removeTextBox">Xóa hộp văn bản này</key>
+    <key alias="contentRoot">Nội dung gốc</key>
+    <key alias="includeUnpublished">Bao gồm các mục nội dung chưa được xuất bản.</key>
+    <key alias="isSensitiveValue">Giá trị này bị ẩn. Nếu bạn cần truy cập để xem giá trị này, vui lòng liên hệ với quản trị viên trang web của bạn.</key>
+    <key alias="isSensitiveValue_short">Giá trị này bị ẩn.</key>
+    <key alias="languagesToPublishForFirstTime">Bạn muốn xuất bản những ngôn ngữ nào? Tất cả các ngôn ngữ có nội dung đều được lưu!</key>
+    <key alias="languagesToPublish">Bạn muốn xuất bản ngôn ngữ nào?</key>
+    <key alias="languagesToSave">Bạn muốn lưu những ngôn ngữ nào?</key>
+    <key alias="languagesToSaveForFirstTime">Tất cả các ngôn ngữ có nội dung đều được lưu khi tạo!</key>
+    <key alias="languagesToSendForApproval">Bạn muốn gửi ngôn ngữ nào để được phê duyệt?</key>
+    <key alias="languagesToSchedule">Bạn muốn lên lịch bằng ngôn ngữ nào?</key>
+    <key alias="languagesToUnpublish">Chọn ngôn ngữ để hủy xuất bản. Việc hủy xuất bản một ngôn ngữ bắt buộc sẽ hủy xuất bản tất cả các ngôn ngữ.</key>
+    <key alias="publishedLanguages">Các Ngôn ngữ Đã Xuất bản</key>
+    <key alias="unpublishedLanguages">Ngôn ngữ chưa được xuất bản</key>
+    <key alias="unmodifiedLanguages">Ngôn ngữ chưa sửa đổi</key>
+    <key alias="untouchedLanguagesForFirstTime">Những ngôn ngữ này chưa được tạo</key>
+
+    <key alias="variantsWillBeSaved">Tất cả các biến thể mới sẽ được lưu.</key>
+    <key alias="variantsToPublish">Bạn muốn xuất bản biến thể nào?</key>
+    <key alias="variantsToSave">Chọn các biến thể sẽ được lưu.</key>
+    <key alias="variantsToSendForApproval">Chọn các biến thể để gửi để phê duyệt.</key>
+    <key alias="variantsToSchedule">Đặt xuất bản theo lịch ...</key>
+    <key alias="variantsToUnpublish">Chọn các biến thể để hủy xuất bản. Việc hủy xuất bản một ngôn ngữ bắt buộc sẽ hủy xuất bản tất cả các biến thể.</key>
+    <key alias="publishRequiresVariants">Các biến thể sau là bắt buộc để xuất bản diễn ra:</key>
+
+    <key alias="notReadyToPublish">Chúng tôi chưa sẵn sàng xuất bản</key>
+    <key alias="readyToPublish">Sẵn sàng xuất bản?</key>
+    <key alias="readyToSave">Sẵn sàng lưu chưa?</key>
+    <key alias="sendForApproval">Gửi để phê duyệt</key>
+    <key alias="schedulePublishHelp">Chọn ngày và giờ để xuất bản và / hoặc hủy xuất bản mục nội dung.</key>
+    <key alias="createEmpty">Tạo mới</key>
+    <key alias="createFromClipboard">Dán từ khay nhớ tạm</key>
+    <key alias="nodeIsInTrash">Mục này nằm trong Thùng rác</key>
+  </area>
+  <area alias="blueprints">
+    <key alias="createBlueprintFrom">Tạo Mẫu Nội dung mới từ '%0%'</key>
+    <key alias="blankBlueprint">Trống</key>
+    <key alias="selectBlueprint">Chọn Mẫu Nội dung</key>
+    <key alias="createdBlueprintHeading">Đã tạo mẫu nội dung</key>
+    <key alias="createdBlueprintMessage">Một Mẫu Nội dung đã được tạo từ '%0%'</key>
+    <key alias="duplicateBlueprintMessage">Một Mẫu Nội dung khác có cùng tên đã tồn tại</key>
+    <key alias="blueprintDescription">Mẫu Nội dung là nội dung được xác định trước mà người chỉnh sửa có thể chọn để sử dụng làm cơ sở cho việc tạo nội dung mới</key>
+  </area>
+  <area alias="media">
+    <key alias="clickToUpload">Nhấp để tải lên</key>
+    <key alias="orClickHereToUpload">hoặc nhấp vào đây để chọn tệp</key>
+    <key alias="dragFilesHereToUpload">Bạn có thể kéo các tệp vào đây để tải lên.</key>
+    <key alias="disallowedFileType">Không thể tải lên tệp này, tệp không có loại tệp được chấp thuận</key>
+    <key alias="maxFileSize">Kích thước tệp tối đa là</key>
+    <key alias="mediaRoot">Gốc phương tiện</key>
+    <key alias="moveFailed">Không di chuyển được phương tiện</key>
+    <key alias="moveToSameFolderFailed">Thư mục mẹ và đích không được giống nhau</key>
+    <key alias="copyFailed">Không sao chép được phương tiện</key>
+    <key alias="createFolderFailed">Không tạo được thư mục dưới id mẹ %0%</key>
+    <key alias="renameFolderFailed">Không thể đổi tên thư mục với id %0%</key>
+    <key alias="dragAndDropYourFilesIntoTheArea">Kéo và thả (các) tệp của bạn vào vùng</key>
+    <key alias="uploadNotAllowed">Không cho phép tải lên ở vị trí này.</key>
+  </area>
+  <area alias="member">
+    <key alias="createNewMember">Tạo thành viên mới</key>
+    <key alias="allMembers">Tất cả thành viên</key>
+    <key alias="memberGroupNoProperties">Nhóm thành viên không có thuộc tính bổ sung nào để chỉnh sửa.</key>
+  </area>
+  <area alias="contentType">
+    <key alias="copyFailed">Không sao chép được loại nội dung</key>
+    <key alias="moveFailed">Không di chuyển được loại nội dung</key>
+  </area>
+  <area alias="mediaType">
+    <key alias="copyFailed">Không sao chép được loại phương tiện</key>
+    <key alias="moveFailed">Không di chuyển được loại phương tiện</key>
+    <key alias="autoPickMediaType">Tự động chọn</key>
+  </area>
+  <area alias="memberType">
+    <key alias="copyFailed">Không sao chép được loại thành viên</key>
+  </area>
+  <area alias="create">
+    <key alias="chooseNode">Bạn muốn tạo %0% mới ở đâu</key>
+    <key alias="createUnder">Tạo một mục trong</key>
+    <key alias="createContentBlueprint">Chọn Loại tài liệu bạn muốn tạo mẫu nội dung cho</key>
+    <key alias="enterFolderName">Nhập tên thư mục</key>
+    <key alias="updateData">Chọn loại và tiêu đề</key>
+    <key alias="noDocumentTypes" version="7.0">​​<![CDATA[Không có Loại tài liệu nào được phép có sẵn để tạo nội dung ở đây. Bạn phải bật những điều này trong <strong> Loại tài liệu </strong> trong phần <strong> Cài đặt </strong>, bằng cách chỉnh sửa <strong> Loại nút con được phép </strong> trong <strong> Quyền </strong>.]]></key>
+    <key alias="noDocumentTypesAtRoot">​​<![CDATA[Không có sẵn Loại tài liệu nào để tạo nội dung ở đây. Bạn phải tạo những thứ này trong <strong> Loại tài liệu </strong> trong phần <strong> Cài đặt </strong>.]]></key>
+    <key alias="noDocumentTypesWithNoSettingsAccess">Trang đã chọn trong cây nội dung không cho phép tạo bất kỳ trang nào bên dưới nó.</key>
+    <key alias="noDocumentTypesEditPermissions">Quyền chỉnh sửa cho Loại tài liệu này</key>
+    <key alias="noDocumentTypesCreateNew">Tạo một loại tài liệu mới</key>
+    <key alias="noDocumentTypesAllowedAtRoot">​​<![CDATA[Không có Loại tài liệu nào được phép có sẵn để tạo nội dung ở đây. Bạn phải bật các tùy chọn này trong <strong> Loại tài liệu </strong> trong phần <strong> Cài đặt </strong> bằng cách thay đổi tùy chọn <strong> Cho phép với tư cách gốc </strong> trong <strong> Quyền </strong>.]]></key>
+    <key alias="noMediaTypes" version="7.0">​​<![CDATA[Không có loại phương tiện được phép nào khả dụng để tạo phương tiện ở đây. Bạn phải bật những điều này trong <strong> Loại phương tiện </strong> trong phần <strong> Cài đặt </strong>, bằng cách chỉnh sửa <strong> Loại nút con được phép </strong> trong <strong> Quyền </strong> .]]></key>
+    <key alias="noMediaTypesWithNoSettingsAccess">Phương tiện đã chọn trong cây không cho phép tạo bất kỳ phương tiện nào khác bên dưới nó.</key>
+    <key alias="noMediaTypesEditPermissions">Quyền chỉnh sửa cho Loại phương tiện này</key>
+    <key alias="documentTypeWithoutTemplate">Loại tài liệu không có mẫu</key>
+    <key alias="documentTypeWithTemplate">Loại tài liệu có mẫu</key>
+    <key alias="documentTypeWithTemplateDescription">Định nghĩa dữ liệu cho trang nội dung mà người chỉnh sửa có thể tạo trong cây nội dung và có thể truy cập trực tiếp qua URL.</key>
+    <key alias="documentType">Loại tài liệu</key>
+    <key alias="documentTypeDescription">Định nghĩa dữ liệu cho thành phần nội dung có thể được tạo bởi người chỉnh sửa trong cây nội dung và được chọn trên các trang khác nhưng không có URL trực tiếp.</key>
+    <key alias="elementType">Loại phần tử</key>
+    <key alias="elementTypeDescription">Xác định lược đồ cho một tập hợp các thuộc tính lặp lại, ví dụ: trong trình chỉnh sửa thuộc tính 'Danh sách khối' hoặc 'Nội dung lồng nhau'.</key>
+    <key alias="composition">Thành phần</key>
+    <key alias="compositionDescription">xác định một tập hợp các thuộc tính có thể sử dụng lại có thể được đưa vào định nghĩa của nhiều Loại tài liệu khác. Ví dụ: một tập hợp 'Cài đặt Trang chung'.</key>
+    <key alias="folder">Thư mục</key>
+    <key alias="folderDescription">Được sử dụng để sắp xếp các Loại Tài liệu, Thành phần và Các Loại Phần tử được tạo trong cây Loại Tài liệu này.</key>
+    <key alias="newFolder">Thư mục mới</key>
+    <key alias="newDataType">Loại dữ liệu mới</key>
+    <key alias="newJavascriptFile">Tệp JavaScript mới</key>
+    <key alias="newEmptyPartialView">Chế độ xem một phần trống mới</key>
+    <key alias="newPartialViewMacro">Macro chế độ xem một phần mới</key>
+    <key alias="newPartialViewFromSnippet">Chế độ xem một phần mới từ đoạn mã</key>
+    <key alias="newPartialViewMacroFromSnippet">Macro chế độ xem một phần mới từ đoạn mã</key>
+    <key alias="newPartialViewMacroNoMacro">Macro chế độ xem một phần mới (không có macro)</key>
+    <key alias="newStyleSheetFile">Tệp trang tính kiểu mới</key>
+    <key alias="newRteStyleSheetFile">Tệp trang định kiểu mới của Rich Text Editor</key>
+  </area>
+  <area alias="dashboard">
+    <key alias="browser">Duyệt trang web của bạn</key>
+    <key alias="dontShowAgain">- Ẩn</key>
+    <key alias="nothinghappens">Nếu Admin không mở, bạn có thể cần cho phép cửa sổ bật lên từ trang web này</key>
+    <key alias="openinnew">đã mở trong cửa sổ mới</key>
+    <key alias="restart">Khởi động lại</key>
+    <key alias="visit">Truy cập</key>
+    <key alias="welcome">Chào mừng</key>
+  </area>
+  <area alias="prompt">
+    <key alias="stay">Ở lại</key>
+    <key alias="discardChanges">Hủy thay đổi</key>
+    <key alias="unsavedChanges">Bạn có các thay đổi chưa được lưu</key>
+    <key alias="unsavedChangesWarning">Bạn có chắc chắn muốn điều hướng khỏi trang này không? - bạn có các thay đổi chưa được lưu</key>
+    <key alias="confirmListViewPublish">Việc xuất bản sẽ hiển thị các mục đã chọn trên trang web.</key>
+    <key alias="confirmListViewUnpublish">Việc hủy xuất bản sẽ xóa các mục đã chọn và tất cả các mục hậu duệ của chúng khỏi trang web.</key>
+    <key alias="confirmUnpublish">Việc hủy xuất bản sẽ xóa trang này và tất cả các trang con của nó khỏi trang web.</key>
+    <key alias="doctypeChangeWarning">Bạn có các thay đổi chưa được lưu. Thực hiện các thay đổi đối với Loại tài liệu sẽ loại bỏ các thay đổi.</key>
+  </area>
+  <area alias="bulk">
+    <key alias="done">Xong</key>
+    <key alias="deletedItem">Đã xóa %0% mục</key>
+    <key alias="deletedItems">Đã xóa %0% mục</key>
+    <key alias="deletedItemOfItem">Đã xóa %0% trong số %1% mục</key>
+    <key alias="deletedItemOfItems">Đã xóa %0% trong số %1% mục</key>
+    <key alias="publishedItem ">Đã xuất bản %0% mục</key>
+    <key alias="publishedItems ">Đã xuất bản %0% mục</key>
+    <key alias="publishedItemOfItem">Đã xuất bản %0% trong tổng số %1% mục</key>
+    <key alias="publishedItemOfItems">Đã xuất bản %0% trong số %1% mục</key>
+    <key alias="unpublishedItem">Chưa xuất bản %0% item</key>
+    <key alias="unpublishedItems">Chưa xuất bản %0% mục</key>
+    <key alias="unpublishedItemOfItem">Unpublished %0% / %1% item</key>
+    <key alias="unpublishedItemOfItems">Chưa xuất bản %0% trong số %1% mục</key>
+    <key alias="movedItem">Đã chuyển %0% mục</key>
+    <key alias="movedItems">Đã chuyển %0% mục</key>
+    <key alias="movedItemOfItem">Đã chuyển %0% trong số %1% mục</key>
+    <key alias="movedItemOfItems">Đã chuyển %0% trong số %1% mục</key>
+    <key alias="copiedItem">Đã sao chép %0% mục</key>
+    <key alias="copiedItems">Đã sao chép %0% mục</key>
+    <key alias="copiedItemOfItems">Đã sao chép %0% trong số %1% mục</key>
+    <key alias="copiedItemOfItems">Đã sao chép %0% trong số %1% mục</key>
+  </area>
+  <area alias="defaultdialogs">
+    <key alias="nodeNameLinkPicker">Tiêu đề liên kết</key>
+    <key alias="urlLinkPicker">Liên kết</key>
+    <key alias="anchorLinkPicker">Anchor / querystring</key>
+    <key alias="anchorInsert">Tên</key>
+    <key alias="closeThisWindow">Đóng cửa sổ này</key>
+    <key alias="confirmdelete">Bạn có chắc chắn muốn xóa không</key>
+    <key alias="confirmdisable">Bạn có chắc chắn muốn tắt</key>
+    <key alias="confirmremove">Bạn có chắc chắn muốn xóa</key>
+    <key alias="confirmremoveusageof">​​<![CDATA[Bạn có chắc chắn muốn xóa việc sử dụng <b>%0%</b>]]></key>
+    <key alias="confirmremovereferenceto">​​<![CDATA[Bạn có chắc chắn muốn xóa tham chiếu đến <b>%0%</b>]]></key>
+    <key alias="confirmlogout">Bạn có chắc không?</key>
+    <key alias="confirmSure">Bạn có chắc không?</key>
+    <key alias="cut">Cắt</key>
+    <key alias="editdictionary">Chỉnh sửa Mục Từ điển</key>
+    <key alias="editlanguage">Chỉnh sửa Ngôn ngữ</key>
+    <key alias="editSelectedMedia">Chỉnh sửa phương tiện đã chọn</key>
+    <key alias="insertAnchor">Chèn liên kết cục bộ</key>
+    <key alias="insertCharacter">Chèn ký tự</key>
+    <key alias="insertgraphicheadline">Chèn dòng tiêu đề đồ họa</key>
+    <key alias="insertimage">Chèn ảnh</key>
+    <key alias="insertlink">Chèn liên kết</key>
+    <key alias="insertMacro">Nhấp để thêm Macro</key>
+    <key alias="inserttable">Chèn bảng</key>
+    <key alias="languagedeletewarning">Thao tác này sẽ xóa ngôn ngữ</key>
+    <key alias="languageChangeWarning">Thay đổi văn hóa cho một ngôn ngữ có thể là một thao tác tốn kém và sẽ dẫn đến việc tạo lại bộ nhớ cache nội dung và các chỉ mục</key>
+    <key alias="lastEdited">Chỉnh sửa lần cuối</key>
+    <key alias="link">Liên kết</key>
+    <key alias="linkinternal">Liên kết nội bộ:</key>
+    <key alias="linklocaltip">Khi sử dụng liên kết cục bộ, hãy chèn "#" vào trước liên kết</key>
+    <key alias="linknewwindow">Mở trong cửa sổ mới?</key>
+    <key alias="macroContainerSettings">Cài đặt macro</key>
+    <key alias="macroDoesNotHaveProperties">Macro này không chứa bất kỳ thuộc tính nào bạn có thể chỉnh sửa</key>
+    <key alias="paste">Dán</key>
+    <key alias="permissionsEdit">Chỉnh sửa quyền cho</key>
+    <key alias="permissionsSet">Đặt quyền cho</key>
+    <key alias="permissionsSetForGroup">Đặt quyền cho %0% cho nhóm người dùng%1%</key>
+    <key alias="permissionsHelp">Chọn nhóm người dùng bạn muốn đặt quyền cho</key>
+    <key alias="recycleBinDeleting">Các mục trong thùng rác hiện đang bị xóa. Vui lòng không đóng cửa sổ này trong khi thao tác này diễn ra</key>
+    <key alias="recycleBinIsEmpty">Thùng rác hiện đang trống</key>
+    <key alias="recycleBinWarning">Khi các mục bị xóa khỏi thùng rác, chúng sẽ biến mất vĩnh viễn</key>
+    <key alias="regexSearchError">​​<![CDATA[<a target = '_ blank' rel = 'noopener' href = 'http: //regexlib.com'> regexlib.com </a> hiện đang gặp sự cố một số vấn đề mà chúng tôi không kiểm soát được. Chúng tôi rất xin lỗi vì sự bất tiện này.]]></key>
+    <key alias="regexSearchHelp">Tìm kiếm một biểu thức chính quy để thêm xác thực vào trường biểu mẫu. Ví dụ: 'email,' zip-code ',' URL '.</key>
+    <key alias="removeMacro">Xóa Macro</key>
+    <key alias="requiredField">Trường Bắt buộc</key>
+    <key alias="sitereindexed">Trang web được lập chỉ mục lại</key>
+    <key alias="siterepublished">Bộ nhớ cache của trang web đã được làm mới. Tất cả nội dung xuất bản hiện đã được cập nhật. Trong khi tất cả nội dung chưa được xuất bản vẫn chưa được xuất bản</key>
+    <key alias="siterepublishHelp">Bộ nhớ cache của trang web sẽ được làm mới. Tất cả nội dung đã xuất bản sẽ được cập nhật, trong khi nội dung chưa được xuất bản sẽ không được xuất bản.</key>
+    <key alias="tableColumns">Số cột</key>
+    <key alias="tableRows">Số hàng</key>
+    <key alias="thumbnailimageclickfororiginal">Nhấp vào hình ảnh để xem kích thước đầy đủ</key>
+    <key alias="treepicker">Chọn mục</key>
+    <key alias="viewCacheItem">Xem mục Cache</key>
+    <key alias="relateToOriginalLabel">Liên quan đến bản gốc</key>
+    <key alias="includeDescendants">Bao gồm con cháu</key>
+    <key alias="theFriendliestCommunity">Cộng đồng thân thiện nhất</key>
+    <key alias="linkToPage">Liên kết đến trang</key>
+    <key alias="openInNewWindow">Mở tài liệu được liên kết trong cửa sổ hoặc tab mới</key>
+    <key alias="linkToMedia">Liên kết tới phương tiện</key>
+    <key alias="selectContentStartNode">Chọn nút bắt đầu nội dung</key>
+    <key alias="selectMedia">Chọn phương tiện</key>
+    <key alias="selectMediaType">Chọn loại phương tiện</key>
+    <key alias="selectIcon">Chọn biểu tượng</key>
+    <key alias="selectItem">Chọn mục</key>
+    <key alias="selectLink">Chọn liên kết</key>
+    <key alias="selectMacro">Chọn macro</key>
+    <key alias="selectContent">Chọn nội dung</key>
+    <key alias="selectContentType">Chọn loại nội dung</key>
+    <key alias="selectMediaStartNode">Chọn nút bắt đầu phương tiện</key>
+    <key alias="selectMember">Chọn thành viên</key>
+    <key alias="selectMemberGroup">Chọn nhóm thành viên</key>
+    <key alias="selectMemberType">Chọn loại thành viên</key>
+    <key alias="selectNode">Chọn nút</key>
+    <key alias="selectSection">Chọn các phần</key>
+    <key alias="selectUser">Chọn người dùng</key>
+    <key alias="selectUsers">Chọn người dùng</key>
+    <key alias="noIconsFound">​​Không tìm thấy biểu tượng nào</key>
+    <key alias="noMacroParams">Không có tham số nào cho macro này</key>
+    <key alias="noMacros">Không có macro nào để chèn</key>
+    <key alias="externalLoginProviders">Nhà cung cấp dịch vụ đăng nhập bên ngoài</key>
+    <key alias="exceptionDetail">Chi tiết ngoại lệ</key>
+    <key alias="stacktrace">Stacktrace</key>
+    <key alias="innerException">Ngoại lệ bên trong</key>
+    <key alias="linkYour">Liên kết của bạn</key>
+    <key alias="unLinkYour">Hủy liên kết của bạn</key>
+    <key alias="account">tài khoản</key>
+    <key alias="selectEditor">Chọn trình chỉnh sửa</key>
+    <key alias="selectEditorConfiguration">Chọn cấu hình</key>
+    <key alias="selectSnippet">Chọn đoạn mã</key>
+    <key alias="variantdeletewarning">Thao tác này sẽ xóa nút và tất cả các ngôn ngữ của nó. Nếu bạn chỉ muốn xóa một ngôn ngữ, bạn nên hủy xuất bản nút bằng ngôn ngữ đó.</key>
+    <key alias="propertyuserpickerremovewarning">​​<![CDATA[Thao tác này sẽ xóa người dùng <b>%0%</b>.]]></key>
+    <key alias="userremovewarning">​​<![CDATA[Điều này sẽ xóa người dùng <b>%0%</b> khỏi nhóm <b>%1%</b>]]></key>
+    <key alias="yesRemove">Có, xóa</key>
+  </area>
+  <area alias="dictionary">
+    <key alias="noItems">Không có mục từ điển nào.</key>
+  </area>
+  <area alias="dictionaryItem">
+    <key alias="description"><![CDATA[
+    Chỉnh sửa các phiên bản ngôn ngữ khác nhau cho mục từ điển '<em>%0%</em>' bên dưới
+    ]]></key>
+    <key alias="displayName">Tên văn hóa</key>
+    <key alias="changeKeyError">​​<![CDATA[
+    Khóa '%0%' đã tồn tại.
+    ]]></key>
+    <key alias="overviewTitle">Tổng quan về từ điển</key>
+  </area>
+  <area alias="examineManagement">
+    <key alias="configuredSearchers">Người tìm kiếm được định cấu hình</key>
+    <key alias="configuredSearchersDescription">Hiển thị các thuộc tính và công cụ cho bất kỳ Trình tìm kiếm được định cấu hình nào (chẳng hạn như trình tìm kiếm nhiều chỉ mục)</key>
+    <key alias="fieldValues">Giá trị trường</key>
+    <key alias="healthStatus">Tình trạng sức khỏe</key>
+    <key alias="healthStatusDescription">Trạng thái trạng thái của chỉ mục và nếu nó có thể được đọc</key>
+    <key alias="indexers">Indexers</key>
+    <key alias="indexInfo">Thông tin chỉ mục</key>
+    <key alias="indexInfoDescription">Liệt kê các thuộc tính của chỉ mục</key>
+    <key alias="manageIndexes">Quản lý chỉ mục của Kiểm tra</key>
+    <key alias="manageIndexesDescription">Cho phép bạn xem chi tiết của từng chỉ mục và cung cấp một số công cụ để quản lý chỉ mục</key>
+    <key alias="rebuildIndex">Tạo lại chỉ mục</key>
+    <key alias="rebuildIndexWarning"><![CDATA[
+      Điều này sẽ khiến chỉ mục được xây dựng lại. <br />
+      Tùy thuộc vào lượng nội dung có trong trang web của bạn, việc này có thể mất một lúc. <br />
+      Không nên xây dựng lại một chỉ mục trong thời gian có lưu lượng truy cập trang web cao hoặc khi các biên tập viên đang chỉnh sửa nội dung.
+      ]]>
+    </key>
+    <key alias="searchers">Người tìm kiếm</key>
+    <key alias="searchDescription">Tìm kiếm chỉ mục và xem kết quả</key>
+    <key alias="tools">Công cụ</key>
+    <key alias="toolsDescription">Công cụ để quản lý chỉ mục</key>
+    <key alias="fields">trường</key>
+    <key alias="indexCannotRead">Chỉ mục không thể đọc được và sẽ cần được tạo lại</key>
+    <key alias="processIsTakingLonger">Quá trình diễn ra lâu hơn dự kiến, hãy kiểm tra nhật ký Admin để xem có lỗi nào trong quá trình này không</key>
+    <key alias="indexCannotRebuild">Không thể tạo lại chỉ mục này vì nó chưa được gán</key>
+    <key alias="iIndexPopulator">IIndexPopulator</key>
+  </area>
+  <area alias="placeholders">
+    <key alias="username">Nhập tên người dùng của bạn</key>
+    <key alias="password">Nhập mật khẩu của bạn</key>
+    <key alias="confirmPassword">Xác nhận mật khẩu của bạn</key>
+    <key alias="nameentity">Đặt tên cho %0%...</key>
+    <key alias="entername">Nhập tên ...</key>
+    <key alias="enteremail">Nhập email ...</key>
+    <key alias="enterusername">Nhập tên người dùng ...</key>
+    <key alias="label">Nhãn ...</key>
+    <key alias="enterDescription">Nhập mô tả ...</key>
+    <key alias="search">Nhập để tìm kiếm ...</key>
+    <key alias="filter">Nhập để lọc ...</key>
+    <key alias="enterTags">Nhập để thêm thẻ (nhấn enter sau mỗi thẻ) ...</key>
+    <key alias="email">Nhập email của bạn</key>
+    <key alias="enterMessage">Nhập tin nhắn ...</key>
+    <key alias="usernameHint">Tên người dùng của bạn thường là email của bạn</key>
+    <key alias="anchor"># value hoặc? key = value</key>
+    <key alias="enterAlias">Nhập bí danh ...</key>
+    <key alias="generatingAlias">Đang tạo bí danh ...</key>
+    <key alias="a11yCreateItem">Tạo mục</key>
+    <key alias="a11yEdit">Chỉnh sửa</key>
+    <key alias="a11yName">Tên</key>
+  </area>
+  <area alias="editcontenttype">
+    <key alias="createListView" version="7.2">Tạo chế độ xem danh sách tùy chỉnh</key>
+    <key alias="removeListView" version="7.2">Xóa chế độ xem danh sách tùy chỉnh</key>
+    <key alias="aliasAlreadyExists">Đã tồn tại Loại nội dung, Loại phương tiện hoặc Loại thành viên với bí danh này</key>
+  </area>
+  <area alias="renamecontainer">
+    <key alias="renamed">Đã đổi tên</key>
+    <key alias="enterNewFolderName">Nhập tên thư mục mới tại đây</key>
+    <key alias="folderWasRename">%0% đã được đổi tên thành%1%</key>
+  </area>
+  <area alias="editdatatype">
+    <key alias="addPrevalue">Thêm giá trị trước</key>
+    <key alias="dataBaseDatatype">Kiểu dữ liệu cơ sở dữ liệu</key>
+    <key alias="guid">HƯỚNG DẪN về trình chỉnh sửa thuộc tính</key>
+    <key alias="renderControl">Trình chỉnh sửa thuộc tính</key>
+    <key alias="rteButtons">Các nút</key>
+    <key alias="rteEnableAdvancedSettings">Bật cài đặt nâng cao cho</key>
+    <key alias="rteEnableContextMenu">Bật menu ngữ cảnh</key>
+    <key alias="rteMaximumDefaultImgSize">Kích thước mặc định tối đa của hình ảnh được chèn</key>
+    <key alias="rteRelatedStylesheets">Bảng định kiểu liên quan</key>
+    <key alias="rteShowLabel">Hiển thị nhãn</key>
+    <key alias="rteWidthAndHeight">Chiều rộng và chiều cao</key>
+    <key alias="allPropTypes">Tất cả các loại thuộc tính &amp; dữ liệu tài sản</key>
+    <key alias="willBeDeleted">sử dụng Loại dữ liệu này sẽ bị xóa vĩnh viễn, vui lòng xác nhận rằng bạn cũng muốn xóa chúng</key>
+    <key alias="yesDelete">Có, xóa</key>
+    <key alias="andAllRelated">và tất cả các loại thuộc tính &amp; dữ liệu thuộc tính sử dụng Loại dữ liệu này</key>
+    <key alias="selectFolder">Chọn thư mục để di chuyển</key>
+    <key alias="inTheTree">đến trong cấu trúc cây bên dưới</key>
+    <key alias="wasMoved">đã được chuyển xuống bên dưới</key>
+    <key alias="hasReferenceDeleteConsequence">​​<![CDATA[Xóa <strong>%0%</strong> sẽ xóa các thuộc tính và dữ liệu của chúng khỏi các mục sau]]></key>
+    <key alias="acceptDeleteConsequence">Tôi hiểu rằng hành động này sẽ xóa các thuộc tính và dữ liệu dựa trên Loại dữ liệu này</key>
+  </area>
+  <area alias="errorHandling">
+    <key alias="errorButDataWasSaved">Dữ liệu của bạn đã được lưu, nhưng trước khi bạn có thể xuất bản trang này, có một số lỗi bạn cần sửa trước:</key>
+    <key alias="errorChangingProviderPassword">Nhà cung cấp dịch vụ thành viên hiện tại không hỗ trợ thay đổi mật khẩu (EnablePasswordRetrieval cần phải đúng)</key>
+    <key alias="errorExistsWithoutTab">%0% đã tồn tại</key>
+    <key alias="errorHeader">Có lỗi:</key>
+    <key alias="errorHeaderWithoutTab">Đã xảy ra lỗi:</key>
+    <key alias="errorInPasswordFormat">Mật khẩu phải dài tối thiểu %0% ký tự và chứa ít nhất %1% ký tự số không phải chữ cái</key>
+    <key alias="errorIntegerWithoutTab">%0% phải là một số nguyên</key>
+    <key alias="errorMandatory">Trường %0% trong tab %1% là bắt buộc</key>
+    <key alias="errorMandatoryWithoutTab">%0% là trường bắt buộc</key>
+    <key alias="errorRegExp">%0% tại %1% không có định dạng đúng</key>
+    <key alias="errorRegExpWithoutTab">%0% không có định dạng đúng</key>
+  </area>
+  <area alias="errors">
+    <key alias="receivedErrorFromServer">Nhận được lỗi từ máy chủ</key>
+    <key alias="dissallowedMediaType">Loại tệp được chỉ định đã không được quản trị viên cho phép</key>
+    <key alias="codemirroriewarning">LƯU Ý! Mặc dù CodeMirror được kích hoạt theo cấu hình, nó vẫn bị tắt trong Internet Explorer vì nó không đủ ổn định.</key>
+    <key alias="contentTypeAliasAndNameNotNull">Vui lòng điền cả bí danh và tên vào loại thuộc tính mới!</key>
+    <key alias="filePermissionsError">Đã xảy ra sự cố với quyền truy cập đọc / ghi vào một tệp hoặc thư mục cụ thể</key>
+    <key alias="macroErrorLoadingPartialView">Lỗi khi tải tập lệnh Chế độ xem một phần (tệp: %0%)</key>
+    <key alias="missingTitle">Vui lòng nhập tiêu đề</key>
+    <key alias="missingType">Vui lòng chọn một loại</key>
+    <key alias="pictureResizeBiggerThanOrg">Bạn sắp phóng ảnh lớn hơn kích thước ban đầu. Bạn có chắc chắn muốn tiếp tục không?</key>
+    <key alias="startNodeDoesNotExists">Startnode đã bị xóa, vui lòng liên hệ với quản trị viên của bạn</key>
+    <key alias="stylesMustMarkBeforeSelect">Vui lòng đánh dấu nội dung trước khi thay đổi kiểu</key>
+    <key alias="stylesNoStylesOnPage">Không có kiểu hiện hoạt nào</key>
+    <key alias="tableColMergeLeft">Vui lòng đặt con trỏ ở bên trái của hai ô bạn muốn hợp nhất</key>
+    <key alias="tableSplitNotSplittable">Bạn không thể tách một ô chưa được hợp nhất.</key>
+    <key alias="propertyHasErrors">Thuộc tính này không hợp lệ</key>
+  </area>
+  <area alias="general">
+    <key alias="options">Tùy chọn</key>
+    <key alias="about">Giới thiệu</key>
+    <key alias="action">Hành động</key>
+    <key alias="actions">Hành động</key>
+    <key alias="add">Thêm</key>
+    <key alias="alias">Bí danh</key>
+    <key alias="all">Tất cả</key>
+    <key alias="areyousure">Bạn có chắc không?</key>
+    <key alias="back">Quay lại</key>
+    <key alias="backToOverview">Quay lại tổng quan</key>
+    <key alias="border">Đường viền</key>
+    <key alias="by">bởi</key>
+    <key alias="cancel">Hủy</key>
+    <key alias="cellMargin">Lề ô</key>
+    <key alias="choose">Chọn</key>
+    <key alias="clear">Xóa</key>
+    <key alias="close">Đóng</key>
+    <key alias="closewindow">Đóng cửa sổ</key>
+    <key alias="closepane">Đóng ngăn</key>
+    <key alias="comment">Nhận xét</key>
+    <key alias="confirm">Xác nhận</key>
+    <key alias="constrain">Ràng buộc</key>
+    <key alias="constraintinProportions">Ràng buộc tỷ lệ</key>
+    <key alias="content">Nội dung</key>
+    <key alias="continue">Tiếp tục</key>
+    <key alias="copy">Sao chép</key>
+    <key alias="create">Tạo</key>
+    <key alias="cropSection">Cắt phần</key>
+    <key alias="database">Cơ sở dữ liệu</key>
+    <key alias="date">Ngày</key>
+    <key alias="default">Mặc định</key>
+    <key alias="delete">Xóa</key>
+    <key alias="delete">Đã xóa</key>
+    <key alias="deleting">Đang xóa ...</key>
+    <key alias="design">Thiết kế</key>
+    <key alias="dictionary">Từ điển</key>
+    <key alias="dimensions">Kích thước</key>
+    <key alias="discard">Loại bỏ</key>
+    <key alias="down">Xuống</key>
+    <key alias="download">Tải xuống</key>
+    <key alias="edit">Chỉnh sửa</key>
+    <key alias="edited">Đã chỉnh sửa</key>
+    <key alias="elements">Phần tử</key>
+    <key alias="email">Email</key>
+    <key alias="error">Lỗi</key>
+    <key alias="field">Trường</key>
+    <key alias="findDocument">Tìm</key>
+    <key alias="first">Đầu tiên</key>
+    <key alias="focalPoint">Tiêu điểm</key>
+    <key alias="general">Chung</key>
+    <key alias="groups">Nhóm</key>
+    <key alias="group">Nhóm</key>
+    <key alias="height">Chiều cao</key>
+    <key alias="help">Trợ giúp</key>
+    <key alias="hide">Ẩn</key>
+    <key alias="history">Lịch sử</key>
+    <key alias="icon">Biểu tượng</key>
+    <key alias="id">Id</key>
+    <key alias="import">Nhập</key>
+    <key alias="includeFromsubFolders">Bao gồm các thư mục con trong tìm kiếm</key>
+    <key alias="excludeFromSubFolders ">Chỉ tìm kiếm thư mục này</key>
+    <key alias="info">Thông tin</key>
+    <key alias="innerMargin">Lề trong</key>
+    <key alias="insert">Chèn</key>
+    <key alias="install">Cài đặt</key>
+    <key alias="invalid">Không hợp lệ</key>
+    <key alias="justify">Căn đều</key>
+    <key alias="label">Nhãn</key>
+    <key alias="language">Ngôn ngữ</key>
+    <key alias="last">Last</key>
+    <key alias="layout">Bố cục</key>
+    <key alias="links">Liên kết</key>
+    <key alias="loading">Đang tải</key>
+    <key alias="locked">Đã khóa</key>
+    <key alias="login">Đăng nhập</key>
+    <key alias="logoff">Đăng xuất</key>
+    <key alias="logout">Đăng xuất</key>
+    <key alias="macro">Macro</key>
+    <key alias="mandatory">Bắt buộc</key>
+    <key alias="message">Tin nhắn</key>
+    <key alias="move">Di chuyển</key>
+    <key alias="name">Tên</key>
+    <key alias="new">Mới</key>
+    <key alias="next">Tiếp theo</key>
+    <key alias="no">Không</key>
+    <key alias="of">/</key>
+    <key alias="off">Tắt</key>
+    <key alias="ok">OK</key>
+    <key alias="open">Mở</key>
+    <key alias="on">Bật</key>
+    <key alias="or">hoặc</key>
+    <key alias="orderBy">Đặt hàng theo</key>
+    <key alias="password">Mật khẩu</key>
+    <key alias="path">Đường dẫn</key>
+    <key alias="pleasewait">Vui lòng đợi một chút ...</key>
+    <key alias="previous">Trước đó</key>
+    <key alias="properties">Thuộc tính</key>
+    <key alias="rebuild">Tạo lại</key>
+    <key alias="reciept">Email để nhận dữ liệu biểu mẫu</key>
+    <key alias="recycleBin">Thùng rác</key>
+    <key alias="recycleBinEmpty">Thùng rác của bạn trống</key>
+    <key alias="reload">Tải lại</key>
+    <key alias="remaining">Còn lại</key>
+    <key alias="remove">Xóa</key>
+    <key alias="rename">Đổi tên</key>
+    <key alias="renew">Gia hạn</key>
+    <key alias="required" version="7.0">Bắt buộc</key>
+    <key alias="retrieve">Truy xuất</key>
+    <key alias="retry">Thử lại</key>
+    <key alias="rights">Quyền</key>
+    <key alias="scheduledPublishing">Xuất bản theo lịch trình</key>
+    <key alias="search">Tìm kiếm</key>
+    <key alias="searchNoResult">Xin lỗi, chúng tôi không thể tìm thấy thông tin bạn đang tìm.</key>
+    <key alias="noItemsInList">Không có mục nào được thêm vào</key>
+    <key alias="server">Máy chủ</key>
+    <key alias="settings">Cài đặt</key>
+    <key alias="show">Hiển thị</key>
+    <key alias="showPageOnSend">Hiển thị trang trên Gửi</key>
+    <key alias="size">Kích thước</key>
+    <key alias="sort">Sắp xếp</key>
+    <key alias="status">Trạng thái</key>
+    <key alias="submit">Gửi</key>
+    <key alias="success">Thành công</key>
+    <key alias="type">Loại</key>
+    <key alias="typeToSearch">Nhập để tìm kiếm ...</key>
+    <key alias="under">dưới</key>
+    <key alias="up">Lên</key>
+    <key alias="update">Cập nhật</key>
+    <key alias="upgrade">Nâng cấp</key>
+    <key alias="upload">Tải lên</key>
+    <key alias="url">URL</key>
+    <key alias="user">Người dùng</key>
+    <key alias="username">Tên người dùng</key>
+    <key alias="value">Giá trị</key>
+    <key alias="view">Xem</key>
+    <key alias="welcome">Chào mừng ...</key>
+    <key alias="width">Chiều rộng</key>
+    <key alias="yes">Có</key>
+    <key alias="folder">Thư mục</key>
+    <key alias="searchResults">Kết quả tìm kiếm</key>
+    <key alias="reorder">Sắp xếp lại</key>
+    <key alias="reorderDone">Tôi đã sắp xếp lại xong</key>
+    <key alias="preview">Xem trước</key>
+    <key alias="changePassword">Thay đổi mật khẩu</key>
+    <key alias="to">thành</key>
+    <key alias="listView">Chế độ xem danh sách</key>
+    <key alias="saving">Đang lưu ...</key>
+    <key alias="current">hiện tại</key>
+    <key alias="embed">Nhúng</key>
+    <key alias="selected">đã chọn</key>
+    <key alias="other">Khác</key>
+    <key alias="articles">Các bài báo</key>
+    <key alias="videos">Video</key>
+    <key alias="install">Đang cài đặt</key>
+    <key alias="avatar">Hình đại diện cho</key>
+  </area>
+  <area alias="colors">
+    <key alias="blue">Xanh lam</key>
+  </area>
+  <area alias="shortcuts">
+    <key alias="addGroup">Thêm nhóm</key>
+    <key alias="addProperty">Thêm thuộc tính</key>
+    <key alias="addEditor">Thêm trình chỉnh sửa</key>
+    <key alias="addTemplate">Thêm mẫu</key>
+    <key alias="addChildNode">Thêm nút con</key>
+    <key alias="addChild">Thêm con</key>
+    <key alias="editDataType">Chỉnh sửa kiểu dữ liệu</key>
+    <key alias="navigateSection">Điều hướng các phần</key>
+    <key alias="shortcut">Phím tắt</key>
+    <key alias="showShortcuts">hiển thị các phím tắt</key>
+    <key alias="toggleListView">Chuyển đổi chế độ xem danh sách</key>
+    <key alias="toggleAllowAsRoot">Chuyển đổi cho phép dưới dạng thư mục gốc</key>
+    <key alias="commentLine">Dòng bình luận / Bỏ ghi chú</key>
+    <key alias="removeLine">Xóa dòng</key>
+    <key alias="copyLineUp">Sao chép dòng</key>
+    <key alias="copyLineDown">Sao chép dòng xuống</key>
+    <key alias="moveLineUp">Di chuyển hàng lên trên</key>
+    <key alias="moveLineDown">Di chuyển dòng xuống</key>
+    <key alias="generalHeader">Chung</key>
+    <key alias="editorHeader">Trình chỉnh sửa</key>
+    <key alias="toggleAllowCultureVariants">Chuyển đổi cho phép các biến thể văn hóa</key>
+    <key alias="toggleAllowSegmentVariants">Chuyển đổi cho phép phân đoạn</key>
+  </area>
+  <area alias="graphicheadline">
+    <key alias="backgroundcolor">Màu nền</key>
+    <key alias="bold">In đậm</key>
+    <key alias="color">Màu văn bản</key>
+    <key alias="font">Phông chữ</key>
+    <key alias="text">Văn bản</key>
+  </area>
+  <area alias="headers">
+    <key alias="page">Trang</key>
+  </area>
+  <area alias="installer">
+    <key alias="databaseErrorCannotConnect">Trình cài đặt không thể kết nối với cơ sở dữ liệu.</key>
+    <key alias="databaseErrorWebConfig">Không thể lưu tệp web.config. Vui lòng sửa đổi chuỗi kết nối theo cách thủ công.</key>
+    <key alias="databaseFound">​​Cơ sở dữ liệu của bạn đã được tìm thấy và được xác định là</key>
+    <key alias="databaseHeader">Cấu hình cơ sở dữ liệu</key>
+    <key alias="databaseInstall">
+      <![CDATA[Nhấn nút <strong> cài đặt </strong> để cài đặt cơ sở dữ liệu Admin %0%
+    ]]></key>
+    <key alias="databaseInstallDone">​​<![CDATA[Umbraco %0% hiện đã được sao chép vào cơ sở dữ liệu của bạn. Nhấn <strong> Tiếp theo </strong> để tiếp tục.]]></key>
+    <key alias="databaseNotFound">
+      ​​<![CDATA[<p> Không tìm thấy cơ sở dữ liệu! Vui lòng kiểm tra xem thông tin trong "chuỗi kết nối" của tệp "web.config" có chính xác không. </p>
+               <p> Để tiếp tục, vui lòng chỉnh sửa tệp "web.config" (sử dụng Visual Studio hoặc trình soạn thảo văn bản yêu thích của bạn), cuộn xuống dưới cùng, thêm chuỗi kết nối cho cơ sở dữ liệu của bạn trong khóa có tên "UmbracoDbDSN" và lưu tệp. </p>
+               <p>
+               Nhấp vào nút <strong> thử lại </strong> khi
+               xong. <br /> <a href="https://our.umbraco.com/documentation/Reference/Config/webconfig/" target="_blank" rel="noopener">
+                      Thông tin thêm về cách chỉnh sửa web.config tại đây</a>.</p>]]>
+    </key>
+    <key alias="databaseText">
+      ​​<![CDATA[Để hoàn thành bước này, bạn phải biết một số thông tin liên quan đến máy chủ cơ sở dữ liệu của mình ("chuỗi kết nối"). <br />
+        Vui lòng liên hệ với ISP của bạn nếu cần.
+        Nếu bạn đang cài đặt trên máy cục bộ hoặc máy chủ, bạn có thể cần thông tin từ quản trị viên hệ thống của mình.]]>
+    </key>
+    <key alias="databaseUpgrade">
+      ​​<![CDATA[
+            <p>Nhấn nút <strong> nâng cấp </strong> để nâng cấp cơ sở dữ liệu của bạn lên Admin %0%</p>
+            <p>Đừng lo lắng - sẽ không có nội dung nào bị xóa và mọi thứ sẽ tiếp tục hoạt động sau đó!</p>]]>
+    </key>
+    <key alias="databaseUpgradeDone"><![CDATA[Cơ sở dữ liệu của bạn đã được nâng cấp lên phiên bản cuối cùng %0%. <br /> Nhấn <strong> Tiếp theo </strong> để tiếp tục.]]></key>
+    <key alias="databaseUpToDate">​​<![CDATA[Cơ sở dữ liệu hiện tại của bạn đã được cập nhật !. Nhấp vào <strong> tiếp theo </strong> để tiếp tục trình hướng dẫn cấu hình]]></key>
+    <key alias="defaultUserChangePass">​​<![CDATA[<strong> Mật khẩu của người dùng mặc định cần được thay đổi! </strong>]]></key>
+    <key alias="defaultUserDisabled">
+      ​​<![CDATA[<strong>Người dùng mặc định đã bị vô hiệu hóa hoặc không có quyền truy cập vào Admin! </strong></p> <p>Bạn không cần thực hiện thêm hành động nào. Nhấp vào <b> Tiếp theo </b> để tiếp tục.]]>
+    </key>
+    <key alias="defaultUserPassChanged">
+      <![CDATA[<strong> Mật khẩu của người dùng mặc định đã được thay đổi thành công kể từ khi cài đặt! </strong></p> <p> Bạn không cần thực hiện thêm hành động nào. Nhấp vào <strong> Tiếp theo </strong> để tiếp tục.]]>
+    </key>
+    <key alias="defaultUserPasswordChanged">Mật khẩu đã được thay đổi!</key>
+    <key alias="greatStart">Có một khởi đầu tuyệt vời, hãy xem video giới thiệu của chúng tôi</key>
+    <key alias="licenseText">Bằng cách nhấp vào nút tiếp theo (hoặc sửa đổi umbracoConfigurationStatus trong web.config), bạn chấp nhận giấy phép cho phần mềm này như được chỉ định trong hộp bên dưới. Lưu ý rằng bản phân phối Umbraco này bao gồm hai giấy phép khác nhau, giấy phép MIT nguồn mở cho khung và giấy phép phần mềm miễn phí Umbraco bao gồm giao diện người dùng.</key>
+    <key alias="none">Chưa được cài đặt.</key>
+    <key alias="permissionsAffectedFolders">Tệp và thư mục bị ảnh hưởng</key>
+    <key alias="permissionsAffectedFoldersMoreInfo">Thông tin thêm về cách thiết lập quyền cho Admin tại đây</key>
+    <key alias="permissionsAffectedFoldersText">Bạn cần cấp quyền sửa đổi ASP.NET cho các tệp / thư mục sau</key>
+    <key alias="permissionsAlmostPerfect">
+      ​​<![CDATA[<strong> Cài đặt quyền của bạn gần như hoàn hảo! </strong> <br /> <br />Bạn có thể chạy Admin mà không gặp sự cố, nhưng bạn sẽ không thể cài đặt các gói được khuyến nghị để tận dụng tối đa Umbraco.]]>
+    </key>
+    <key alias="permissionsHowtoResolve">Cách giải quyết</key>
+    <key alias="permissionsHowtoResolveLink">Nhấp vào đây để đọc phiên bản văn bản</key>
+    <key alias="permissionsHowtoResolveText">​​<![CDATA[Xem <strong> video hướng dẫn </strong> của chúng tôi về cách thiết lập quyền thư mục cho Umbraco hoặc đọc phiên bản văn bản.]]></key>
+    <key alias="permissionsMaybeAnIssue">
+      ​​<![CDATA[<strong> Cài đặt quyền của bạn có thể là vấn đề! </strong>
+            <br/> <br />
+            Bạn có thể chạy Admin mà không gặp sự cố, nhưng bạn sẽ không thể tạo thư mục hoặc cài đặt các gói được khuyến nghị để tận dụng tối đa Umbraco.]]>
+    </key>
+    <key alias="permissionsNotReady">
+      ​​<![CDATA[<strong> Cài đặt quyền của bạn chưa sẵn sàng cho Admin! </strong>
+            <br /> <br />
+            Để chạy Admin, bạn cần cập nhật cài đặt quyền của mình.]]>
+    </key>
+    <key alias="permissionsPerfect">
+      ​​<![CDATA[<strong> Cài đặt quyền của bạn rất hoàn hảo! </strong> <br /> <br />
+            Bạn đã sẵn sàng để chạy Admin và cài đặt các gói!]]>
+    </key>
+    <key alias="permissionsResolveFolderIssues">Giải quyết vấn đề thư mục</key>
+    <key alias="permissionsResolveFolderIssuesLink">Nhấp vào liên kết này để biết thêm thông tin về các sự cố với ASP.NET và tạo thư mục</key>
+    <key alias="permissionsSettingUpPermissions">Thiết lập quyền đối với thư mục</key>
+    <key alias="permissionsText">
+      ​​<![CDATA[
+            Admin cần quyền truy cập ghi / sửa đổi vào một số thư mục nhất định để lưu trữ các tệp như ảnh và PDF.
+            Nó cũng lưu trữ dữ liệu tạm thời (hay còn gọi là: bộ nhớ cache) để nâng cao hiệu suất của trang web của bạn.]]>
+    </key>
+    <key alias="runwayFromScratch">Tôi muốn bắt đầu lại từ đầu</key>
+    <key alias="runwayFromScratchText">
+      ​​<![CDATA[
+            Trang web của bạn hiện đang trống hoàn toàn, vì vậy điều đó thật hoàn hảo nếu bạn muốn bắt đầu lại từ đầu và tạo Mẫu và Loại tài liệu của riêng mình.
+            (<a href="https://umbraco.tv/documentation/videos/for-site-builders/foundation/document-types"> tìm hiểu cách thực hiện </a>)
+            Bạn vẫn có thể chọn cài đặt Runway sau này. Vui lòng chuyển đến phần Nhà phát triển và chọn Gói.]]>
+    </key>
+    <key alias="runwayHeader">Bạn vừa thiết lập một nền tảng Admin sạch. Bạn muốn làm gì tiếp theo?</key>
+    <key alias="runwayInstalled">Runway đã được cài đặt</key>
+    <key alias="runwayInstalledText">
+      ​​<![CDATA[
+            Bạn có nền tảng tại chỗ. Chọn những mô-đun bạn muốn cài đặt trên đó. <br />
+            Đây là danh sách các mô-đun được đề xuất của chúng tôi, hãy chọn những mô-đun bạn muốn cài đặt hoặc xem <a href = "#" onclick = "toggleModules (); return false;" id = "toggleModuleList"> danh sách đầy đủ các mô-đun </a>]]>
+    </key>
+    <key alias="runwayOnlyProUsers">Chỉ được đề xuất cho người dùng có kinh nghiệm</key>
+    <key alias="runwaySimpleSite">Tôi muốn bắt đầu với một trang web đơn giản</key>
+    <key alias="runwaySimpleSiteText">
+      ​​<![CDATA[
+            <p>
+              "Runway" là một trang web đơn giản cung cấp một số Mẫu và Loại Tài liệu cơ bản. Trình cài đặt có thể tự động thiết lập Runway cho bạn,
+              nhưng bạn có thể dễ dàng chỉnh sửa, mở rộng hoặc loại bỏ nó. Nó không cần thiết và bạn hoàn toàn có thể sử dụng Umbraco mà không cần nó. Tuy vậy,
+              Runway cung cấp một nền tảng dễ dàng dựa trên các phương pháp hay nhất để giúp bạn bắt đầu nhanh hơn bao giờ hết.
+              Nếu bạn chọn cài đặt Runway, bạn có thể tùy ý chọn các khối xây dựng cơ bản được gọi là Mô-đun Runway để nâng cao các trang Runway của mình.
+            </p>
+            <small>
+              <em> Đi kèm với Runway: </em> Trang chủ, trang Bắt đầu, trang Cài đặt mô-đun. <br />
+              <em> Mô-đun tùy chọn: </em> Điều hướng trên cùng, Sơ đồ trang web, Liên hệ, Thư viện.
+            </small>]]>
+    </key>
+    <key alias="runwayWhatIsRunway">Runway là gì</key>
+    <key alias="step1">Bước 1/5 Chấp nhận giấy phép</key>
+    <key alias="step2">Bước 2/5: Cấu hình cơ sở dữ liệu</key>
+    <key alias="step3">Bước 3/5: Xác thực quyền đối với tệp</key>
+    <key alias="step4">Bước 4/5: Kiểm tra bảo mật Admin</key>
+    <key alias="step5">Bước 5/5: Admin sẵn sàng giúp bạn bắt đầu</key>
+    <key alias="thankYou">Cảm ơn bạn đã chọn Admin</key>
+    <key alias="theEndBrowseSite">
+      ​​<![CDATA[<h3> Duyệt qua trang web mới của bạn </h3>
+            Bạn đã cài đặt Runway, vậy tại sao bạn không thấy trang web mới của mình trông như thế nào.]]>
+    </key>
+    <key alias="theEndFurtherHelp">
+      ​​<![CDATA[<h3> Trợ giúp và thông tin thêm </h3>
+            Nhận trợ giúp từ cộng đồng từng đoạt giải thưởng của chúng tôi, duyệt qua tài liệu hoặc xem một số video miễn phí về cách tạo một trang web đơn giản, cách sử dụng các gói và hướng dẫn nhanh về thuật ngữ Umbraco]]>
+    </key>
+    <key alias="theEndHeader">Admin %0% đã được cài đặt và sẵn sàng sử dụng</key>
+    <key alias="theEndInstallFailed">
+      ​​<![CDATA[Để hoàn tất quá trình cài đặt, bạn cần phải
+            chỉnh sửa thủ công <strong> tệp /web.config </strong> và cập nhật khóa AppSetting <strong> UmbracoConfigurationStatus </strong> ở dưới cùng thành giá trị <strong> '%0%' </strong>.]] >
+          </key>
+          <key alias = "theEndInstallSuccess">
+            ​​<![CDATA[Bạn có thể <strong> bắt đầu ngay lập tức </strong> bằng cách nhấp vào nút "Khởi chạy Admin" bên dưới. <br /> Nếu bạn <strong> mới sử dụng Umbraco </strong>,
+            bạn có thể tìm thấy nhiều tài nguyên trên các trang bắt đầu của chúng tôi.]]>
+    </key>
+    <key alias="theEndOpenUmbraco">
+      ​​<![CDATA[<h3> Khởi chạy Admin </h3>
+            Để quản lý trang web của bạn, chỉ cần mở văn phòng phụ của Admin và bắt đầu thêm nội dung, cập nhật các mẫu và bảng định kiểu hoặc thêm chức năng mới]]>
+    </key>
+    <key alias="Unavailable">Kết nối với cơ sở dữ liệu không thành công.</key>
+    <key alias="Version3">Admin Phiên bản 3</key>
+    <key alias="Version4">Admin Phiên bản 4</key>
+    <key alias="watch">Xem</key>
+    <key alias="welcomeIntro">
+      ​​<![CDATA[Trình hướng dẫn này sẽ hướng dẫn bạn quy trình định cấu hình <strong> Admin %0%</strong> để cài đặt mới hoặc nâng cấp từ phiên bản 3.0.
+            <br /> <br />
+            Nhấn <strong> "tiếp theo" </strong> để bắt đầu trình hướng dẫn.]]>
+    </key>
+  </area>
+  <area alias="language">
+    <key alias="cultureCode">Mã Văn hóa</key>
+    <key alias="displayName">Tên văn hóa</key>
+  </area>
+  <area alias="lockout">
+    <key alias="lockoutWillOccur">Bạn đã không sử dụng và quá trình đăng xuất sẽ tự động diễn ra sau</key>
+    <key alias="renewSession">Gia hạn ngay để lưu công việc của bạn</key>
+  </area>
+  <area alias="login">
+    <key alias="greeting0">Chủ nhật siêu vui vẻ</key>
+    <key alias="greeting1">Thứ Hai vui vẻ</key>
+    <key alias="greeting2">Thứ Ba vui vẻ</key>
+    <key alias="greeting3">Thứ Tư vui vẻ</key>
+    <key alias="greeting4">Thứ Năm vui vẻ như sấm sét</key>
+    <key alias="greeting5">Thứ Sáu vui vẻ hạnh phúc</key>
+    <key alias="greeting6">Thứ 7 hạnh phúc</key>
+    <key alias="instruction">Đăng nhập bên dưới</key>
+    <key alias="signInWith">Đăng nhập bằng</key>
+    <key alias="timeout">Phiên đã hết thời gian chờ</key>
+    <key alias="bottomText">​​<![CDATA[<p style = "text-align: right;">& copy; 2001 -%0%<br /> <a href="https://umbraco.com" style="text-decoration: none" target="_blank" rel="noopener"> Umbraco.com </a> < / p>]]></key>
+    <key alias="forgottenPassword">Bạn quên mật khẩu?</key>
+    <key alias="forgottenPasswordInstruction">Một email sẽ được gửi đến địa chỉ được chỉ định cùng với một liên kết để đặt lại mật khẩu của bạn</key>
+    <key alias="requestPasswordResetConfirmation">Một email có hướng dẫn đặt lại mật khẩu sẽ được gửi đến địa chỉ đã chỉ định nếu địa chỉ đó khớp với hồ sơ của chúng tôi</key>
+    <key alias="showPassword">Hiển thị mật khẩu</key>
+    <key alias="hidePassword">Ẩn mật khẩu</key>
+    <key alias="returnToLogin">Quay lại biểu mẫu đăng nhập</key>
+    <key alias="setPasswordInstruction">Vui lòng cung cấp mật khẩu mới</key>
+    <key alias="setPasswordConfirmation">Mật khẩu của bạn đã được cập nhật</key>
+    <key alias="resetCodeExpired">Liên kết bạn đã nhấp vào không hợp lệ hoặc đã hết hạn</key>
+    <key alias="resetPasswordEmailCopySubject">Admin: Đặt lại mật khẩu</key>
+    <key alias="resetPasswordEmailCopyFormat">
+      <![CDATA[
+        <html>
+			<head>
+				<meta name='viewport' content='width=device-width'>
+				<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+			</head>
+			<body class='' style='font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; color: #392F54; line-height: 22px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #1d1333; margin: 0; padding: 0;' bgcolor='#1d1333'>
+				<style type='text/css'> @media only screen and (max-width: 620px) {table[class=body] h1 {font-size: 28px !important; margin-bottom: 10px !important; } table[class=body] .wrapper {padding: 32px !important; } table[class=body] .article {padding: 32px !important; } table[class=body] .content {padding: 24px !important; } table[class=body] .container {padding: 0 !important; width: 100% !important; } table[class=body] .main {border-left-width: 0 !important; border-radius: 0 !important; border-right-width: 0 !important; } table[class=body] .btn table {width: 100% !important; } table[class=body] .btn a {width: 100% !important; } table[class=body] .img-responsive {height: auto !important; max-width: 100% !important; width: auto !important; } } .btn-primary table td:hover {background-color: #34495e !important; } .btn-primary a:hover {background-color: #34495e !important; border-color: #34495e !important; } .btn  a:visited {color:#FFFFFF;} </style>
+				<table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #1d1333;" bgcolor="#1d1333">
+					<tr>
+						<td style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding: 24px;" valign="top">
+							<table style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+								<tr>
+									<td background="https://umbraco.com/umbraco/assets/img/application/logo.png" bgcolor="#1d1333" width="28" height="28" valign="top" style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
+										<!--[if gte mso 9]> <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:30px;height:30px;"> <v:fill type="tile" src="https://umbraco.com/umbraco/assets/img/application/logo.png" color="#1d1333" /> <v:textbox inset="0,0,0,0"> <![endif]-->
+										<div> </div>
+										<!--[if gte mso 9]> </v:textbox> </v:rect> <![endif]-->
+									</td>
+									<td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table border='0' cellpadding='0' cellspacing='0' class='body' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #1d1333;' bgcolor='#1d1333'>
+					<tr>
+						<td style='font-family: sans-serif; font-size: 14px; vertical-align: top;' valign='top'> </td>
+						<td class='container' style='font-family: sans-serif; font-size: 14px; vertical-align: top; display: block; max-width: 560px; width: 560px; margin: 0 auto; padding: 10px;' valign='top'>
+							<div class='content' style='box-sizing: border-box; display: block; max-width: 560px; margin: 0 auto; padding: 10px;'>
+								<br>
+								<table class='main' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; border-radius: 3px; background: #FFFFFF;' bgcolor='#FFFFFF'>
+									<tr>
+										<td class='wrapper' style='font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 50px;' valign='top'>
+											<table border='0' cellpadding='0' cellspacing='0' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;'>
+												<tr>
+													<td style='line-height: 24px; font-family: sans-serif; font-size: 14px; vertical-align: top;' valign='top'>
+														<h1 style='color: #392F54; font-family: sans-serif; font-weight: bold; line-height: 1.4; font-size: 24px; text-align: left; text-transform: capitalize; margin: 0 0 30px;' align='left'>
+															Đã yêu cầu đặt lại mật khẩu
+														</h1>
+														<p style='color: #392F54; font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0 0 15px;'>
+															Tên người dùng của bạn để đăng nhập vào văn phòng hỗ trợ của Nam Nung là: <strong>%0%</strong>
+														</p>
+														<p style='color: #392F54; font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0 0 15px;'>
+															<table border='0' cellpadding='0' cellspacing='0' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;'>
+																<tbody>
+																	<tr>
+																		<td style='font-family: sans-serif; font-size: 14px; vertical-align: top; border-radius: 5px; text-align: center; background: #35C786;' align='center' bgcolor='#35C786' valign='top'>
+																			<a href='%1%' target='_blank' rel='noopener' style='color: #FFFFFF; text-decoration: none; -ms-word-break: break-all; word-break: break-all; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 14px; font-weight: bold; text-transform: capitalize; background: #35C786; margin: 0; padding: 12px 30px; border: 1px solid #35c786;'>
+																				Nhấp vào liên kết này để đặt lại mật khẩu của bạn
+																			</a>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</p>
+														<p style='max-width: 400px; display: block; color: #392F54; font-family: sans-serif; font-size: 14px; line-height: 20px; font-weight: normal; margin: 15px 0;'>Nếu bạn không thể nhấp vào liên kết, hãy sao chép và dán URL này vào cửa sổ trình duyệt của bạn:</p>
+															<table border='0' cellpadding='0' cellspacing='0'>
+																<tr>
+																	<td style='-ms-word-break: break-all; word-break: break-all; font-family: sans-serif; font-size: 11px; line-height:14px;'>
+																		<font style="-ms-word-break: break-all; word-break: break-all; font-size: 11px; line-height:14px;">
+																			<a style='-ms-word-break: break-all; word-break: break-all; color: #392F54; text-decoration: underline; font-size: 11px; line-height:15px;' href='%1%'>%1%</a>
+																		</font>
+																	</td>
+																</tr>
+															</table>
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<br><br><br>
+							</div>
+						</td>
+						<td style='font-family: sans-serif; font-size: 14px; vertical-align: top;' valign='top'> </td>
+					</tr>
+				</table>
+			</body>
+		</html>
+	]]>
+    </key>
+  </area>
+  <area alias="main">
+    <key alias="dashboard">Trang tổng quan</key>
+    <key alias="section">Phần</key>
+    <key alias="tree">Nội dung</key>
+  </area>
+  <area alias="moveOrCopy">
+    <key alias="choose">Chọn trang ở trên ...</key>
+    <key alias="copyDone">%0% đã được sao chép vào %1%</key>
+    <key alias="copyTo">Chọn nơi tài liệu %0% sẽ được sao chép vào bên dưới</key>
+    <key alias="moveDone">%0% đã được chuyển đến %1%</key>
+    <key alias="moveTo">Chọn nơi tài liệu %0% sẽ được chuyển đến bên dưới</key>
+    <key alias="nodeSelected">đã được chọn làm gốc cho nội dung mới của bạn, hãy nhấp vào 'ok' bên dưới.</key>
+    <key alias="noNodeSelected">Chưa chọn nút nào, vui lòng chọn một nút trong danh sách ở trên trước khi nhấp vào 'ok'</key>
+    <key alias="notAllowedByContentType">Nút hiện tại không được phép trong nút đã chọn vì loại của nó</key>
+    <key alias="notAllowedByPath">Không thể di chuyển nút hiện tại đến một trong các trang con của nó</key>
+    <key alias="notAllowedAtRoot">Nút hiện tại không thể tồn tại ở gốc</key>
+    <key alias="notValid">Hành động này không được phép vì bạn không có đủ quyền đối với 1 hoặc nhiều tài liệu con.</key>
+    <key alias="relateToOriginal ">Liên quan các mục đã sao chép với bản gốc</key>
+  </area>
+  <area alias="notifications">
+    <key alias="editNotifications">​​<![CDATA[Chọn thông báo của bạn cho <strong>%0%</strong>]]></key>
+    <key alias="notificationsSavedFor">Đã lưu cài đặt thông báo cho</key>
+    <key alias="mailBody">
+      <![CDATA[
+      Xin chào %0%
+      Đây là một thư tự động để thông báo cho bạn rằng nhiệm vụ '%1%'
+      đã được thực hiện trên trang '%2%'
+      bởi người dùng '%3%'
+      Đi đến http://%4%/#/content/content/edit/%5% để chỉnh sửa.
+      %6%
+      Chúc một ngày tốt lành!
+      Khu Bảo tồn Thiên nhiên Nâm Nung.
+    ]]>
+    </key>
+    <key alias="mailBodyVariantSummary">Các ngôn ngữ sau đã được sửa đổi %0% </key>
+    <key alias="mailBodyHtml">
+      <![CDATA[
+        <html>
+			<head>
+				<meta name='viewport' content='width=device-width'>
+				<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+			</head>
+			<body class='' style='font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; color: #392F54; line-height: 22px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #1d1333; margin: 0; padding: 0;' bgcolor='#1d1333'>
+				<style type='text/css'> @media only screen and (max-width: 620px) {table[class=body] h1 {font-size: 28px !important; margin-bottom: 10px !important; } table[class=body] .wrapper {padding: 32px !important; } table[class=body] .article {padding: 32px !important; } table[class=body] .content {padding: 24px !important; } table[class=body] .container {padding: 0 !important; width: 100% !important; } table[class=body] .main {border-left-width: 0 !important; border-radius: 0 !important; border-right-width: 0 !important; } table[class=body] .btn table {width: 100% !important; } table[class=body] .btn a {width: 100% !important; } table[class=body] .img-responsive {height: auto !important; max-width: 100% !important; width: auto !important; } } .btn-primary table td:hover {background-color: #34495e !important; } .btn-primary a:hover {background-color: #34495e !important; border-color: #34495e !important; } .btn  a:visited {color:#FFFFFF;} </style>
+				<table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #1d1333;" bgcolor="#1d1333">
+					<tr>
+						<td style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding: 24px;" valign="top">
+							<table style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+								<tr>
+									<td background="https://umbraco.com/umbraco/assets/img/application/logo.png" bgcolor="#1d1333" width="28" height="28" valign="top" style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
+										<!--[if gte mso 9]> <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:30px;height:30px;"> <v:fill type="tile" src="https://umbraco.com/umbraco/assets/img/application/logo.png" color="#1d1333" /> <v:textbox inset="0,0,0,0"> <![endif]-->
+										<div> </div>
+										<!--[if gte mso 9]> </v:textbox> </v:rect> <![endif]-->
+									</td>
+									<td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table border='0' cellpadding='0' cellspacing='0' class='body' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #1d1333;' bgcolor='#1d1333'>
+					<tr>
+						<td style='font-family: sans-serif; font-size: 14px; vertical-align: top;' valign='top'> </td>
+						<td class='container' style='font-family: sans-serif; font-size: 14px; vertical-align: top; display: block; max-width: 560px; width: 560px; margin: 0 auto; padding: 10px;' valign='top'>
+							<div class='content' style='box-sizing: border-box; display: block; max-width: 560px; margin: 0 auto; padding: 10px;'>
+								<br>
+								<table class='main' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; border-radius: 3px; background: #FFFFFF;' bgcolor='#FFFFFF'>
+									<tr>
+										<td class='wrapper' style='font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 50px;' valign='top'>
+											<table border='0' cellpadding='0' cellspacing='0' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;'>
+												<tr>
+													<td style='line-height: 24px; font-family: sans-serif; font-size: 14px; vertical-align: top;' valign='top'>
+														<h1 style='color: #392F54; font-family: sans-serif; font-weight: bold; line-height: 1.4; font-size: 24px; text-align: left; text-transform: capitalize; margin: 0 0 30px;' align='left'>
+															 Xin chào %0%,
+														</h1>
+														<p style='color: #392F54; font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0 0 15px;'>
+															Đây là một thư tự động để thông báo cho bạn rằng nhiệm vụ <strong>'%1%'</strong> đã được thực hiện trên trang <a style="color: #392F54; text-decoration: none; -ms-word-break: break-all; word-break: break-all;" href="http://%4%/#/content/content/edit/%5%"><strong>'%2%'</strong></a> bởi người dùng <strong>'%3%'</strong>
+														</p>
+														<table border='0' cellpadding='0' cellspacing='0' class='btn btn-primary' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;'>
+															<tbody>
+																<tr>
+																	<td align='left' style='font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;' valign='top'>
+																		<table border='0' cellpadding='0' cellspacing='0' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;'><tbody><tr>
+																			<td style='font-family: sans-serif; font-size: 14px; vertical-align: top; border-radius: 5px; text-align: center; background: #35C786;' align='center' bgcolor='#35C786' valign='top'>
+																				<a href='http://%4%/#/content/content/edit/%5%' target='_blank' rel='noopener' style='color: #FFFFFF; text-decoration: none; -ms-word-break: break-all; word-break: break-all; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 14px; font-weight: bold; text-transform: capitalize; background: #35C786; margin: 0; padding: 12px 30px; border: 1px solid #35c786;'>Chỉnh sửa</a> </td> </tr></tbody></table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+														<p style='color: #392F54; font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0 0 15px;'>
+															<h3>Cập nhật tóm tắt:</h3>
+															%6%
+														</p>
+														<p style='color: #392F54; font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0 0 15px;'>
+															Chúc một ngày tốt lành!<br /><br />
+															Khu Bảo tồn Thiên nhiên Nâm Nung
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<br><br><br>
+							</div>
+						</td>
+						<td style='font-family: sans-serif; font-size: 14px; vertical-align: top;' valign='top'> </td>
+					</tr>
+				</table>
+			</body>
+		</html>
+	]]>
+    </key>
+    <key alias="mailBodyVariantHtmlSummary">
+      ​​<![CDATA[<p> Các ngôn ngữ sau đã được sửa đổi: </p> %0%]]>
+    </key>
+    <key alias="mailSubject">[%0%] Thông báo về %1% được thực hiện trên %2%</key>
+    <key alias="notification">Thông báo</key>
+  </area>
+  <area alias="packager">
+    <key alias="actions">Hành động</key>
+    <key alias="created">Đã tạo</key>
+    <key alias="createPackage">Tạo gói</key>
+    <key alias="chooseLocalPackageText">
+      ​​<![CDATA[Chọn Gói từ máy của bạn bằng cách nhấp vào Duyệt <br /> và định vị gói. Các gói Admin thường có phần mở rộng là ".umb" hoặc ".zip".]]>
+    </key>
+    <key alias="deletewarning">Thao tác này sẽ xóa gói</key>
+    <key alias="dropHere">Thả để tải lên</key>
+    <key alias="includeAllChildNodes">Bao gồm tất cả các nút con</key>
+    <key alias="orClickHereToUpload">hoặc nhấp vào đây để chọn tệp gói</key>
+    <key alias="uploadPackage">Tải gói lên</key>
+    <key alias="localPackageDescription">Cài đặt gói cục bộ bằng cách chọn gói đó từ máy của bạn. Chỉ cài đặt các gói từ các nguồn bạn biết và tin cậy</key>
+    <key alias="uploadAnother">Tải lên một gói khác</key>
+    <key alias="cancelAndUploadAnother ">Hủy và tải lên một gói khác</key>
+    <key alias="accept">Tôi chấp nhận</key>
+    <key alias="termsOfUse">điều khoản sử dụng</key>
+    <key alias="pathToFile">Đường dẫn đến tệp</key>
+    <key alias="pathToFileDescription">Đường dẫn tuyệt đối đến tệp (ví dụ: /bin/umbraco.bin)</key>
+    <key alias="installed">Đã cài đặt</key>
+    <key alias="installedPackages">Các gói đã cài đặt</key>
+    <key alias="installLocal">Cài đặt cục bộ</key>
+    <key alias="installFinish">Kết thúc</key>
+    <key alias="noConfigurationView">Gói này không có chế độ xem cấu hình</key>
+    <key alias="noPackagesCreated">Chưa có gói nào được tạo</key>
+    <key alias="noPackages">Bạn chưa cài đặt gói nào</key>
+    <key alias="noPackagesDescription">​​<![CDATA[Bạn chưa cài đặt gói nào. Cài đặt gói cục bộ bằng cách chọn gói đó từ máy của bạn hoặc duyệt qua các gói có sẵn bằng biểu tượng <strong> 'Gói' </strong> ở trên cùng bên phải màn hình của bạn]]></key>
+    <key alias="packageActions">Hành động theo gói</key>
+    <key alias="packageAuthorUrl">URL của tác giả</key>
+    <key alias="packageContent">Nội dung gói</key>
+    <key alias="packageFiles">Gói Tệp</key>
+    <key alias="packageIconUrl">URL biểu tượng</key>
+    <key alias="packageInstall">Cài đặt gói</key>
+    <key alias="packageLicense">Giấy phép</key>
+    <key alias="packageLicenseUrl">URL cấp phép</key>
+    <key alias="packageProperties">Thuộc tính gói</key>
+    <key alias="packageSearch">Tìm kiếm các gói</key>
+    <key alias="packageSearchResults">Kết quả cho</key>
+    <key alias="packageNoResults">Chúng tôi không tìm thấy gì cho</key>
+    <key alias="packageNoResultsDescription">Vui lòng thử tìm kiếm một gói khác hoặc duyệt qua các danh mục</key>
+    <key alias="packagesPopular">Phổ biến</key>
+    <key alias="packagesNew">Bản phát hành mới</key>
+    <key alias="packageHas">có</key>
+    <key alias="packageKarmaPoints">điểm nghiệp</key>
+    <key alias="packageInfo">Thông tin</key>
+    <key alias="packageOwner">Chủ sở hữu</key>
+    <key alias="packageCreated">Người đóng góp</key>
+    <key alias="packageCreate">Đã tạo</key>
+    <key alias="packageCurrentVersion">Phiên bản hiện tại</key>
+    <key alias="packageNetVersion">. Phiên bản NET</key>
+    <key alias="packageDownloads">Tải xuống</key>
+    <key alias="packageLikes">Lượt thích</key>
+    <key alias="packageCompatibility">Khả năng tương thích</key>
+    <key alias="packageCompatibilityDescription">Gói này tương thích với các phiên bản sau của Admin, theo báo cáo của các thành viên cộng đồng. Không thể đảm bảo tính tương thích đầy đủ cho các phiên bản được báo cáo dưới 100%</key>
+    <key alias="packageExternalSources">Nguồn bên ngoài</key>
+    <key alias="packageAuthor">Tác giả</key>
+    <key alias="packageDocumentation">Tài liệu</key>
+    <key alias="packageMetaData">Gói dữ liệu meta</key>
+    <key alias="packageName">Tên gói</key>
+    <key alias="packageNoItemsHeader">Gói không chứa bất kỳ mục nào</key>
+    <key alias="packageNoItemsText">
+      ​​<![CDATA[Tệp gói này không chứa bất kỳ mục nào cần gỡ cài đặt. <br /> <br/>
+
+              Bạn có thể xóa phần mềm này khỏi hệ thống một cách an toàn bằng cách nhấp vào "gỡ cài đặt gói" bên dưới.]]>
+    </key>
+    <key alias="packageOptions">Tùy chọn gói</key>
+    <key alias="packageReadme">Gói readme</key>
+    <key alias="packageRepository">Kho lưu trữ gói</key>
+    <key alias="packageUninstallConfirm">Xác nhận gỡ cài đặt gói</key>
+    <key alias="packageUninstalledHeader">Gói đã được gỡ cài đặt</key>
+    <key alias="packageUninstalledText">Gói đã được gỡ cài đặt thành công</key>
+    <key alias="packageUninstallHeader">Gỡ cài đặt gói</key>
+    <key alias="packageUninstallText">
+      ​​<![CDATA[Bạn có thể bỏ chọn các mục mà bạn không muốn xóa, tại thời điểm này, bên dưới. Khi bạn nhấp vào "xác nhận gỡ cài đặt", tất cả các mục đã chọn sẽ bị xóa. <br />
+
+              <span style = "color: Red; font-weight: bold;"> Lưu ý: </span> bất kỳ tài liệu, phương tiện truyền thông nào, v.v. tùy thuộc vào các mục bạn xóa, sẽ ngừng hoạt động và có thể dẫn đến sự không ổn định của hệ thống,
+
+              vì vậy hãy thận trọng gỡ cài đặt. Nếu nghi ngờ, hãy liên hệ với tác giả gói.]]>
+    </key>
+    <key alias="packageVersion">Phiên bản gói</key>
+    <key alias="packageVersionUpgrade">Nâng cấp từ phiên bản</key>
+    <key alias="packageAlreadyInstalled">Gói đã được cài đặt</key>
+    <key alias="targetVersionMismatch">Không thể cài đặt gói này, nó yêu cầu phiên bản Admin tối thiểu của</key>
+    <key alias="installStateUninstalling">Đang gỡ cài đặt ...</key>
+    <key alias="installStateDownloading">Đang tải xuống ...</key>
+    <key alias="installStateImporting">Đang nhập ...</key>
+    <key alias="installStateInstalling">Đang cài đặt ...</key>
+    <key alias="installStateRestart">Đang khởi động lại, vui lòng đợi ...</key>
+    <key alias="installStateComplete">Tất cả đã xong, trình duyệt của bạn bây giờ sẽ được làm mới, vui lòng đợi ...</key>
+    <key alias="installStateCompleted">Vui lòng nhấp vào 'Hoàn tất' để hoàn tất cài đặt và tải lại trang.</key>
+    <key alias="installStateUploading">Đang tải gói lên ...</key>
+    <key alias="verifyToWorkOnUmbracoCloud">Đã xác minh để hoạt động trên Admin Cloud</key>
+  </area>
+  <area alias="paste">
+    <key alias="doNothing">Dán với định dạng đầy đủ (Không được khuyến nghị)</key>
+    <key alias="errorMessage">Văn bản bạn đang cố dán chứa các ký tự hoặc định dạng đặc biệt. Điều này có thể do sao chép văn bản từ Microsoft Word. Umbraco có thể tự động xóa các ký tự đặc biệt hoặc định dạng, vì vậy nội dung được dán sẽ phù hợp hơn với web.</key>
+    <key alias="removeAll">Dán dưới dạng văn bản thô mà không có bất kỳ định dạng nào</key>
+    <key alias="removeSpecialFormattering">Dán, nhưng xóa định dạng (Được khuyến nghị)</key>
+  </area>
+  <area alias="publicAccess">
+    <key alias="paGroups">Bảo vệ dựa trên nhóm</key>
+    <key alias="paGroupsHelp">Nếu bạn muốn cấp quyền truy cập cho tất cả thành viên của các nhóm thành viên cụ thể</key>
+    <key alias="paGroupsNoGroups">Bạn cần tạo một nhóm thành viên trước khi có thể sử dụng xác thực dựa trên nhóm</key>
+    <key alias="paErrorPage">Trang lỗi</key>
+    <key alias="paErrorPageHelp">Được sử dụng khi mọi người đã đăng nhập nhưng không có quyền truy cập</key>
+    <key alias="paHowWould">​​<![CDATA[Chọn cách hạn chế quyền truy cập vào trang <strong>%0%</strong>]]></key>
+    <key alias="paIsProtected">​​<![CDATA[<strong>%0%</strong> hiện đã được bảo vệ]]></key>
+    <key alias="paIsRemoved">​​<![CDATA[Đã xóa bảo vệ khỏi <strong>%0%</strong>]]></key>
+    <key alias="paLoginPage">Trang đăng nhập</key>
+    <key alias="paLoginPageHelp">Chọn trang có chứa biểu mẫu đăng nhập</key>
+    <key alias="paRemoveProtection">Xóa bảo vệ ...</key>
+    <key alias="paRemoveProtectionConfirm">​​<![CDATA[Bạn có chắc chắn muốn xóa bảo vệ khỏi trang <strong>%0%</strong>?]]></key>
+    <key alias="paSelectPages">Chọn các trang chứa biểu mẫu đăng nhập và thông báo lỗi</key>
+    <key alias="paSelectGroups">​​<![CDATA[Chọn nhóm có quyền truy cập vào trang <strong>%0%</strong>]]></key>
+    <key alias="paSelectMembers">​​<![CDATA[Chọn thành viên có quyền truy cập vào trang <strong>%0%</strong>]]></key>
+    <key alias="paMembers">Bảo vệ các thành viên cụ thể</key>
+    <key alias="paMembersHelp">Nếu bạn muốn cấp quyền truy cập cho các thành viên cụ thể</key>
+  </area>
+  <area alias="publish">
+    <key alias="invalidPublishBranchPermissions">Người dùng không đủ quyền xuất bản tất cả các tài liệu hậu duệ</key>
+    <key alias="contentPublishedFailedIsTrashed">
+      ​​<![CDATA[
+
+              Không thể xuất bản %0%vì mục này nằm trong thùng rác.]]>
+    </key>
+    <key alias="contentPublishedFailedAwaitingRelease">
+      ​​<![CDATA[
+
+              Không thể xuất bản %0%vì mục này đã được lên lịch phát hành.]]>
+    </key>
+    <key alias="contentPublishedFailedExpired">
+      ​​<![CDATA[
+
+              Không thể xuất bản %0%vì mục này đã hết hạn.]]>
+    </key>
+    <key alias="contentPublishedFailedInvalid">
+      ​​<![CDATA[
+
+              Không thể xuất bản %0%vì một số thuộc tính không vượt qua quy tắc xác thực.]]>
+    </key>
+    <key alias="contentPublishedFailedByEvent">
+      ​​<![CDATA[
+
+              Không thể xuất bản %0%, tiện ích bổ sung của bên thứ ba đã hủy hành động.]]>
+    </key>
+    <key alias="contentPublishedFailedByParent">
+      ​​<![CDATA[
+
+              %0% không thể được xuất bản, bởi vì một trang mẹ không được xuất bản.]]>
+    </key>
+    <key alias="contentPublishedFailedByMissingName">​​<![CDATA[%0% không thể xuất bản vì thiếu tên.]]></key>
+    <key alias="contentPublishedFailedReqCultureValidationError">Không thể xác thực cho ngôn ngữ được yêu cầu '%0%'. Ngôn ngữ này đã được lưu nhưng chưa được xuất bản.</key>
+    <key alias="inProgress">Đang xuất bản - vui lòng đợi ...</key>
+    <key alias="inProgressCounter">%0% trong số %1% trang đã được xuất bản ...</key>
+    <key alias="nodePublish">%0% đã được xuất bản</key>
+    <key alias="nodePublishAll">%0% và các trang con đã được xuất bản</key>
+    <key alias="publishingAll">Xuất bản %0% và tất cả các trang con của nó</key>
+    <key alias="publishingHelp">
+      ​​<![CDATA[Nhấp vào <em> Xuất bản </em> để xuất bản <strong>%0%</strong> và do đó công bố công khai nội dung của nó. <br/> <br />
+
+              Bạn có thể xuất bản trang này và tất cả các trang con của nó bằng cách chọn <em> Bao gồm các trang con chưa được xuất bản </em> bên dưới.]]>
+    </key>
+  </area>
+  <area alias="colorpicker">
+    <key alias="noColors">Bạn chưa định cấu hình bất kỳ màu nào được chấp thuận</key>
+  </area>
+  <area alias="contentPicker">
+    <key alias="allowedItemTypes">Bạn chỉ có thể chọn (các) mục thuộc loại: %0%</key>
+    <key alias="pickedTrashedItem">Bạn đã chọn một mục nội dung hiện đã bị xóa hoặc trong thùng rác</key>
+    <key alias="pickedTrashedItems">Bạn đã chọn các mục nội dung hiện đã bị xóa hoặc trong thùng rác</key>
+  </area>
+  <area alias="mediaPicker">
+    <key alias="deletedItem">Mục đã xóa</key>
+    <key alias="pickedTrashedItem">Bạn đã chọn một mục phương tiện hiện đã bị xóa hoặc trong thùng rác</key>
+    <key alias="pickedTrashedItems">Bạn đã chọn các mục phương tiện hiện đã bị xóa hoặc trong thùng rác</key>
+    <key alias="trashed">Đã chuyển vào thùng rác</key>
+    <key alias="openMedia">Mở trong Thư viện phương tiện</key>
+    <key alias="changeMedia">Thay đổi mục phương tiện</key>
+    <key alias="resetMediaCrop">Đặt lại cắt phương tiện</key>
+    <key alias="editMediaEntryLabel">Chỉnh sửa %0% trên %1%</key>
+    <key alias="confirmCancelMediaEntryCreationHeadline">Hủy tạo?</key>
+    <key alias="confirmCancelMediaEntryCreationMessage">​​<![CDATA[Bạn có chắc chắn muốn hủy quá trình tạo.]]></key>
+    <key alias="confirmCancelMediaEntryHasChanges">Bạn đã thực hiện các thay đổi đối với nội dung này. Bạn có chắc chắn muốn loại bỏ chúng không?</key>
+    <key alias="confirmRemoveMediaEntryMessage">Xóa?</key>
+    <key alias="confirmRemoveAllMediaEntryMessage">Xóa tất cả phương tiện?</key>
+    <key alias="tabClipboard">Bảng tạm</key>
+    <key alias="notAllowed">Không được phép</key>
+  </area>
+  <area alias="relatedlinks">
+    <key alias="enterExternal">nhập liên kết ngoài</key>
+    <key alias="chooseInternal">chọn trang nội bộ</key>
+    <key alias="caption">Chú thích</key>
+    <key alias="link">Liên kết</key>
+    <key alias="newWindow">Mở trong cửa sổ mới</key>
+    <key alias="captionPlaceholder">nhập chú thích hiển thị</key>
+    <key alias="externalLinkPlaceholder">Nhập liên kết</key>
+  </area>
+  <area alias="imagecropper">
+    <key alias="reset">Đặt lại cắt</key>
+    <key alias="saveCrop">Lưu cắt</key>
+    <key alias="addCrop">Thêm hình cắt mới</key>
+    <key alias="updateEditCrop">Xong</key>
+    <key alias="undoEditCrop">Hoàn tác chỉnh sửa</key>
+    <key alias="customCrop">Người dùng xác định</key>
+  </area>
+  <area alias="rollback">
+    <key alias="changes">Thay đổi</key>
+    <key alias="created">Đã tạo</key>
+    <key alias="headline">Chọn phiên bản để so sánh với phiên bản hiện tại</key>
+    <key alias="currentVersion">Phiên bản hiện tại</key>
+    <key alias="diffHelp">​​<![CDATA[Điều này cho thấy sự khác biệt giữa phiên bản hiện tại và phiên bản đã chọn <br /> <del> Văn bản </del> màu đỏ sẽ không được hiển thị trong phiên bản đã chọn. , <ins> xanh có nghĩa là đã thêm </ins>]]></key>
+    <key alias="documentRolledBack">Tài liệu đã được khôi phục lại</key>
+    <key alias="htmlHelp">Điều này hiển thị phiên bản đã chọn dưới dạng HTML, nếu bạn muốn thấy sự khác biệt giữa 2 phiên bản cùng một lúc, hãy sử dụng chế độ xem khác biệt</key>
+    <key alias="rollbackTo">Khôi phục về</key>
+    <key alias="selectVersion">Chọn phiên bản</key>
+    <key alias="view">Xem</key>
+  </area>
+  <area alias="scripts">
+    <key alias="editscript">Chỉnh sửa tệp tập lệnh</key>
+  </area>
+  <area alias="sections">
+    <key alias="content">Nội dung</key>
+    <key alias="forms">Biểu mẫu</key>
+    <key alias="media">Media</key>
+    <key alias="member">Thành viên</key>
+    <key alias="packages">Gói</key>
+    <key alias="settings">Cài đặt</key>
+    <key alias="translation">Bản dịch</key>
+    <key alias="users">Người dùng</key>
+  </area>
+  <area alias="help">
+    <key alias="tours">Chuyến tham quan</key>
+    <key alias="theBestUmbracoVideoTutorials">Các video hướng dẫn về Admin tốt nhất</key>
+    <key alias="umbracoForum">Truy cập our.umbraco.com</key>
+    <key alias="umbracoTv">Truy cập umbraco.tv</key>
+  </area>
+  <area alias="settings">
+    <key alias="defaulttemplate">Mẫu mặc định</key>
+    <key alias="importDocumentTypeHelp">Để nhập Loại Tài liệu, hãy tìm tệp ".udt" trên máy tính của bạn bằng cách nhấp vào nút "Duyệt" và nhấp vào "Nhập" (bạn sẽ được yêu cầu xác nhận trên màn hình tiếp theo)</key>
+    <key alias="newtabname">Tiêu đề tab mới</key>
+    <key alias="nodetype">Loại nút</key>
+    <key alias="objecttype">Loại</key>
+    <key alias="stylesheet">Biểu định kiểu</key>
+    <key alias="script">Tập lệnh</key>
+    <key alias="tab">Tab</key>
+    <key alias="tabname">Tiêu đề tab</key>
+    <key alias="tabs">Tab</key>
+    <key alias="contentTypeEnabled">Đã bật Loại Nội dung Chính</key>
+    <key alias="contentTypeUses">Loại Nội dung này sử dụng</key>
+    <key alias="noPropertiesDefinedOnTab">Không có thuộc tính nào được xác định trên tab này. Nhấp vào liên kết "thêm thuộc tính mới" ở trên cùng để tạo thuộc tính mới.</key>
+    <key alias="createMatchingTemplate">Tạo mẫu phù hợp</key>
+    <key alias="addIcon">Thêm biểu tượng</key>
+  </area>
+  <area alias="sort">
+    <key alias="sortOrder">Sắp xếp thứ tự</key>
+    <key alias="sortCreationDate">Ngày tạo</key>
+    <key alias="sortDone">Sắp xếp xong.</key>
+    <key alias="sortHelp">Kéo các mục khác nhau lên hoặc xuống bên dưới để đặt cách sắp xếp chúng. Hoặc nhấp vào tiêu đề cột để sắp xếp toàn bộ bộ sưu tập các mục</key>
+    <key alias="sortPleaseWait">​​<![CDATA[Vui lòng đợi. Các mục đang được sắp xếp, quá trình này có thể mất một lúc.]]></key>
+    <key alias="sortEmptyState">Nút này không có nút con nào để sắp xếp</key>
+  </area>
+  <area alias="speechBubbles">
+    <key alias="validationFailedHeader">Xác thực</key>
+    <key alias="validationFailedMessage">Lỗi xác thực phải được sửa trước khi có thể lưu mục</key>
+    <key alias="operationFailedHeader">Không thành công</key>
+    <key alias="operationSavedHeader">Đã lưu</key>
+    <key alias="operationSavedHeaderReloadUser">Đã lưu. Để xem các thay đổi, vui lòng tải lại trình duyệt của bạn</key>
+    <key alias="invalidUserPermissionsText">Người dùng không đủ quyền, không thể hoàn thành thao tác</key>
+    <key alias="operationCancelledHeader">Đã bị hủy</key>
+    <key alias="operationCancelledText">Thao tác đã bị hủy bởi bổ trợ bên thứ 3</key>
+    <key alias="contentTypeDublicatePropertyType">Đã tồn tại loại thuộc tính</key>
+    <key alias="contentTypePropertyTypeCreate">Đã tạo loại thuộc tính</key>
+    <key alias="contentTypePropertyTypeCreateText">​​<![CDATA[Tên: %0% <br /> DataType: %1%]]></key>
+    <key alias="contentTypePropertyTypeDeleted">Loại thuộc tính đã bị xóa</key>
+    <key alias="contentTypeSavedHeader">Đã lưu loại tài liệu</key>
+    <key alias="contentTypeTabCreate">Đã tạo tab</key>
+    <key alias="contentTypeTabDeleted">Đã xóa tab</key>
+    <key alias="contentTypeTabDeletedText">Tab có id: %0% đã bị xóa</key>
+    <key alias="cssErrorHeader">Biểu định kiểu chưa được lưu</key>
+    <key alias="cssSavedHeader">Đã lưu biểu định kiểu</key>
+    <key alias="cssSavedText">Biểu định kiểu được lưu mà không có bất kỳ lỗi nào</key>
+    <key alias="dataTypeSaved">Datatype đã được lưu</key>
+    <key alias="dictionaryItemSaved">Đã lưu mục từ điển</key>
+    <key alias="editContentPublishedHeader">Nội dung đã xuất bản</key>
+    <key alias="editContentPublishedText">và hiển thị trên trang web</key>
+    <key alias="editMultiContentPublishedText">%0% tài liệu được xuất bản và hiển thị trên trang web</key>
+    <key alias="editVariantPublishedText">%0% được xuất bản và hiển thị trên trang web</key>
+    <key alias="editMultiVariantPublishedText">%0% tài liệu được xuất bản cho các ngôn ngữ %1% và hiển thị trên trang web</key>
+    <key alias="editContentSavedHeader">Đã lưu nội dung</key>
+    <key alias="editContentSavedText">Hãy nhớ xuất bản để hiển thị các thay đổi</key>
+    <key alias="editContentScheduledSavedText">Đã cập nhật lịch xuất bản</key>
+    <key alias="editVariantSavedText">Đã lưu%0%</key>
+    <key alias="editContentSendToPublish">Đã gửi để phê duyệt</key>
+    <key alias="editContentSendToPublishText">Các thay đổi đã được gửi để phê duyệt</key>
+    <key alias="editVariantSendToPublishText">%0%thay đổi đã được gửi để phê duyệt</key>
+    <key alias="editMediaSaved">Đã lưu phương tiện</key>
+    <key alias="editMediaSavedText">Phương tiện được lưu mà không có bất kỳ lỗi nào</key>
+    <key alias="editMemberSaved">Đã lưu thành viên</key>
+    <key alias="editMemberGroupSaved">Đã lưu nhóm thành viên</key>
+    <key alias="editStylesheetPropertySaved">Đã Lưu Thuộc tính Biểu định kiểu</key>
+    <key alias="editStylesheetSaved">Đã lưu biểu định kiểu</key>
+    <key alias="editTemplateSaved">Đã lưu mẫu</key>
+    <key alias="editUserError">Lỗi khi lưu người dùng (kiểm tra nhật ký)</key>
+    <key alias="editUserSaved">Người dùng đã lưu</key>
+    <key alias="editUserTypeSaved">Đã lưu kiểu người dùng</key>
+    <key alias="editUserGroupSaved">Đã lưu nhóm người dùng</key>
+    <key alias="editCulturesAndHostnamesSaved">Đã lưu văn hóa và tên máy chủ</key>
+    <key alias="editCulturesAndHostnamesError">Lỗi khi lưu văn hóa và tên máy chủ</key>
+    <key alias="fileErrorHeader">Tệp không được lưu</key>
+    <key alias="fileErrorText">Không thể lưu tệp. Vui lòng kiểm tra quyền đối với tệp</key>
+    <key alias="fileSavedHeader">Đã lưu tệp</key>
+    <key alias="fileSavedText">Tệp được lưu mà không có bất kỳ lỗi nào</key>
+    <key alias="languageSaved">Đã lưu ngôn ngữ</key>
+    <key alias="mediaTypeSavedHeader">Đã lưu loại phương tiện</key>
+    <key alias="memberTypeSavedHeader">Đã lưu Loại thành viên</key>
+    <key alias="memberGroupSavedHeader">Đã lưu nhóm thành viên</key>
+    <key alias="templateErrorHeader">Mẫu chưa được lưu</key>
+    <key alias="templateErrorText">Vui lòng đảm bảo rằng bạn không có 2 mẫu có cùng bí danh</key>
+    <key alias="templateSavedHeader">Đã lưu mẫu</key>
+    <key alias="templateSavedText">Đã lưu mẫu mà không có bất kỳ lỗi nào!</key>
+    <key alias="contentUnpublished">Nội dung chưa được xuất bản</key>
+    <key alias="contentCultureUnpublished">Nội dung biến thể %0% chưa được xuất bản</key>
+    <key alias="contentMandatoryCultureUnpublished">Ngôn ngữ bắt buộc '%0%' đã được hủy xuất bản. Tất cả các ngôn ngữ cho mục nội dung này hiện chưa được xuất bản.</key>
+    <key alias="partialViewSavedHeader">Đã lưu một phần chế độ xem</key>
+    <key alias="partialViewSavedText">Đã lưu một phần chế độ xem mà không có bất kỳ lỗi nào!</key>
+    <key alias="partialViewErrorHeader">Chế độ xem một phần không được lưu</key>
+    <key alias="partialViewErrorText">Đã xảy ra lỗi khi lưu tệp.</key>
+    <key alias="permissionsSavedFor">Các quyền được lưu cho</key>
+    <key alias="deleteUserGroupsSuccess">Đã xóa %0% nhóm người dùng</key>
+    <key alias="deleteUserGroupSuccess">%0% đã bị xóa</key>
+    <key alias="enableUsersSuccess">Đã bật %0% người dùng</key>
+    <key alias="disableUsersSuccess">Đã vô hiệu hóa %0% người dùng</key>
+    <key alias="enableUserSuccess">%0% hiện đã được bật</key>
+    <key alias="disableUserSuccess">%0% hiện đã bị vô hiệu hóa</key>
+    <key alias="setUserGroupOnUsersSuccess">Nhóm người dùng đã được đặt</key>
+    <key alias="unlockUsersSuccess">Đã mở khóa %0% người dùng</key>
+    <key alias="unlockUserSuccess">%0% hiện đã được mở khóa</key>
+    <key alias="memberExportedSuccess">Thành viên đã được xuất sang tệp</key>
+    <key alias="memberExportedError">Đã xảy ra lỗi khi xuất thành viên</key>
+    <key alias="deleteUserSuccess">Người dùng %0% đã bị xóa</key>
+    <key alias="resendInviteHeader">Mời người dùng</key>
+    <key alias="resendInviteSuccess">Lời mời đã được gửi lại đến %0%</key>
+    <key alias="contentReqCulturePublishError">Không thể xuất bản tài liệu vì '%0%' bắt buộc không được xuất bản</key>
+    <key alias="contentCultureValidationError">Không thể xác thực cho ngôn ngữ '%0%'</key>
+    <key alias="documentTypeExportedSuccess">Loại tài liệu đã được xuất sang tệp</key>
+    <key alias="documentTypeExportedError">Đã xảy ra lỗi khi xuất Loại tài liệu</key>
+    <key alias="scheduleErrReleaseDate1">Ngày phát hành không được trong quá khứ</key>
+    <key alias="scheduleErrReleaseDate2">Không thể lên lịch xuất bản tài liệu vì '%0%' bắt buộc không được xuất bản</key>
+    <key alias="scheduleErrReleaseDate3">Không thể lên lịch xuất bản tài liệu vì '%0%' bắt buộc có ngày xuất bản muộn hơn ngôn ngữ không bắt buộc</key>
+    <key alias="scheduleErrExpireDate1">Ngày hết hạn không được trong quá khứ</key>
+    <key alias="scheduleErrExpireDate2">Ngày hết hạn không được trước ngày phát hành</key>
+  </area>
+  <area alias="stylesheet">
+    <key alias="addRule">Thêm kiểu</key>
+    <key alias="editRule">Chỉnh sửa kiểu</key>
+    <key alias="editorRules">Kiểu trình soạn thảo văn bản đa dạng thức</key>
+    <key alias="editorRulesHelp">Xác định các kiểu sẽ có sẵn trong trình chỉnh sửa văn bản đa dạng thức cho biểu định kiểu này</key>
+    <key alias="editstylesheet">Chỉnh sửa biểu định kiểu</key>
+    <key alias="editstylesheetproperty">Chỉnh sửa thuộc tính biểu định kiểu</key>
+    <key alias="nameHelp">Tên được hiển thị trong bộ chọn kiểu trình chỉnh sửa</key>
+    <key alias="preview">Xem trước</key>
+    <key alias="previewHelp">Văn bản sẽ trông như thế nào trong trình chỉnh sửa văn bản đa dạng thức.</key>
+    <key alias="selector">Bộ chọn</key>
+    <key alias="selectorHelp">Sử dụng cú pháp CSS, ví dụ: "h1" hoặc ".redHeader"</key>
+    <key alias="styles">Kiểu</key>
+    <key alias="stylesHelp">CSS sẽ được áp dụng trong trình chỉnh sửa văn bản đa dạng thức, ví dụ: "color: red;"</key>
+    <key alias="tabCode">Mã</key>
+    <key alias="tabRules">Trình chỉnh sửa Văn bản Đa dạng thức</key>
+  </area>
+  <area alias="template">
+    <key alias="deleteByIdFailed">Không xóa được mẫu có ID %0%</key>
+    <key alias="edittemplate">Chỉnh sửa mẫu</key>
+    <key alias="insertSection">Phần</key>
+    <key alias="insertContentArea">Chèn vùng nội dung</key>
+    <key alias="insertContentAreaPlaceHolder">Chèn trình giữ chỗ vùng nội dung</key>
+    <key alias="insert">Chèn</key>
+    <key alias="insertDesc">Chọn những gì để chèn vào mẫu của bạn</key>
+    <key alias="insertDictionaryItem">Mục từ điển</key>
+    <key alias="insertDictionaryItemDesc">Mục từ điển là phần giữ chỗ cho một đoạn văn bản có thể dịch được, giúp dễ dàng tạo thiết kế cho các trang web đa ngôn ngữ.</key>
+    <key alias="insertMacro">Macro</key>
+    <key alias="insertMacroDesc">
+      Macro là một thành phần có thể định cấu hình rất tốt cho
+      các phần có thể tái sử dụng trong thiết kế của bạn, nơi bạn cần tùy chọn để cung cấp các thông số,
+      chẳng hạn như phòng trưng bày, biểu mẫu và danh sách.
+    </key>
+    <key alias="insertPageField">Giá trị</key>
+    <key alias="insertPageFieldDesc">Hiển thị giá trị của trường được đặt tên từ trang hiện tại, với các tùy chọn để sửa đổi giá trị hoặc dự phòng thành các giá trị thay thế.</key>
+    <key alias="insertPartialView">Chế độ xem một phần</key>
+    <key alias="insertPartialViewDesc">
+      Chế độ xem một phần là một tệp mẫu riêng biệt có thể được hiển thị bên trong
+      mẫu, nó tuyệt vời để sử dụng lại đánh dấu hoặc để tách các mẫu phức tạp thành các tệp riêng biệt.
+    </key>
+    <key alias="mastertemplate">Mẫu chính</key>
+    <key alias="noMaster">Không có chính chủ</key>
+    <key alias="renderBody">Kết xuất mẫu con</key>
+    <key alias="renderBodyDesc">
+      ​​<![CDATA[
+
+                  Hiển thị nội dung của một mẫu con, bằng cách chèn một
+
+                  Trình giữ chỗ <code> @RenderBody () </code>.]]>
+    </key>
+    <key alias="defineSection">Xác định một phần được đặt tên</key>
+    <key alias="defineSectionDesc">
+      ​​<![CDATA[
+
+                  Xác định một phần của mẫu của bạn dưới dạng một phần được đặt tên bằng cách gói nó trong
+
+                  <code> @section {...} </code>. Điều này có thể được hiển thị trong một
+
+                  khu vực cụ thể của phụ huynh của mẫu này, bằng cách sử dụng <code> @RenderSection </code>.]]>
+    </key>
+    <key alias="renderSection">Hiển thị phần được đặt tên</key>
+    <key alias="renderSectionDesc">
+      ​​<![CDATA[
+
+                  Hiển thị vùng đã đặt tên của mẫu con, bằng cách chèn trình giữ chỗ <code> @RenderSection (name) </code>.
+
+                  Điều này hiển thị một vùng của mẫu con được bao bọc trong định nghĩa <code> @section [name] {...} </code> tương ứng.]]>
+    </key>
+    <key alias="sectionName">Tên phần</key>
+    <key alias="sectionMandatory">Phần là bắt buộc</key>
+    <key alias="sectionMandatoryDesc">
+      ​​<![CDATA[
+
+                  Nếu bắt buộc, mẫu con phải chứa định nghĩa <code> @section </code>, nếu không sẽ xuất hiện lỗi.]]>
+    </key>
+    <key alias="queryBuilder">Trình tạo truy vấn</key>
+    <key alias="itemsReturned">mặt hàng được trả lại, sau</key>
+    <key alias="copyToClipboard">sao chép vào khay nhớ tạm</key>
+    <key alias="iWant">Tôi muốn</key>
+    <key alias="allContent">tất cả nội dung</key>
+    <key alias="contentOfType">nội dung thuộc loại "%0%"</key>
+    <key alias="from">from</key>
+    <key alias="websiteRoot">trang web của tôi</key>
+    <key alias="where">ở đâu</key>
+    <key alias="and">và</key>
+    <key alias="is">là</key>
+    <key alias="isNot">không phải là</key>
+    <key alias="before">trước</key>
+    <key alias="beforeIncDate">trước (bao gồm cả ngày đã chọn)</key>
+    <key alias="after">sau</key>
+    <key alias="afterIncDate">sau (bao gồm cả ngày đã chọn)</key>
+    <key alias="equals">bằng</key>
+    <key alias="doesNotEqual">không bằng</key>
+    <key alias="contains">chứa</key>
+    <key alias="doesNotContain">không chứa</key>
+    <key alias="greaterThan">lớn hơn</key>
+    <key alias="greaterThanEqual">lớn hơn hoặc bằng</key>
+    <key alias="lessThan">nhỏ hơn</key>
+    <key alias="lessThanEqual">nhỏ hơn hoặc bằng</key>
+    <key alias="id">Id</key>
+    <key alias="name">Tên</key>
+    <key alias="createdDate">Ngày tạo</key>
+    <key alias="lastUpdatedDate">Ngày cập nhật lần cuối</key>
+    <key alias="orderBy">đặt hàng theo</key>
+    <key alias="ascending">tăng dần</key>
+    <key alias="descending">giảm dần</key>
+    <key alias="template">Mẫu</key>
+  </area>
+  <area alias="grid">
+    <key alias="media">Hình ảnh</key>
+    <key alias="macro">Macro</key>
+    <key alias="insertControl">Chọn loại nội dung</key>
+    <key alias="chooseLayout">Chọn bố cục</key>
+    <key alias="addRows">Thêm hàng</key>
+    <key alias="addElement">Thêm nội dung</key>
+    <key alias="dropElement">Thả nội dung</key>
+    <key alias="settingsApplied">Đã áp dụng cài đặt</key>
+    <key alias="contentNotAllowed">Nội dung này không được phép ở đây</key>
+    <key alias="contentAllowed">Nội dung này được phép ở đây</key>
+    <key alias="clickToEmbed">Nhấp để nhúng</key>
+    <key alias="clickToInsertImage">Nhấp để chèn hình ảnh</key>
+    <key alias="clickToInsertMacro">Nhấp để chèn macro</key>
+    <key alias="placeholderImageCaption">Chú thích hình ảnh ...</key>
+    <key alias="placeholderWriteHere">Viết ở đây ...</key>
+    <key alias="gridLayouts">Bố cục Lưới</key>
+    <key alias="gridLayoutsDetail">Bố cục là khu vực làm việc tổng thể cho trình chỉnh sửa lưới, thông thường bạn chỉ cần một hoặc hai bố cục khác nhau</key>
+    <key alias="addGridLayout">Thêm bố cục lưới</key>
+    <key alias="editGridLayout">Chỉnh sửa bố cục lưới</key>
+    <key alias="addGridLayoutDetail">Điều chỉnh bố cục bằng cách đặt độ rộng cột và thêm các phần bổ sung</key>
+    <key alias="rowConfigurations">Cấu hình hàng</key>
+    <key alias="rowConfigurationsDetail">Hàng là các ô xác định trước được sắp xếp theo chiều ngang</key>
+    <key alias="addRowConfiguration">Thêm cấu hình hàng</key>
+    <key alias="editRowConfiguration">Chỉnh sửa cấu hình hàng</key>
+    <key alias="addRowConfigurationDetail">Điều chỉnh hàng bằng cách đặt độ rộng ô và thêm ô bổ sung</key>
+    <key alias="noConfiguration">Không có thêm cấu hình nào nữa</key>
+    <key alias="columns">Cột</key>
+    <key alias="columnsDetails">Tổng số cột được kết hợp trong bố cục lưới</key>
+    <key alias="settings">Cài đặt</key>
+    <key alias="settingsDetails">Định cấu hình những gì người chỉnh sửa cài đặt có thể thay đổi</key>
+    <key alias="styles">Kiểu</key>
+    <key alias="stylesDetails">Định cấu hình những gì trình chỉnh sửa kiểu có thể thay đổi</key>
+    <key alias="allowAllEditors">Cho phép tất cả người chỉnh sửa</key>
+    <key alias="allowAllRowConfigurations">Cho phép tất cả các cấu hình hàng</key>
+    <key alias="maxItems">Các mục tối đa</key>
+    <key alias="maxItemsDescription">Để trống hoặc đặt thành 0 để không giới hạn</key>
+    <key alias="setAsDefault">Đặt làm mặc định</key>
+    <key alias="chooseExtra">Chọn thêm</key>
+    <key alias="chooseDefault">Chọn mặc định</key>
+    <key alias="areAdded">đã được thêm vào</key>
+    <key alias="warning">Cảnh báo</key>
+    <key alias="youAreDeleting">Bạn đang xóa cấu hình hàng</key>
+    <key alias="deletingARow">Xóa tên cấu hình hàng sẽ làm mất dữ liệu cho bất kỳ nội dung hiện có nào dựa trên cấu hình này.</key>
+  </area>
+  <area alias="contentTypeEditor">
+    <key alias="compositions">Sáng tác</key>
+    <key alias="group">Nhóm</key>
+    <key alias="noGroups">Bạn chưa thêm bất kỳ nhóm nào</key>
+    <key alias="addGroup">Thêm nhóm</key>
+    <key alias="inheritedFrom">Được kế thừa từ</key>
+    <key alias="addProperty">Thêm thuộc tính</key>
+    <key alias="requiredLabel">Nhãn bắt buộc</key>
+    <key alias="enableListViewHeading">Bật chế độ xem danh sách</key>
+    <key alias="enableListViewDescription">Định cấu hình mục nội dung để hiển thị danh sách con của nó có thể sắp xếp và tìm kiếm được, các con sẽ không được hiển thị trong cây</key>
+    <key alias="allowedTemplatesHeading">Mẫu được phép</key>
+    <key alias="allowedTemplatesDescription">Chọn trình chỉnh sửa mẫu nào được phép sử dụng trên nội dung thuộc loại này</key>
+    <key alias="allowAsRootHeading">Cho phép làm quyền root</key>
+    <key alias="allowAsRootDescription">Cho phép người chỉnh sửa tạo nội dung thuộc loại này trong gốc của cây nội dung.</key>
+    <key alias="childNodesHeading">Các loại nút con được phép</key>
+    <key alias="childNodesDescription">Cho phép tạo nội dung thuộc các loại được chỉ định bên dưới nội dung của loại này.</key>
+    <key alias="chooseChildNode">Chọn nút con</key>
+    <key alias="compositionsDescription">Kế thừa các tab và thuộc tính từ Loại tài liệu hiện có. Các tab mới sẽ được thêm vào Loại tài liệu hiện tại hoặc được hợp nhất nếu tồn tại một tab có tên giống hệt nhau.</key>
+    <key alias="compositionInUse">Loại Nội dung này được sử dụng trong một sáng tác và do đó không thể tự sáng tác.</key>
+    <key alias="noAvailableCompositions">Không có Loại nội dung nào có sẵn để sử dụng làm bố cục.</key>
+    <key alias="compositionRemoveWarning">Xóa thành phần sẽ xóa tất cả dữ liệu thuộc tính được liên kết. Sau khi bạn lưu Loại tài liệu, không có cách nào quay lại.</key>
+    <key alias="availableEditors">Tạo mới</key>
+    <key alias="reuse">Sử dụng hiện có</key>
+    <key alias="editorSettings">Cài đặt trình chỉnh sửa</key>
+    <key alias="searchResultSettings">Các cấu hình có sẵn</key>
+    <key alias="searchResultEditors">Tạo cấu hình mới</key>
+    <key alias="configuration">Cấu hình</key>
+    <key alias="yesDelete">Có, xóa</key>
+    <key alias="movedUnderneath">đã được chuyển xuống bên dưới</key>
+    <key alias="copiedUnderneath">đã được sao chép bên dưới</key>
+    <key alias="folderToMove">Chọn thư mục để di chuyển</key>
+    <key alias="folderToCopy">Chọn thư mục để sao chép</key>
+    <key alias="structureBelow">đến trong cấu trúc cây bên dưới</key>
+    <key alias="allDocumentTypes">Tất cả các loại tài liệu</key>
+    <key alias="allDocuments">Tất cả Tài liệu</key>
+    <key alias="allMediaItems">Tất cả các mục phương tiện</key>
+    <key alias="usingThisDocument">sử dụng Loại tài liệu này sẽ bị xóa vĩnh viễn, vui lòng xác nhận rằng bạn cũng muốn xóa chúng.</key>
+    <key alias="usingThisMedia">sử dụng Loại phương tiện này sẽ bị xóa vĩnh viễn, vui lòng xác nhận rằng bạn cũng muốn xóa chúng.</key>
+    <key alias="usingThisMember">sử dụng Loại thành viên này sẽ bị xóa vĩnh viễn, vui lòng xác nhận rằng bạn cũng muốn xóa chúng</key>
+    <key alias="andAllDocuments">và tất cả các tài liệu sử dụng loại này</key>
+    <key alias="andAllMediaItems">và tất cả các mục phương tiện sử dụng loại này</key>
+    <key alias="andAllMembers">và tất cả các thành viên sử dụng loại này</key>
+    <key alias="memberCanEdit">Thành viên có thể chỉnh sửa</key>
+    <key alias="memberCanEditDescription">Cho phép thành viên chỉnh sửa giá trị thuộc tính này trên trang hồ sơ của họ</key>
+    <key alias="isSensitiveData">Là dữ liệu nhạy cảm</key>
+    <key alias="isSensitiveDataDescription">Ẩn giá trị thuộc tính này khỏi những người chỉnh sửa nội dung không có quyền truy cập để xem thông tin nhạy cảm</key>
+    <key alias="showOnMemberProfile">Hiển thị trên hồ sơ thành viên</key>
+    <key alias="showOnMemberProfileDescription">Cho phép giá trị thuộc tính này được hiển thị trên trang hồ sơ thành viên</key>
+    <key alias="tabHasNoSortOrder">Tab không có thứ tự sắp xếp</key>
+    <key alias="compositionUsageHeading">Thành phần này được sử dụng ở đâu?</key>
+    <key alias="compositionUsageSpecification">Thành phần này hiện được sử dụng trong thành phần của Các loại nội dung sau:</key>
+    <key alias="variantsHeading">Cho phép các biến thể</key>
+    <key alias="cultureVariantHeading">Cho phép thay đổi theo văn hóa</key>
+    <key alias="segmentVariantHeading">Cho phép phân đoạn</key>
+    <key alias="cultureVariantLabel">Thay đổi theo văn hóa</key>
+    <key alias="segmentVariantLabel">Thay đổi theo phân đoạn</key>
+    <key alias="variantsDescription">Cho phép người chỉnh sửa tạo nội dung thuộc loại này bằng các ngôn ngữ khác nhau.</key>
+    <key alias="cultureVariantDescription">Cho phép người chỉnh sửa tạo nội dung bằng các ngôn ngữ khác nhau.</key>
+    <key alias="segmentVariantDescription">Cho phép người chỉnh sửa tạo các phân đoạn của nội dung này.</key>
+    <key alias="allowVaryByCulture">Cho phép thay đổi theo văn hóa</key>
+    <key alias="allowVaryBySegment">Cho phép phân đoạn</key>
+    <key alias="elementType">Loại phần tử</key>
+    <key alias="elementHeading">Là một loại phần tử</key>
+    <key alias="elementDescription">Một Loại Phần tử được sử dụng chẳng hạn như trong Nội dung lồng nhau chứ không phải trong cây.</key>
+    <key alias="elementCannotToggle">Không thể thay đổi Loại tài liệu thành Loại phần tử khi nó đã được sử dụng để tạo một hoặc nhiều mục nội dung.</key>
+    <key alias="elementDoesNotSupport">Điều này không áp dụng cho Loại phần tử</key>
+    <key alias="propertyHasChanges">Bạn đã thực hiện các thay đổi đối với thuộc tính này. Bạn có chắc chắn muốn loại bỏ chúng không?</key>
+    <key alias="displaySettingsHeadline">Giao diện</key>
+    <key alias="displaySettingsLabelOnTop">Nhãn ở trên (full-width)</key>
+  </area>
+  <area alias="languages">
+    <key alias="addLanguage">Thêm ngôn ngữ</key>
+    <key alias="mandatoryLanguage">Ngôn ngữ bắt buộc</key>
+    <key alias="mandatoryLanguageHelp">Các thuộc tính trên ngôn ngữ này phải được điền vào trước khi nút có thể được xuất bản.</key>
+    <key alias="defaultLanguage">Ngôn ngữ mặc định</key>
+    <key alias="defaultLanguageHelp">Một trang web Admin chỉ có thể có một bộ ngôn ngữ mặc định.</key>
+    <key alias="changingDefaultLanguageWarning">Việc chuyển đổi ngôn ngữ mặc định có thể dẫn đến thiếu nội dung mặc định.</key>
+    <key alias="fallsbackToLabel">rơi trở lại</key>
+    <key alias="noFallbackLanguageOption">Không có ngôn ngữ dự phòng</key>
+    <key alias="fallbackLanguageDescription">Để cho phép nội dung đa ngôn ngữ chuyển sang ngôn ngữ khác nếu không có trong ngôn ngữ được yêu cầu, hãy chọn nó tại đây.</key>
+    <key alias="fallbackLanguage">Ngôn ngữ dự phòng</key>
+    <key alias="none">không có</key>
+  </area>
+  <area alias="macro">
+    <key alias="addParameter">Thêm tham số</key>
+    <key alias="editParameter">Chỉnh sửa tham số</key>
+    <key alias="enterMacroName">Nhập tên macro</key>
+    <key alias="parameters">Tham số</key>
+    <key alias="parametersDescription">Xác định các tham số sẽ có sẵn khi sử dụng macro này.</key>
+    <key alias="selectViewFile">Chọn tệp macro xem một phần</key>
+  </area>
+  <area alias="modelsBuilder">
+    <key alias="buildingModels">Mô hình xây dựng</key>
+    <key alias="waitingMessage">việc này có thể mất một chút thời gian, đừng lo lắng</key>
+    <key alias="modelsGenerated">Các mô hình được tạo</key>
+    <key alias="modelsGeneratedError">Không thể tạo mô hình</key>
+    <key alias="modelsExceptionInUlog">Tạo mô hình không thành công, hãy xem ngoại lệ trong nhật ký U</key>
+  </area>
+  <area alias="templateEditor">
+    <key alias="addFallbackField">Thêm trường dự phòng</key>
+    <key alias="fallbackField">Trường dự phòng</key>
+    <key alias="addDefaultValue">Thêm giá trị mặc định</key>
+    <key alias="defaultValue">Giá trị mặc định</key>
+    <key alias="alternativeField">Trường dự phòng</key>
+    <key alias="alternativeText">Giá trị mặc định</key>
+    <key alias="casing">Cách viết hoa</key>
+    <key alias="encoding">Mã hóa</key>
+    <key alias="chooseField">Chọn trường</key>
+    <key alias="convertLineBreaks">Chuyển đổi ngắt dòng</key>
+    <key alias="convertLineBreaksDescription">Có, chuyển đổi ngắt dòng</key>
+    <key alias="convertLineBreaksHelp">Thay thế các ngắt dòng bằng thẻ html 'br'</key>
+    <key alias="customFields">Trường tùy chỉnh</key>
+    <key alias="dateOnly">Chỉ ngày</key>
+    <key alias="formatAndEncoding">Định dạng và mã hóa</key>
+    <key alias="formatAsDate">Định dạng thành ngày</key>
+    <key alias="formatAsDateDescr">Định dạng giá trị dưới dạng ngày tháng hoặc ngày theo thời gian, theo văn hóa hoạt động</key>
+    <key alias="htmlEncode">Mã hóa HTML</key>
+    <key alias="htmlEncodeHelp">Sẽ thay thế các ký tự đặc biệt bằng các ký tự tương đương trong HTML của chúng.</key>
+    <key alias="insertedAfter">Sẽ được chèn sau giá trị trường</key>
+    <key alias="insertedBefore">Sẽ được chèn trước giá trị trường</key>
+    <key alias="lowercase">Chữ thường</key>
+    <key alias="modifyOutput">Sửa đổi đầu ra</key>
+    <key alias="none">Không có</key>
+    <key alias="outputSample">Mẫu đầu ra</key>
+    <key alias="postContent">Chèn sau trường</key>
+    <key alias="preContent">Chèn trước trường</key>
+    <key alias="recursive">Đệ quy</key>
+    <key alias="recursiveDescr">Có, hãy đặt nó thành đệ quy</key>
+    <key alias="separator">Dấu phân cách</key>
+    <key alias="standardFields">Trường Chuẩn</key>
+    <key alias="uppercase">Chữ hoa</key>
+    <key alias="urlEncode">Mã hóa URL</key>
+    <key alias="urlEncodeHelp">Sẽ định dạng các ký tự đặc biệt trong URL</key>
+    <key alias="usedIfAllEmpty">Sẽ chỉ được sử dụng khi các giá trị trường ở trên trống</key>
+    <key alias="usedIfEmpty">Trường này sẽ chỉ được sử dụng nếu trường chính trống</key>
+    <key alias="withTime">Ngày và giờ</key>
+  </area>
+  <area alias="translation">
+    <key alias="details">Chi tiết bản dịch</key>
+    <key alias="DownloadXmlDTD">Tải xuống XML DTD</key>
+    <key alias="fields">Trường</key>
+    <key alias="includeSubpages">Bao gồm các trang con</key>
+    <key alias="mailBody">
+      ​​<![CDATA[
+                  Xin chào %0%
+                  Đây là một thư tự động để thông báo cho bạn rằng tài liệu '%1%'
+                  đã được yêu cầu dịch thành '%5%' theo %2%.
+                  Truy cập http: //%3%/translation/details.aspx? Id = %4% để chỉnh sửa.
+                  Hoặc đăng nhập vào Admin để xem tổng quan về các nhiệm vụ dịch thuật của bạn
+                  http: //%3%
+                  Chúc một ngày tốt lành!
+                  Khu Bảo tồn Thiên nhiên Nâm Nung]]>
+    </key>
+    <key alias="noTranslators">Không tìm thấy người dùng dịch. Vui lòng tạo người dùng dịch thuật trước khi bạn bắt đầu gửi nội dung sang bản dịch</key>
+    <key alias="pageHasBeenSendToTranslation">Trang '%0%' đã được chuyển sang bản dịch</key>
+    <key alias="sendToTranslate">Gửi trang '%0%' sang bản dịch</key>
+    <key alias="totalWords">Tổng số từ</key>
+    <key alias="translateTo">Dịch sang</key>
+    <key alias="translationDone">Bản dịch đã hoàn thành.</key>
+    <key alias="translationDoneHelp">Bạn có thể xem trước các trang mà bạn vừa dịch, bằng cách nhấp vào bên dưới. Nếu trang gốc được tìm thấy, bạn sẽ nhận được bản so sánh của 2 trang.</key>
+    <key alias="translationFailed">Dịch không thành công, tệp XML có thể bị hỏng</key>
+    <key alias="translationOptions">Tùy chọn dịch</key>
+    <key alias="translator">Translator</key>
+    <key alias="uploadTranslationXml">Tải lên XML bản dịch</key>
+  </area>
+  <area alias="treeHeaders">
+    <key alias="content">Nội dung</key>
+    <key alias="contentBlueprints">Mẫu Nội dung</key>
+    <key alias="media">Media</key>
+    <key alias="cacheBrowser">Trình duyệt bộ nhớ đệm</key>
+    <key alias="contentRecycleBin">Thùng rác</key>
+    <key alias="createdPackages">Các gói đã tạo</key>
+    <key alias="dataTypes">Loại dữ liệu</key>
+    <key alias="dictionary">Từ điển</key>
+    <key alias="installedPackages">Các gói đã cài đặt</key>
+    <key alias="installSkin">Cài đặt skin</key>
+    <key alias="installStarterKit">Cài đặt bộ khởi động</key>
+    <key alias="languages">Ngôn ngữ</key>
+    <key alias="localPackage">Cài đặt gói cục bộ</key>
+    <key alias="macros">Macro</key>
+    <key alias="mediaTypes">Loại phương tiện</key>
+    <key alias="member">Thành viên</key>
+    <key alias="memberGroups">Nhóm thành viên</key>
+    <key alias="memberRoles">Vai trò thành viên</key>
+    <key alias="memberTypes">Loại thành viên</key>
+    <key alias="documentTypes">Loại tài liệu</key>
+    <key alias="relationTypes">Các kiểu quan hệ</key>
+    <key alias="packager">Gói</key>
+    <key alias="packages">Gói</key>
+    <key alias="partialViews">Chế độ xem từng phần</key>
+    <key alias="partialViewMacros">Tệp macro xem một phần</key>
+    <key alias="repositories">Cài đặt từ kho lưu trữ</key>
+    <key alias="runway">Cài đặt Runway</key>
+    <key alias="runwayModules">Mô-đun đường băng</key>
+    <key alias="scripting">Tập tin kịch bản</key>
+    <key alias="scripts">Tập lệnh</key>
+    <key alias="stylesheets">Biểu định kiểu</key>
+    <key alias="templates">Mẫu</key>
+    <key alias="logViewer">Trình xem nhật ký</key>
+    <key alias="users">Người dùng</key>
+    <key alias="settingsGroup">Cài đặt</key>
+    <key alias="templatingGroup">Tạo mẫu</key>
+    <key alias="thirdPartyGroup">Bên thứ ba</key>
+  </area>
+  <area alias="update">
+    <key alias="updateAvailable">Bản cập nhật mới đã sẵn sàng</key>
+    <key alias="updateDownloadText">%0% đã sẵn sàng, hãy nhấp vào đây để tải xuống</key>
+    <key alias="updateNoServer">Không có kết nối với máy chủ</key>
+    <key alias="updateNoServerError">Lỗi khi kiểm tra bản cập nhật. Vui lòng xem lại ngăn xếp theo dõi để biết thêm thông tin</key>
+  </area>
+  <area alias="user">
+    <key alias="access">Truy cập</key>
+    <key alias="accessHelp">Dựa trên các nhóm được chỉ định và các nút bắt đầu, người dùng có quyền truy cập vào các nút sau</key>
+    <key alias="assignAccess">Chỉ định quyền truy cập</key>
+    <key alias="administrator">Quản trị viên</key>
+    <key alias="categoryField">Trường danh mục</key>
+    <key alias="createDate">Người dùng đã tạo</key>
+    <key alias="changePassword">Thay đổi mật khẩu của bạn</key>
+    <key alias="changePhoto">Thay đổi ảnh</key>
+    <key alias="newPassword">Mật khẩu mới</key>
+    <key alias="newPasswordFormatLengthTip">Tối thiểu %0% ký tự để bắt đầu!</key>
+    <key alias="newPasswordFormatNonAlphaTip">Phải có ít nhất %0% (các) ký tự đặc biệt trong đó.</key>
+    <key alias="noLockouts">chưa bị khóa</key>
+    <key alias="noPasswordChange">Mật khẩu chưa được thay đổi</key>
+    <key alias="confirmNewPassword">Xác nhận mật khẩu mới</key>
+    <key alias="changePasswordDescription">Bạn có thể thay đổi mật khẩu của mình để truy cập văn phòng Admin bằng cách điền vào biểu mẫu bên dưới và nhấp vào nút 'Thay đổi Mật khẩu'</key>
+    <key alias="contentChannel">Kênh nội dung</key>
+    <key alias="createAnotherUser">Tạo một người dùng khác</key>
+    <key alias="createUserHelp">Tạo người dùng mới để cấp cho họ quyền truy cập vào Admin. Khi người dùng mới được tạo, mật khẩu sẽ được tạo để bạn có thể chia sẻ với người dùng đó.</key>
+    <key alias="descriptionField">Trường mô tả</key>
+    <key alias="disabled">Vô hiệu hóa Người dùng</key>
+    <key alias="documentType">Loại tài liệu</key>
+    <key alias="editors">Editor</key>
+    <key alias="excerptField">Trường đoạn trích</key>
+    <key alias="failedPasswordAttempts">Đăng nhập không thành công</key>
+    <key alias="goToProfile">Đi tới hồ sơ người dùng</key>
+    <key alias="groupsHelp">Thêm nhóm để chỉ định quyền truy cập và quyền</key>
+    <key alias="inviteAnotherUser">Mời một người dùng khác</key>
+    <key alias="inviteUserHelp">Mời người dùng mới cấp cho họ quyền truy cập vào Admin. Một email mời sẽ được gửi đến người dùng với thông tin về cách đăng nhập vào Umbraco. Lời mời kéo dài trong 72 giờ.</key>
+    <key alias="language">Ngôn ngữ</key>
+    <key alias="languageHelp">Đặt ngôn ngữ bạn sẽ thấy trong menu và hộp thoại</key>
+    <key alias="lastLockoutDate">Ngày khóa cuối cùng</key>
+    <key alias="lastLogin">Lần đăng nhập cuối cùng</key>
+    <key alias="lastPasswordChangeDate">Mật khẩu được thay đổi lần cuối</key>
+    <key alias="loginname">Tên người dùng</key>
+    <key alias="mediastartnode">Nút bắt đầu phương tiện</key>
+    <key alias="mediastartnodehelp">Giới hạn thư viện phương tiện ở một nút bắt đầu cụ thể</key>
+    <key alias="mediastartnodes">Nút bắt đầu phương tiện</key>
+    <key alias="mediastartnodeshelp">Giới hạn thư viện phương tiện ở các nút bắt đầu cụ thể</key>
+    <key alias="modules">Phần</key>
+    <key alias="noConsole">Tắt quyền truy cập Admin</key>
+    <key alias="noLogin">chưa đăng nhập</key>
+    <key alias="oldPassword">Mật khẩu cũ</key>
+    <key alias="password">Mật khẩu</key>
+    <key alias="resetPassword">Đặt lại mật khẩu</key>
+    <key alias="passwordChanged">Mật khẩu của bạn đã được thay đổi!</key>
+    <key alias="passwordChangedGeneric">Mật khẩu đã thay đổi</key>
+    <key alias="passwordConfirm">Vui lòng xác nhận mật khẩu mới</key>
+    <key alias="passwordEnterNew">Nhập mật khẩu mới của bạn</key>
+    <key alias="passwordIsBlank">Mật khẩu mới của bạn không được để trống!</key>
+    <key alias="passwordCurrent">Mật khẩu hiện tại</key>
+    <key alias="passwordInvalid">Mật khẩu hiện tại không hợp lệ</key>
+    <key alias="passwordIsDiosystem">Có sự khác biệt giữa mật khẩu mới và mật khẩu đã xác nhận. Vui lòng thử lại!</key>
+    <key alias="passwordMismatch">Mật khẩu đã xác nhận không khớp với mật khẩu mới!</key>
+    <key alias="permissionReplaceChildren">Thay thế quyền của nút con</key>
+    <key alias="permissionSelectedPages">Bạn hiện đang sửa đổi quyền cho các trang:</key>
+    <key alias="permissionSelectPages">Chọn các trang để sửa đổi quyền của chúng</key>
+    <key alias="removePhoto">Xóa ảnh</key>
+    <key alias="permissionReplaceChildren">Quyền mặc định</key>
+    <key alias="permissionsGranular">Quyền chi tiết</key>
+    <key alias="permissionsGranularHelp">Đặt quyền cho các nút cụ thể</key>
+    <key alias="profile">Hồ sơ</key>
+    <key alias="searchAllChildren">Tìm kiếm tất cả trẻ em</key>
+    <key alias="sectionsHelp">Thêm các phần để cấp cho người dùng quyền truy cập</key>
+    <key alias="selectUserGroups">Chọn nhóm người dùng</key>
+    <key alias="noStartNode">Không có nút bắt đầu nào được chọn</key>
+    <key alias="noStartNodes">Không có nút bắt đầu nào được chọn</key>
+    <key alias="startnode">Nút bắt đầu nội dung</key>
+    <key alias="startnodehelp">Giới hạn cây nội dung ở một nút bắt đầu cụ thể</key>
+    <key alias="startnodes">Nút bắt đầu nội dung</key>
+    <key alias="startnodeshelp">Giới hạn cây nội dung ở các nút bắt đầu cụ thể</key>
+    <key alias="updateDate">Người dùng cập nhật lần cuối</key>
+    <key alias="userCreate">đã được tạo</key>
+    <key alias="userCreateSuccessHelp">Người dùng mới đã được tạo thành công. Để đăng nhập vào Admin, hãy sử dụng mật khẩu bên dưới.</key>
+    <key alias="userManagement">Quản lý người dùng</key>
+    <key alias="username">Tên</key>
+    <key alias="userPermissions">Quyền của người dùng</key>
+    <key alias="usergroup">Nhóm người dùng</key>
+    <key alias="userInvited">đã được mời</key>
+    <key alias="userInvitedSuccessHelp">Một lời mời đã được gửi tới người dùng mới với chi tiết về cách đăng nhập vào Admin.</key>
+    <key alias="userinviteWelcomeMessage">Xin chào và chào mừng bạn đến với Admin! Chỉ 1 phút nữa thôi là bạn có thể đi rồi, chúng tôi chỉ cần bạn thiết lập mật khẩu và thêm ảnh cho hình đại diện của bạn.</key>
+    <key alias="userinviteExpiredMessage">Chào mừng bạn đến với Admin! Rất tiếc, lời mời của bạn đã hết hạn. Vui lòng liên hệ với quản trị viên của bạn và yêu cầu họ gửi lại.</key>
+    <key alias="userinviteAvatarMessage">Tải lên ảnh của chính bạn sẽ giúp người dùng khác dễ dàng nhận ra bạn. Nhấp vào vòng tròn ở trên để tải ảnh của bạn lên.</key>
+    <key alias="writer">Người viết</key>
+    <key alias="change">Thay đổi</key>
+    <key alias="yourProfile" version="7.0">Hồ sơ của bạn</key>
+    <key alias="yourHistory" version="7.0">Lịch sử gần đây của bạn</key>
+    <key alias="sessionExpires" version="7.0">Phiên hết hạn sau</key>
+    <key alias="inviteUser">Mời người dùng</key>
+    <key alias="createUser">Tạo người dùng</key>
+    <key alias="sendInvite">Gửi lời mời</key>
+    <key alias="backToUsers">Quay lại người dùng</key>
+    <key alias="inviteEmailCopySubject">NamNung: Lời mời</key>
+    <key alias="inviteEmailCopyFormat">
+      <![CDATA[
+        <html>
+			<head>
+				<meta name='viewport' content='width=device-width'>
+				<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+			</head>
+			<body class='' style='font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; color: #392F54; line-height: 22px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #1d1333; margin: 0; padding: 0;' bgcolor='#1d1333'>
+				<style type='text/css'> @media only screen and (max-width: 620px) {table[class=body] h1 {font-size: 28px !important; margin-bottom: 10px !important; } table[class=body] .wrapper {padding: 32px !important; } table[class=body] .article {padding: 32px !important; } table[class=body] .content {padding: 24px !important; } table[class=body] .container {padding: 0 !important; width: 100% !important; } table[class=body] .main {border-left-width: 0 !important; border-radius: 0 !important; border-right-width: 0 !important; } table[class=body] .btn table {width: 100% !important; } table[class=body] .btn a {width: 100% !important; } table[class=body] .img-responsive {height: auto !important; max-width: 100% !important; width: auto !important; } } .btn-primary table td:hover {background-color: #34495e !important; } .btn-primary a:hover {background-color: #34495e !important; border-color: #34495e !important; } .btn  a:visited {color:#FFFFFF;} </style>
+				<table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #1d1333;" bgcolor="#1d1333">
+					<tr>
+						<td style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding: 24px;" valign="top">
+							<table style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+								<tr>
+									<td background="https://umbraco.com/umbraco/assets/img/application/logo.png" bgcolor="#1d1333" width="28" height="28" valign="top" style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
+										<!--[if gte mso 9]> <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:30px;height:30px;"> <v:fill type="tile" src="https://umbraco.com/umbraco/assets/img/application/logo.png" color="#1d1333" /> <v:textbox inset="0,0,0,0"> <![endif]-->
+										<div> </div>
+										<!--[if gte mso 9]> </v:textbox> </v:rect> <![endif]-->
+									</td>
+									<td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table border='0' cellpadding='0' cellspacing='0' class='body' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #1d1333;' bgcolor='#1d1333'>
+					<tr>
+						<td style='font-family: sans-serif; font-size: 14px; vertical-align: top;' valign='top'> </td>
+						<td class='container' style='font-family: sans-serif; font-size: 14px; vertical-align: top; display: block; max-width: 560px; width: 560px; margin: 0 auto; padding: 10px;' valign='top'>
+							<div class='content' style='box-sizing: border-box; display: block; max-width: 560px; margin: 0 auto; padding: 10px;'>
+								<br>
+								<table class='main' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; border-radius: 3px; background: #FFFFFF;' bgcolor='#FFFFFF'>
+									<tr>
+										<td class='wrapper' style='font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 50px;' valign='top'>
+											<table border='0' cellpadding='0' cellspacing='0' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;'>
+												<tr>
+													<td style='line-height: 24px; font-family: sans-serif; font-size: 14px; vertical-align: top;' valign='top'>
+														<h1 style='color: #392F54; font-family: sans-serif; font-weight: bold; line-height: 1.4; font-size: 24px; text-align: left; text-transform: capitalize; margin: 0 0 30px;' align='left'>
+															Xin chào %0%,
+														</h1>
+														<p style='color: #392F54; font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0 0 15px;'>
+															Bạn đã được mời bởi <a href="mailto:%4%" style="text-decoration: underline; color: #392F54; -ms-word-break: break-all; word-break: break-all;">%1%</a> tới Văn phòng hỗ trợ.
+														</p>
+														<p style='color: #392F54; font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0 0 15px;'>
+															tin nhắn từ <a href="mailto:%1%" style="text-decoration: none; color: #392F54; -ms-word-break: break-all; word-break: break-all;">%1%</a>:
+															<br/>
+															<em>%2%</em>
+														</p>
+														<table border='0' cellpadding='0' cellspacing='0' class='btn btn-primary' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;'>
+															<tbody>
+																<tr>
+																	<td align='left' style='font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;' valign='top'>
+																		<table border='0' cellpadding='0' cellspacing='0' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;'>
+																			<tbody>
+																				<tr>
+																					<td style='font-family: sans-serif; font-size: 14px; vertical-align: top; border-radius: 5px; text-align: center; background: #35C786;' align='center' bgcolor='#35C786' valign='top'>
+																						<a href='%3%' target='_blank' rel='noopener' style='color: #FFFFFF; text-decoration: none; -ms-word-break: break-all; word-break: break-all; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 14px; font-weight: bold; text-transform: capitalize; background: #35C786; margin: 0; padding: 12px 30px; border: 1px solid #35c786;'>
+																							nhấp vào liên kết này để chấp nhận lời mời
+																						</a>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+														<p style='max-width: 400px; display: block; color: #392F54; font-family: sans-serif; font-size: 14px; line-height: 20px; font-weight: normal; margin: 15px 0;'>Nếu bạn không thể nhấp vào liên kết, hãy sao chép và dán URL này vào cửa sổ trình duyệt của bạn:</p>
+															<table border='0' cellpadding='0' cellspacing='0'>
+																<tr>
+																	<td style='-ms-word-break: break-all; word-break: break-all; font-family: sans-serif; font-size: 11px; line-height:14px;'>
+																		<font style="-ms-word-break: break-all; word-break: break-all; font-size: 11px; line-height:14px;">
+																			<a style='-ms-word-break: break-all; word-break: break-all; color: #392F54; text-decoration: underline; font-size: 11px; line-height:15px;' href='%3%'>%3%</a>
+																		</font>
+																	</td>
+																</tr>
+															</table>
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<br><br><br>
+							</div>
+						</td>
+						<td style='font-family: sans-serif; font-size: 14px; vertical-align: top;' valign='top'> </td>
+					</tr>
+				</table>
+			</body>
+    </html>]]>
+    </key>
+    <key alias="invite">Mời</key>
+    <key alias="defaultInvitationMessage">Gửi lại lời mời ...</key>
+    <key alias="deleteUser">Xóa người dùng</key>
+    <key alias="deleteUserConfirmation">Bạn có chắc chắn muốn xóa tài khoản người dùng này không?</key>
+    <key alias="stateAll">Tất cả</key>
+    <key alias="stateActive">Hoạt động</key>
+    <key alias="stateDisabled">Đã tắt</key>
+    <key alias="stateLockedOut">Đã bị khóa</key>
+    <key alias="stateInvited">Được mời</key>
+    <key alias="stateInactive">Không hoạt động</key>
+    <key alias="sortNameAscending">Tên (AZ)</key>
+    <key alias="sortNameDescending">Tên (ZA)</key>
+    <key alias="sortCreateDateAscending">Mới nhất</key>
+    <key alias="sortCreateDateDescending">Cũ nhất</key>
+    <key alias="sortLastLoginDateDescending">Đăng nhập lần cuối</key>
+    <key alias="noUserGroupsAdded">Không có nhóm người dùng nào được thêm vào</key>
+  </area>
+  <area alias="validation">
+    <key alias="validation">Xác thực</key>
+    <key alias="validateAsEmail">Xác thực địa chỉ email</key>
+    <key alias="validateAsNumber">Xác thực dưới dạng số</key>
+    <key alias="validateAsUrl">Xác thực dưới dạng URL</key>
+    <key alias="enterCustomValidation">... hoặc nhập xác thực tùy chỉnh</key>
+    <key alias="fieldIsMandatory">Trường là bắt buộc</key>
+    <key alias="mandatoryMessage">Nhập thông báo lỗi xác thực tùy chỉnh (tùy chọn)</key>
+    <key alias="validationRegExp">Nhập một biểu thức chính quy</key>
+    <key alias="validationRegExpMessage">Nhập thông báo lỗi xác thực tùy chỉnh (tùy chọn)</key>
+    <key alias="minCount">Bạn cần thêm ít nhất</key>
+    <key alias="maxCount">Bạn chỉ có thể có</key>
+    <key alias="addUpTo">Thêm tối đa</key>
+    <key alias="items">item</key>
+    <key alias="urls">URL</key>
+    <key alias="urlsSelected">Đã chọn (các) URL</key>
+    <key alias="itemsSelected">các mục được chọn</key>
+    <key alias="invalidDate">Ngày không hợp lệ</key>
+    <key alias="invalidNumber">Không phải là số</key>
+    <key alias="invalidNumberStepSize">Không phải là kích thước bước số hợp lệ</key>
+    <key alias="invalidEmail">Email không hợp lệ</key>
+    <key alias="invalidNull">Giá trị không được rỗng</key>
+    <key alias="invalidEmpty">Giá trị không được để trống</key>
+    <key alias="invalidPattern">Giá trị không hợp lệ, không khớp với mẫu chính xác</key>
+    <key alias="customValidation">Xác thực tùy chỉnh</key>
+    <key alias="entriesShort">​​<![CDATA[Tối thiểu %0% mục nhập, yêu cầu thêm <strong>%1%</strong>.]]></key>
+    <key alias="entriesExceed">​​<![CDATA[Tối đa %0% mục nhập, <strong>%1%</strong> quá nhiều.]]></key>
+  </area>
+  <area alias="healthcheck">
+    <!-- Các khóa sau nhận các mã thông báo này được chuyển vào:
+
+          0: Giá trị hiện tại
+
+          1: Giá trị đề xuất
+
+          2: XPath
+
+          3: Đường dẫn tệp cấu hình
+
+          -->
+    <key alias="checkSuccessMessage">Giá trị được đặt thành giá trị được đề xuất: '%0%'.</key>
+    <key alias="rectifySuccessMessage">Giá trị được đặt thành '%1%' cho XPath '%2%' trong tệp cấu hình '%3%'.</key>
+    <key alias="checkErrorMessageDi DifferentEosystemValue">Giá trị mong đợi '%1%' cho '%2%' trong tệp cấu hình '%3%', nhưng đã tìm thấy '%0%'.</key>
+    <key alias="checkErrorMessageUneosystemValue">Đã tìm thấy giá trị không mong muốn '%0%' cho '%2%' trong tệp cấu hình '%3%'.</key>
+    <!-- Các khóa sau nhận các mã thông báo này được chuyển vào:
+
+          0: Giá trị hiện tại
+
+          1: Giá trị đề xuất
+
+          -->
+    <key alias="customErrorsCheckSuccessMessage">Lỗi tùy chỉnh được đặt thành '%0%'.</key>
+    <key alias="customErrorsCheckErrorMessage">Lỗi tùy chỉnh hiện được đặt thành '%0%'. Bạn nên đặt giá trị này thành '%1%' trước khi phát trực tiếp.</key>
+    <key alias="customErrorsCheckRectifySuccessMessage">Đã đặt thành công lỗi tùy chỉnh thành '%0%'.</key>
+    <key alias="macroErrorModeCheckSuccessMessage">MacroErrors được đặt thành '%0%'.</key>
+    <key alias="macroErrorModeCheckErrorMessage">MacroErrors được đặt thành '%0%' sẽ ngăn một số hoặc tất cả các trang trong trang web của bạn tải hoàn toàn nếu có bất kỳ lỗi nào trong macro. Chỉnh sửa điều này sẽ đặt giá trị thành '%1%'.</key>
+    <key alias="macroErrorModeCheckRectifySuccessMessage">MacroErrors hiện được đặt thành '%0%'.</key>
+    <!-- Các khóa sau nhận các mã thông báo này được chuyển vào:
+
+          0: Giá trị hiện tại
+
+          1: Giá trị đề xuất
+
+          2: Phiên bản máy chủ
+
+          -->
+    <key alias="trySkipIisCustomErrorsCheckSuccessMessage">Thử Bỏ qua IIS Lỗi tùy chỉnh được đặt thành '%0%' và bạn đang sử dụng phiên bản IIS '%1%'.</key>
+    <key alias="trySkipIisCustomErrorsCheckErrorMessage">Thử Bỏ qua IIS Lỗi tùy chỉnh hiện là '%0%'. Bạn nên đặt giá trị này thành '%1%' cho phiên bản IIS của bạn (%2%).</key>
+    <key alias="trySkipIisCustomErrorsCheckRectifySuccessMessage">Thử Bỏ qua lỗi tùy chỉnh IIS được đặt thành công thành '%0%'.</key>
+    <!-- Các khóa sau nhận được các mã thông báo xác định trước được chuyển vào mà không phải tất cả đều giống nhau, như trên -->
+    <key alias="configurationServiceFileNotFound">​​Tệp không tồn tại: '%0%'.</key>
+    <key alias="configurationServiceNodeNotFound">​​<![CDATA[Không thể tìm thấy <strong> '%0%' </strong> trong tệp cấu hình <strong> '%1%' </strong>.]]></key>
+    <key alias="configurationServiceError">Đã xảy ra lỗi, hãy kiểm tra nhật ký để biết lỗi đầy đủ: %0%.</key>
+    <key alias="databaseSchemaValidationCheckDatabaseOk">Cơ sở dữ liệu - Lược đồ cơ sở dữ liệu chính xác cho phiên bản này của Admin</key>
+    <key alias="databaseSchemaValidationCheckDatabaseErrors">%0% sự cố đã được phát hiện với giản đồ cơ sở dữ liệu của bạn (Kiểm tra nhật ký để biết chi tiết)</key>
+    <key alias="databaseSchemaValidationCheckDatabaseLogMessage">Một số lỗi đã được phát hiện khi xác thực lược đồ cơ sở dữ liệu so với phiên bản hiện tại của Umbraco.</key>
+    <key alias="httpsCheckValidCertificate">Chứng chỉ trang web của bạn hợp lệ.</key>
+    <key alias="httpsCheckInvalidCertificate">Lỗi xác thực chứng chỉ: '%0%'</key>
+    <key alias="httpsCheckExpiredCertificate">Chứng chỉ SSL của trang web của bạn đã hết hạn.</key>
+    <key alias="httpsCheckExpiringCertificate">Chứng chỉ SSL trang web của bạn sẽ hết hạn sau %0% ngày nữa.</key>
+    <key alias="healthCheckInvalidUrl">Lỗi ping URL %0%- '%1%'</key>
+    <key alias="httpsCheckIsCurrentSchemeHttps">Bạn hiện %0% đang xem trang web bằng lược đồ HTTPS.</key>
+    <key alias="httpsCheckConfigurationRectifyNotPossible">AppSetting 'Umbraco.Core.UseHttps' được đặt thành 'false' trong tệp web.config của bạn. Khi bạn truy cập trang web này bằng lược đồ HTTPS, lược đồ đó sẽ được đặt thành 'true'.</key>
+    <key alias="httpsCheckConfigurationCheckResult">AppSetting 'Umbraco.Core.UseHttps' được đặt thành '%0%' trong tệp web.config của bạn, cookie của bạn được %1% đánh dấu là an toàn.</key>
+    <key alias="httpsCheckEnableHttpsError">Không thể cập nhật cài đặt 'Umbraco.Core.UseHttps' trong tệp web.config của bạn. Lỗi: %0%</key>
+    <!-- Các khóa sau không nhận được mã thông báo được chuyển vào -->
+    <key alias="httpsCheckEnableHttpsButton">Bật HTTPS</key>
+    <key alias="httpsCheckEnableHttpsDescription">Đặt cài đặt umbracoSSL thành true trong appSettings của tệp web.config.</key>
+    <key alias="httpsCheckEnableHttpsSuccess">AppSetting 'Umbraco.Core.UseHttps' hiện được đặt thành 'true' trong tệp web.config của bạn, cookie của bạn sẽ được đánh dấu là an toàn.</key>
+    <key alias="rectifyButton">Khắc phục</key>
+    <key alias="cannotRectifyShouldNotEqual">Không thể sửa séc có kiểu so sánh giá trị 'ShouldNotEqual'.</key>
+    <key alias="cannotRectifyShouldEqualWithValue">Không thể sửa séc có kiểu so sánh giá trị 'ShouldEqual' với giá trị được cung cấp.</key>
+    <key alias="valueToRectifyNotProvided">Giá trị để sửa séc không được cung cấp.</key>
+    <key alias="compilationDebugCheckSuccessMessage">Chế độ biên dịch gỡ lỗi bị tắt.</key>
+    <key alias="compilationDebugCheckErrorMessage">Chế độ biên dịch gỡ lỗi hiện đang được bật. Bạn nên tắt cài đặt này trước khi hoạt động.</key>
+    <key alias="compilationDebugCheckRectifySuccessMessage">Đã tắt thành công chế độ biên dịch gỡ lỗi.</key>
+    <key alias="traceModeCheckSuccessMessage">Chế độ theo dõi bị tắt.</key>
+    <key alias="traceModeCheckErrorMessage">Chế độ theo dõi hiện đang được bật. Bạn nên tắt cài đặt này trước khi hoạt động.</key>
+    <key alias="traceModeCheckRectifySuccessMessage">Đã tắt thành công chế độ theo dõi.</key>
+    <key alias="folderPermissionsCheckMessage">Tất cả các thư mục đều được đặt quyền chính xác.</key>
+    <!-- Các khóa sau nhận các mã thông báo này được chuyển vào:
+
+          0: Danh sách các đường dẫn thư mục bị lỗi được phân tách bằng dấu phẩy
+
+          -->
+    <key alias="requiredFolderPermissionFailed">​​<![CDATA[Các thư mục sau phải được thiết lập với quyền sửa đổi nhưng không thể truy cập: <strong> %0%</strong>.]]></key>
+    <key alias="optionalFolderPermissionFailed">​​<![CDATA[Các thư mục sau phải được thiết lập với quyền sửa đổi để một số hoạt động Admin hoạt động nhưng không thể truy cập: <strong>%0%</strong>. Nếu chúng không được viết để không cần thực hiện hành động nào.]]></key>
+    <key alias="filePermissionsCheckMessage">Tất cả các tệp đều được đặt quyền chính xác.</key>
+    <!-- Các khóa sau nhận các mã thông báo này được chuyển vào:
+
+          0: Danh sách các đường dẫn thư mục bị lỗi được phân tách bằng dấu phẩy
+
+          -->
+    <key alias="requiredFilePermissionFailed">​​<![CDATA[Các tệp sau phải được thiết lập với quyền ghi nhưng không thể truy cập: <strong> %0%</strong>.]]></key>
+    <key alias="optionalFilePermissionFailed">​​<![CDATA[Các tệp sau phải được thiết lập với quyền ghi để các hoạt động Admin nhất định hoạt động nhưng không thể truy cập: <strong>%0%</strong>. Nếu chúng không được viết để không cần thực hiện hành động nào.]]></key>
+    <key alias="clickJackingCheckHeaderFound">​​<![CDATA[Tiêu đề hoặc thẻ meta <strong> X-Frame-Options </strong> được sử dụng để kiểm soát xem một trang web có thể được IFRAMEd bởi một trang web khác được tìm thấy hay không.]]></key>
+    <key alias="clickJackingCheckHeaderNotFound">​​<![CDATA[Tiêu đề hoặc thẻ meta <strong> X-Frame-Options </strong> được sử dụng để kiểm soát xem một trang web có thể được IFRAMEd bởi một trang web khác không.]]></key>
+    <key alias="setHeaderInConfig">Đặt tiêu đề trong cấu hình</key>
+    <key alias="clickJackingSetHeaderInConfigDescription">Thêm giá trị vào phần httpProtocol / customHeaders của web.config để ngăn trang web bị IFRAMEd bởi các trang web khác.</key>
+    <key alias="clickJackingSetHeaderInConfigSuccess">Cài đặt để tạo tiêu đề ngăn IFRAMEing của trang web bởi các trang web khác đã được thêm vào tệp web.config của bạn.</key>
+    <key alias="setHeaderInConfigError">Không thể cập nhật tệp web.config. Lỗi: %0%</key>
+    <key alias="noSniffCheckHeaderFound">​​<![CDATA[Tiêu đề hoặc thẻ meta <strong> X-Content-Type-Options </strong> được sử dụng để bảo vệ chống lại các lỗ hổng đánh giá MIME.]]></key>
+    <key alias="noSniffCheckHeaderNotFound">​​<![CDATA[Tiêu đề hoặc thẻ meta <strong> X-Content-Type-Options </strong> được sử dụng để bảo vệ chống lại các lỗ hổng phát hiện MIME không được tìm thấy.]]></key>
+    <key alias="noSniffSetHeaderInConfigDescription">Thêm giá trị vào phần httpProtocol / customHeaders của web.config để bảo vệ khỏi các lỗ hổng MIME đánh cắp.</key>
+    <key alias="noSniffSetHeaderInConfigSuccess">Cài đặt để tạo tiêu đề bảo vệ chống lại các lỗ hổng dò tìm MIME đã được thêm vào tệp web.config của bạn.</key>
+    <key alias="hSTSCheckHeaderFound">​​<![CDATA[Tiêu đề <strong> Nghiêm ngặt-Vận chuyển-Bảo mật </strong>, còn được gọi là tiêu đề HSTS, đã được tìm thấy.]]></key>
+    <key alias="hSTSCheckHeaderNotFound">​​<![CDATA[Không tìm thấy tiêu đề <strong> Nghiêm ngặt-Truyền tải-Bảo mật </strong>.]]></key>
+    <key alias="hSTSSetHeaderInConfigDescription">Thêm tiêu đề 'Nghiêm ngặt-Vận chuyển-Bảo mật' với giá trị 'max-age = 10886400' vào phần httpProtocol / customHeaders của web.config. Chỉ sử dụng bản sửa lỗi này nếu bạn sẽ chạy miền của mình với https trong 18 tuần tới (tối thiểu).</key>
+    <key alias="hSTSSetHeaderInConfigSuccess">Tiêu đề HSTS đã được thêm vào tệp web.config của bạn.</key>
+    <key alias="xssProtectionCheckHeaderFound">​​<![CDATA[Đã tìm thấy tiêu đề <strong> X-XSS-Protection </strong>.]]></key>
+    <key alias="xssProtectionCheckHeaderNotFound">​​<![CDATA[Không tìm thấy tiêu đề <strong> X-XSS-Protection </strong>.]]></key>
+    <key alias="xssProtectionSetHeaderInConfigDescription">Thêm tiêu đề 'X-XSS-Protection' với giá trị '1; mode = block 'vào phần httpProtocol / customHeaders của web.config.</key>
+    <key alias="xssProtectionSetHeaderInConfigSuccess">Tiêu đề X-XSS-Protection đã được thêm vào tệp web.config của bạn.</key>
+    <!-- Khóa sau nhận các mã thông báo này được chuyển vào:
+
+          0: Đã tìm thấy danh sách các tiêu đề được phân tách bằng dấu phẩy
+
+          -->
+    <key alias="excessiveHeadersFound">​​<![CDATA[Đã tìm thấy các tiêu đề sau tiết lộ thông tin về công nghệ trang web: <strong>%0%</strong>.]]></key>
+    <key alias="excessiveHeadersNotFound">​​Không tìm thấy tiêu đề tiết lộ thông tin về công nghệ trang web.</key>
+    <key alias="smtpMailSettingsNotFound">​​Trong tệp Web.config, không tìm thấy system.net/mailsettings.</key>
+    <key alias="smtpMailSettingsHostNotConfigured">Trong phần Web.config tệp system.net/mailsettings, máy chủ chưa được định cấu hình.</key>
+    <key alias="smtpMailSettingsConnectionSuccess">Cài đặt SMTP được định cấu hình chính xác và dịch vụ đang hoạt động như mong đợi.</key>
+    <key alias="smtpMailSettingsConnectionFail">Không thể truy cập máy chủ SMTP được định cấu hình với máy chủ lưu trữ '%0%' và cổng '%1%'. Vui lòng kiểm tra để đảm bảo cài đặt SMTP trong tệp Web.config system.net/mailsettings là chính xác.</key>
+    <key alias="notificationEmailsCheckSuccessMessage">​​<![CDATA[Email thông báo đã được đặt thành <strong>%0%</strong>.]]></key>
+    <key alias="notificationEmailsCheckErrorMessage">​​<![CDATA[Email thông báo vẫn được đặt thành giá trị mặc định là <strong>%0%</strong>.]]></key>
+    <key alias="scheduledHealthCheckEmailBody">
+      ​​<![CDATA[<html>
+                            <body>
+                              <p> Kết quả của Kiểm tra sức khỏe Admin đã lên lịch chạy trên %0% ở %1% như sau: </p>%2%​​< / body>
+                          </html>]]>
+    </key>
+    <key alias="scheduledHealthCheckEmailSubject">Trạng thái kiểm tra sức khỏe của Admin: %0%</key>
+    <key alias="checkAllGroups">Kiểm tra Tất cả các Nhóm</key>
+    <key alias="checkGroup">Kiểm tra nhóm</key>
+    <key alias="helpText">
+      ​​<![CDATA[
+
+                          <p>
+                            Trình kiểm tra tình trạng đánh giá các khu vực khác nhau trên trang web của bạn để biết cài đặt thực tiễn tốt nhất, cấu hình, các sự cố tiềm ẩn, v.v. Bạn có thể dễ dàng khắc phục sự cố bằng cách nhấn nút.
+
+                            Bạn có thể thêm kiểm tra sức khỏe của riêng mình, hãy xem tại <a href = "https://our.umbraco.com/documentation/Exceptions/Healthcheck/" target = "_ blank" rel = "noopener" class = "btn-link -underline "> tài liệu để biết thêm thông tin </a> về kiểm tra sức khỏe tùy chỉnh.
+                          </p>]]>
+    </key>
+  </area>
+  <area alias="redirectUrls">
+    <key alias="disableUrlTracker">Tắt trình theo dõi URL</key>
+    <key alias="enableUrlTracker">Bật trình theo dõi URL</key>
+    <key alias="culture">Văn hóa</key>
+    <key alias="originalUrl">URL gốc</key>
+    <key alias="redirectedTo">Được chuyển hướng đến</key>
+    <key alias="redirectUrlManagement">Quản lý URL chuyển hướng</key>
+    <key alias="panelInformation">Các URL sau chuyển hướng đến mục nội dung này:</key>
+    <key alias="noRedirects">Không có chuyển hướng nào được thực hiện</key>
+    <key alias="noRedirectsDescription">Khi một trang đã xuất bản được đổi tên hoặc chuyển, chuyển hướng sẽ tự động được chuyển sang trang mới.</key>
+    <key alias="confirmRemove">Bạn có chắc chắn muốn xóa chuyển hướng từ '%0%' thành '%1%' không?</key>
+    <key alias="redirectRemoved">Đã xóa URL chuyển hướng.</key>
+    <key alias="redirectRemoveError">Lỗi khi xóa URL chuyển hướng.</key>
+    <key alias="redirectRemoveWarning">Thao tác này sẽ xóa chuyển hướng</key>
+    <key alias="confirmDisable">Bạn có chắc chắn muốn tắt trình theo dõi URL không?</key>
+    <key alias="disabledConfirm">Trình theo dõi URL hiện đã bị vô hiệu hóa.</key>
+    <key alias="disableError">Lỗi khi tắt trình theo dõi URL, bạn có thể tìm thấy thêm thông tin trong tệp nhật ký của mình.</key>
+    <key alias="enabledConfirm">Trình theo dõi URL hiện đã được bật.</key>
+    <key alias="enableError">Lỗi khi bật trình theo dõi URL, bạn có thể tìm thấy thêm thông tin trong tệp nhật ký của mình.</key>
+  </area>
+  <area alias="emptyStates">
+    <key alias="emptyDictionaryTree">Không có mục Từ điển nào để chọn</key>
+  </area>
+  <area alias="textbox">
+    <key alias="characters_left"><![CDATA[<strong>%0%</strong> các ký tự còn lại.]]></key>
+    <key alias="characters_exceed"><![CDATA[Tối đa %0% ký tự, <strong>%1%</strong> quá nhiều.]]></key>
+  </area>
+  <area alias="recycleBin">
+    <key alias="contentTrashed">Nội dung được chuyển vào thùng rác có Id: {0} liên quan đến nội dung gốc ban đầu có Id: {1}</key>
+    <key alias="mediaTrashed">Phương tiện được chuyển vào thùng rác có Id: {0} liên quan đến mục phương tiện gốc ban đầu có Id: {1}</key>
+    <key alias="itemCannotBeRestored">Không thể tự động khôi phục mục này</key>
+    <key alias="itemCannotBeRestoredHelpText">Không có vị trí nào có thể tự động khôi phục mục này. Bạn có thể di chuyển mục theo cách thủ công bằng cách sử dụng cây bên dưới.</key>
+    <key alias="wasRestored">đã được khôi phục trong</key>
+  </area>
+  <area alias="relationType">
+    <key alias="direction">Hướng</key>
+    <key alias="parentToChild">Cha mẹ cho con cái</key>
+    <key alias="bidirectional">Hai chiều</key>
+    <key alias="parent">Parent</key>
+    <key alias="child">Con</key>
+    <key alias="count">Đếm</key>
+    <key alias="relations">Mối quan hệ</key>
+    <key alias="created">Đã tạo</key>
+    <key alias="comment">Nhận xét</key>
+    <key alias="name">Tên</key>
+    <key alias="noRelations">Không có quan hệ nào cho Loại quan hệ này</key>
+    <key alias="tabRelationType">Loại quan hệ</key>
+    <key alias="tabRelations">Mối quan hệ</key>
+  </area>
+  <area alias="dashboardTabs">
+    <key alias="contentIntro">Bắt đầu</key>
+    <key alias="contentRedirectManager">Quản lý URL chuyển hướng</key>
+    <key alias="mediaFolderBrowser">Nội dung</key>
+    <key alias="settingsWelcome">Chào mừng</key>
+    <key alias="settingsExamine">Quản lý Kiểm tra</key>
+    <key alias="settingsPublishedStatus">Trạng thái Đã xuất bản</key>
+    <key alias="settingsModelsBuilder">Trình tạo mô hình</key>
+    <key alias="settingsHealthCheck">Kiểm tra sức khỏe</key>
+    <key alias="settingsProfiler">Hồ sơ</key>
+    <key alias="memberIntro">Bắt đầu</key>
+    <key alias="formsInstall">Cài đặt Admin Forms</key>
+  </area>
+  <area alias="visuallyHiddenTexts">
+    <key alias="goBack">Quay lại</key>
+    <key alias="activeListLayout">Bố cục hiện hoạt:</key>
+    <key alias="jumpTo">Chuyển tới</key>
+    <key alias="group">nhóm</key>
+    <key alias="passed">đã qua</key>
+    <key alias="warning">cảnh báo</key>
+    <key alias="failed">không thành công</key>
+    <key alias="suggestion">gợi ý</key>
+    <key alias="checkPassed">Kiểm tra được thông qua</key>
+    <key alias="checkFailed">Kiểm tra không thành công</key>
+    <key alias="openBackofficeSearch">Mở tìm kiếm văn phòng</key>
+    <key alias="openCloseBackofficeHelp">Trợ giúp Mở / Đóng backoffice</key>
+    <key alias="openCloseBackofficeProfileOptions">Mở / Đóng tùy chọn hồ sơ của bạn</key>
+    <key alias="assignDomainDescription">Thiết lập Văn hóa và Tên máy chủ cho %0%</key>
+    <key alias="createDescription">Tạo nút mới dưới %0%</key>
+    <key alias="protectDescription">Thiết lập các giới hạn truy cập trên %0%</key>
+    <key alias="rightsDescription">Quyền thiết lập trên %0%</key>
+    <key alias="sortDescription">Thay đổi thứ tự sắp xếp cho %0%</key>
+    <key alias="createblueprintDescription">Tạo Mẫu Nội dung dựa trên %0%</key>
+    <key alias="openContextMenu">Mở menu ngữ cảnh cho</key>
+    <key alias="currentLanguage">Ngôn ngữ hiện tại</key>
+    <key alias="switchLanguage">Chuyển ngôn ngữ sang</key>
+    <key alias="createNewFolder">Tạo thư mục mới</key>
+    <key alias="newPartialView">Chế độ xem một phần</key>
+    <key alias="newPartialViewMacro">Macro Chế độ xem một phần</key>
+    <key alias="newMember">Thành viên</key>
+    <key alias="newDataType">Loại dữ liệu</key>
+    <key alias="redirectDashboardSearchLabel">Tìm kiếm trên trang tổng quan chuyển hướng</key>
+    <key alias="userGroupSearchLabel">Tìm kiếm phần nhóm người dùng</key>
+    <key alias="userSearchLabel">Tìm kiếm phần người dùng</key>
+    <key alias="createItem">Tạo mục</key>
+    <key alias="create">Tạo</key>
+    <key alias="edit">Chỉnh sửa</key>
+    <key alias="name">Tên</key>
+    <key alias="addNewRow">Thêm hàng mới</key>
+    <key alias="tabExpand">Xem các tùy chọn khác</key>
+    <key alias="searchOverlayTitle">Tìm kiếm văn phòng phụ của Admin</key>
+    <key alias="searchOverlayDescription">Tìm kiếm các nút nội dung, nút đa phương tiện, v.v. trên văn phòng.</key>
+    <key alias="searchInputDescription">Khi có kết quả tự động hoàn thành, hãy nhấn vào mũi tên lên và xuống hoặc sử dụng phím tab và sử dụng phím enter để chọn.</key>
+    <key alias="path">Đường dẫn:</key>
+    <key alias="foundIn">Đã tìm thấy trong</key>
+    <key alias="hasTranslation">Có bản dịch</key>
+    <key alias="noTranslation">Thiếu bản dịch</key>
+    <key alias="dictionaryListCaption">Các mục từ điển</key>
+    <key alias="contextMenuDescription">Chọn một trong các tùy chọn để chỉnh sửa nút.</key>
+    <key alias="contextDialogDescription">Thực hiện hành động %0% trên nút %1%</key>
+    <key alias="addImageCaption">Thêm chú thích hình ảnh</key>
+    <key alias="searchContentTree">Cây nội dung tìm kiếm</key>
+    <key alias="maxAmount">Số tiền tối đa</key>
+  </area>
+  <area alias="references">
+    <key alias="tabName">Tham khảo</key>
+    <key alias="DataTypeNoReferences">Loại Dữ liệu này không có tham chiếu.</key>
+    <key alias="labelUsedByDocumentTypes">Được sử dụng trong Các loại tài liệu</key>
+    <key alias="noDocumentTypes">Không có tham chiếu đến Loại tài liệu.</key>
+    <key alias="labelUsedByMediaTypes">Được sử dụng trong Các loại phương tiện</key>
+    <key alias="noMediaTypes">Không có tham chiếu đến Loại phương tiện.</key>
+    <key alias="labelUsedByMemberTypes">Được sử dụng trong Các loại thành viên</key>
+    <key alias="noMemberTypes">Không có tham chiếu đến Loại thành viên.</key>
+    <key alias="usedByProperties">Được sử dụng bởi</key>
+    <key alias="labelUsedByDocuments">Được sử dụng trong Tài liệu</key>
+    <key alias="labelUsedByMembers">Được sử dụng trong Thành viên</key>
+    <key alias="labelUsedByMedia">Được sử dụng trong Media</key>
+  </area>
+  <area alias="logViewer">
+    <key alias="deleteSavedSearch">Xóa Tìm kiếm đã Lưu</key>
+    <key alias="logLevels">Cấp độ nhật ký</key>
+    <key alias="savedSearches">Tìm kiếm đã Lưu</key>
+    <key alias="saveSearch">Lưu Tìm kiếm</key>
+    <key alias="saveSearchDescription">Nhập tên thân thiện cho truy vấn tìm kiếm của bạn</key>
+    <key alias="filterSearch">Lọc Tìm kiếm</key>
+    <key alias="totalItems">Tổng số mục</key>
+    <key alias="timestamp">Dấu thời gian</key>
+    <key alias="level">Cấp độ</key>
+    <key alias="machine">Máy</key>
+    <key alias="message">Tin nhắn</key>
+    <key alias="exception">Ngoại lệ</key>
+    <key alias="properties">Thuộc tính</key>
+    <key alias="searchWithGoogle">Tìm kiếm với Google</key>
+    <key alias="searchThisMessageWithGoogle">Tìm kiếm thông báo này bằng Google</key>
+    <key alias="searchWithBing">Tìm kiếm bằng Bing</key>
+    <key alias="searchThisMessageWithBing">Tìm kiếm thư này bằng Bing</key>
+    <key alias="searchOurUmbraco">Tìm kiếm Admin của chúng tôi</key>
+    <key alias="searchThisMessageOnOurUmbracoForumsAndDocs">Tìm kiếm thông báo này trên các tài liệu và diễn đàn Admin của chúng tôi</key>
+    <key alias="searchOurUmbracoWithGoogle">Tìm kiếm Admin của chúng tôi với Google</key>
+    <key alias="searchOurUmbracoForumsUsingGoogle">Tìm kiếm các diễn đàn Admin của chúng tôi bằng Google</key>
+    <key alias="searchUmbracoSource">Tìm kiếm Nguồn Admin</key>
+    <key alias="searchWithinUmbracoSourceCodeOnGithub">Tìm kiếm trong mã nguồn Admin trên Github</key>
+    <key alias="searchUmbracoIssues">Tìm kiếm các vấn đề về Admin</key>
+    <key alias="searchUmbracoIssuesOnGithub">Tìm kiếm các vấn đề về Admin trên Github</key>
+    <key alias="deleteThisSearch">Xóa tìm kiếm này</key>
+    <key alias="findLogsWithRequestId">Tìm nhật ký với ID yêu cầu</key>
+    <key alias="findLogsWithNamespace">Tìm nhật ký với không gian tên</key>
+    <key alias="findLogsWithMachineName">Tìm nhật ký với tên máy</key>
+    <key alias="open">Mở</key>
+    <key alias="polling">Thăm dò ý kiến ​​</key>
+    <key alias="every2">2 giây một lần</key>
+    <key alias="every5">5 giây một lần</key>
+    <key alias="every10">10 giây một lần</key>
+    <key alias="every20">20 giây một lần</key>
+    <key alias="every30">30 giây một lần</key>
+    <key alias="pollingEvery2">Thăm dò ý kiến ​​cứ 2 giây một lần</key>
+    <key alias="pollingEvery5">Thăm dò ý kiến ​​sau mỗi 5 giây</key>
+    <key alias="pollingEvery10">Thăm dò ý kiến ​​cứ 10 giây một lần</key>
+    <key alias="pollingEvery20">Thăm dò ý kiến ​​20 giây một lần</key>
+    <key alias="pollingEvery30">Thăm dò ý kiến ​​30 giây một lần</key>
+  </area>
+  <area alias="clipboard">
+    <key alias="labelForCopyAllEntries">Sao chép %0%</key>
+    <key alias="labelForArrayOfItemsFrom">%0% từ %1%</key>
+    <key alias="labelForArrayOfItems">Bộ sưu tập %0%</key>
+    <key alias="labelForRemoveAllEntries">Xóa tất cả các mục</key>
+    <key alias="labelForClearClipboard">Xóa khay nhớ tạm</key>
+  </area>
+  <area alias="propertyActions">
+    <key alias="tooltipForPropertyActionsMenu">Mở Hành động thuộc tính</key>
+    <key alias="tooltipForPropertyActionsMenuClose">Đóng các thao tác thuộc tính</key>
+  </area>
+  <area alias="nuCache">
+    <key alias="wait">Chờ</key>
+    <key alias="refreshStatus">Làm mới trạng thái</key>
+    <key alias="memoryCache">Bộ nhớ đệm</key>
+    <key alias="memoryCacheDescription">
+      ​​<![CDATA[
+
+                  Nút này cho phép bạn tải lại bộ nhớ đệm trong bộ nhớ, bằng cách tải lại hoàn toàn từ cơ sở dữ liệu
+
+                  bộ nhớ cache (nhưng nó không xây dựng lại bộ nhớ cache cơ sở dữ liệu đó). Điều này là tương đối nhanh chóng.
+
+                  Sử dụng nó khi bạn cho rằng bộ nhớ đệm chưa được làm mới đúng cách, sau một số sự kiện
+
+                  đã kích hoạt & mdash; điều này sẽ chỉ ra một vấn đề nhỏ về Admin.
+
+                  (lưu ý: kích hoạt tải lại trên tất cả các máy chủ trong môi trường LB).]]>
+    </key>
+    <key alias="reload">Tải lại</key>
+    <key alias="databaseCache">Cơ sở dữ liệu Cache</key>
+    <key alias="databaseCacheDescription">
+      ​​<![CDATA[
+
+                  Nút này cho phép bạn xây dựng lại bộ đệm cơ sở dữ liệu, tức là nội dung của bảng cmsContentNu.
+
+                  <strong> Việc xây dựng lại có thể tốn kém. </strong>
+
+                  Sử dụng nó khi tải lại không đủ và bạn nghĩ rằng bộ nhớ cache của cơ sở dữ liệu chưa được
+
+                  được tạo đúng cách & mdash; sẽ chỉ ra một số vấn đề nghiêm trọng của Admin.]]>
+    </key>
+    <key alias="rebuild">Tạo lại</key>
+    <key alias="internals">Internals</key>
+    <key alias="internalsDescription">
+      ​​<![CDATA[
+
+                  Nút này cho phép bạn kích hoạt bộ sưu tập ảnh chụp nhanh NuCache (sau khi chạy GCCLR đầy đủ).
+
+                  Trừ khi bạn biết điều đó có nghĩa là gì, bạn có thể <em> không </em> cần sử dụng nó.]]>
+    </key>
+    <key alias="collect">Thu thập</key>
+    <key alias="publishedCacheStatus">Trạng thái Bộ nhớ đệm Đã xuất bản</key>
+    <key alias="caches">Bộ nhớ đệm</key>
+  </area>
+  <area alias="profiling">
+    <key alias="performanceProfiling">Hồ sơ hiệu suất</key>
+    <key alias="performanceProfilingDescription">
+      ​​<![CDATA[
+
+                  <p>
+
+                    Admin hiện đang chạy ở chế độ gỡ lỗi. Điều này có nghĩa là bạn có thể sử dụng trình cấu hình hiệu suất tích hợp để đánh giá hiệu suất khi hiển thị các trang.
+
+                  </p>
+
+                  <p>
+
+                    Nếu bạn muốn kích hoạt trình biên dịch để hiển thị trang cụ thể, chỉ cần thêm <b> umbDebug = true </b> vào chuỗi truy vấn khi yêu cầu trang.
+
+                  </p>
+
+                  <p>
+
+                    Nếu bạn muốn trình cấu hình được kích hoạt theo mặc định cho tất cả các kết xuất trang, bạn có thể sử dụng nút chuyển đổi bên dưới.
+
+                    Nó sẽ đặt một cookie trong trình duyệt của bạn, sau đó sẽ tự động kích hoạt trình biên dịch.
+
+                    Nói cách khác, trình biên dịch sẽ chỉ hoạt động theo mặc định trong trình duyệt <i> của bạn </i> - không phải của bất kỳ người nào khác.
+
+                  </p>]]>
+    </key>
+    <key alias="activateByDefault">Kích hoạt trình biên dịch theo mặc định</key>
+    <key alias="reminder">Lời nhắc thân thiện</key>
+    <key alias="reminderDescription">
+      ​​<![CDATA[
+
+                  <p>
+
+                    Bạn không bao giờ được để trang sản xuất chạy ở chế độ gỡ lỗi. Chế độ gỡ lỗi bị tắt bằng cách đặt <b> debug = "false" </b> trên phần tử <b> & lt; compilation / & gt; </b> trong web.config.
+
+                  </p>]]>
+    </key>
+    <key alias="profilerEnabledDescription">
+      ​​<![CDATA[
+
+                  <p>
+
+                    Admin hiện không chạy ở chế độ gỡ lỗi, vì vậy bạn không thể sử dụng trình cấu hình tích hợp sẵn. Đây là cách nó phải như vậy đối với một địa điểm sản xuất.
+
+                  </p>
+
+                  <p>
+
+                    Chế độ gỡ lỗi được bật bằng cách đặt <b> debug = "true" </b> trên phần tử <b> & lt; compilation / & gt; </b> trong web.config.
+
+                  </p>]]>
+    </key>
+  </area>
+  <area alias="settingsDashboardVideos">
+    <key alias="trainingHeadline">Giờ xem video đào tạo Admin chỉ cách một cú nhấp chuột</key>
+    <key alias="trainingDescription">
+      ​​<![CDATA[
+
+                  <p>
+                    Bạn muốn thành thạo Admin? Hãy dành vài phút để tìm hiểu một số phương pháp hay nhất bằng cách xem một trong những video này về cách sử dụng Umbraco. Và hãy truy cập <a href="https://umbraco.tv" target="_blank" rel="noopener"> umbraco.tv </a> để biết thêm nhiều video về Umbraco
+                  </p>]]>
+    </key>
+    <key alias="getStarted">Để bạn bắt đầu</key>
+  </area>
+  <area alias="settingsDashboard">
+    <key alias="start">Bắt đầu tại đây</key>
+    <key alias="startDescription">Phần này chứa các khối xây dựng cho trang Admin của bạn. Theo các liên kết bên dưới để tìm hiểu thêm về cách làm việc với các mục trong phần Cài đặt</key>
+    <key alias="more">Tìm hiểu thêm</key>
+    <key alias="bulletPointOne">
+      ​​<![CDATA[
+
+                  Đọc thêm về cách làm việc với các mục trong Cài đặt <a class = "btn-link -underline" href = "https://our.umbraco.com/documentation/Getting-Started/Backoffice/Section/" target = "_ blank" rel = "noopener"> trong phần Tài liệu </a> của Umbraco của chúng tôi]]>
+    </key>
+    <key alias="bulletPointTwo">
+      ​​<![CDATA[
+
+                  Đặt câu hỏi trong <a class="btn-link -underline" href="https://our.umbraco.com/forum" target="_blank" rel="noopener"> Diễn đàn cộng đồng </a>]]>
+    </key>
+    <key alias="bulletPointThree">
+      ​​<![CDATA[
+
+                  Xem <a class="btn-link -underline" href="https://umbraco.tv" target="_blank" rel="noopener"> video hướng dẫn </a> của chúng tôi (một số video miễn phí, một số video yêu cầu đăng ký )]]>
+    </key>
+    <key alias="bulletPointFour">
+      ​​<![CDATA[
+
+                  Tìm hiểu về <a class="btn-link -underline" href="https://umbraco.com/products/" target="_blank" rel="noopener"> các công cụ thúc đẩy năng suất và hỗ trợ thương mại </a> của chúng tôi
+                  ]]>
+    </key>
+    <key alias="bulletPointFive">
+      ​​<![CDATA[
+                  Tìm hiểu về cơ hội <a class="btn-link -underline" href="https://umbraco.com/training/" target="_blank" rel="noopener"> đào tạo và chứng nhận </a> trong đời thực
+                  ]]>
+    </key>
+  </area>
+  <area alias="startupDashboard">
+    <key alias="fallbackHeadline">Chào mừng bạn đến với CMS thân thiện</key>
+    <key alias="fallbackDescription">Cảm ơn bạn đã chọn Admin - chúng tôi nghĩ rằng đây có thể là sự khởi đầu của một điều gì đó đẹp đẽ. Mặc dù ban đầu có thể cảm thấy quá sức nhưng chúng tôi đã làm rất nhiều để giúp quá trình học tập diễn ra suôn sẻ và nhanh chóng nhất có thể.</key>
+  </area>
+  <area alias="formsDashboard">
+    <key alias="formsHeadline">Biểu mẫu Admin</key>
+    <key alias="formsDescription">Tạo biểu mẫu bằng giao diện kéo và thả trực quan. Từ các biểu mẫu liên hệ đơn giản gửi e-mail đến các bảng câu hỏi nâng cao tích hợp với hệ thống CRM. Khách hàng của bạn sẽ thích nó!</key>
+  </area>
+  <area alias="blockEditor">
+    <key alias="headlineCreateBlock">Chọn loại phần tử</key>
+    <key alias="headlineAddSettingsElementType">Đính kèm loại phần tử cài đặt</key>
+    <key alias="headlineAddCustomView">Chọn chế độ xem</key>
+    <key alias="headlineAddCustomStylesheet">Chọn biểu định kiểu</key>
+    <key alias="headlineAddThumbnail">Chọn hình thu nhỏ</key>
+    <key alias="labelcreateNewElementType">Tạo loại phần tử mới</key>
+    <key alias="labelCustomStylesheet">Biểu định kiểu tùy chỉnh</key>
+    <key alias="addCustomStylesheet">Thêm biểu định kiểu</key>
+    <key alias="headlineEditorAppearance">Trình chỉnh sửa</key>
+    <key alias="headlineDataModels">Mô hình dữ liệu</key>
+    <key alias="headlineCatalogueAppearance">Hình thức danh mục</key>
+    <key alias="labelBackgroundColor">Màu nền</key>
+    <key alias="labelIconColor">Màu biểu tượng</key>
+    <key alias="labelContentElementType">Mô hình nội dung</key>
+    <key alias="labelLabelTemplate">Nhãn</key>
+    <key alias="labelCustomView">Chế độ xem tùy chỉnh</key>
+    <key alias="labelCustomViewInfoTitle">Hiển thị mô tả chế độ xem tùy chỉnh</key>
+    <key alias="labelCustomViewDescription">Ghi đè cách khối này xuất hiện trong giao diện người dùng văn phòng. Chọn một tệp .html có chứa bản trình bày của bạn.</key>
+    <key alias="labelSettingsElementType">Mô hình cài đặt</key>
+    <key alias="labelEditorSize">Kích thước trình chỉnh sửa lớp phủ</key>
+    <key alias="addCustomView">Thêm chế độ xem tùy chỉnh</key>
+    <key alias="addSettingsElementType">Thêm cài đặt</key>
+    <key alias="labelTemplatePlaceholder">Ghi đè mẫu nhãn</key>
+    <key alias="confirmDeleteBlockMessage">​​<![CDATA[Bạn có chắc chắn muốn xóa nội dung <strong>%0%</strong>?]]></key>
+    <key alias="confirmDeleteBlockTypeMessage">​​<![CDATA[Bạn có chắc chắn muốn xóa cấu hình khối <strong>%0%</strong> không?]]></key>
+    <key alias="confirmDeleteBlockTypeNotice">Nội dung của khối này sẽ vẫn tồn tại, việc chỉnh sửa nội dung này sẽ không còn nữa và sẽ được hiển thị dưới dạng nội dung không được hỗ trợ.</key>
+    <key alias="blockConfigurationOverlayTitle">​​<![CDATA[Cấu hình của '%0%']]></key>
+    <key alias="thumbnail">Hình thu nhỏ</key>
+    <key alias="addThumbnail">Thêm hình thu nhỏ</key>
+    <key alias="tabCreateEmpty">Tạo trống</key>
+    <key alias="tabClipboard">Bảng tạm</key>
+    <key alias="tabBlockSettings">Cài đặt</key>
+    <key alias="headlineAdvanced">Nâng cao</key>
+    <key alias="forceHideContentEditor">Buộc ẩn trình chỉnh sửa nội dung</key>
+    <key alias="blockHasChanges">Bạn đã thực hiện các thay đổi đối với nội dung này. Bạn có chắc chắn muốn loại bỏ chúng không?</key>
+    <key alias="confirmCancelBlockCreationHeadline">Hủy tạo?</key>
+    <key alias="confirmCancelBlockCreationMessage">​​<![CDATA[Bạn có chắc chắn muốn hủy quá trình tạo.]]></key>
+    <key alias="elementTypeDoesNotExistHeadline">Lỗi!</key>
+    <key alias="elementTypeDoesNotExistDescription">ElementType của khối này không còn tồn tại nữa</key>
+    <key alias="addBlock">Thêm nội dung</key>
+    <key alias="addThis">Thêm %0%</key>
+    <key alias="propertyEditorNotSupported">Thuộc tính '%0%' sử dụng trình chỉnh sửa '%1%' không được hỗ trợ trong các khối.</key>
+  </area>
+  <area alias="contentTemplatesDashboard">
+    <key alias="whatHeadline">Mẫu Nội dung là gì?</key>
+    <key alias="whatDescription">Mẫu nội dung là nội dung được xác định trước có thể được chọn khi tạo nút nội dung mới.</key>
+    <key alias="createHeadline">Làm cách nào để tạo Mẫu nội dung?</key>
+    <key alias="createDescription">
+      ​​<![CDATA[
+                  <p> Có hai cách để tạo Mẫu nội dung: </p>
+                  <ul>
+                    <li> Nhấp chuột phải vào nút nội dung và chọn "Tạo Mẫu nội dung" để tạo Mẫu nội dung mới. </li>
+                    <li> Nhấp chuột phải vào cây Mẫu nội dung trong phần Cài đặt và chọn Loại tài liệu bạn muốn tạo Mẫu nội dung. </li>
+                  </ul>
+                  <p> Sau khi được đặt tên, người chỉnh sửa có thể bắt đầu sử dụng Mẫu nội dung làm nền tảng cho trang mới của họ. </p>
+                  ]]>
+    </key>
+    <key alias="manageHeadline">Làm cách nào để quản lý Mẫu nội dung?</key>
+    <key alias="manageDescription">Bạn có thể chỉnh sửa và xóa Mẫu nội dung khỏi cây "Mẫu nội dung" trong phần Cài đặt. Mở rộng Loại tài liệu mà Mẫu nội dung dựa trên và nhấp vào nó để chỉnh sửa hoặc xóa nó.</key>
+  </area>
+  <area alias="preview">
+    <key alias="endLabel">End</key>
+    <key alias="endTitle">Kết thúc chế độ xem trước</key>
+    <key alias="openWebsiteLabel">Xem trước trang web</key>
+    <key alias="openWebsiteTitle">Mở trang web ở chế độ xem trước</key>
+    <key alias="returnToPreviewHeadline">Xem trước trang web?</key>
+    <key alias="returnToPreviewDescription">Bạn đã kết thúc chế độ xem trước, bạn có muốn bật lại chế độ này để xem phiên bản đã lưu mới nhất của trang web của mình không?</key>
+    <key alias="returnToPreviewAcceptButton">Xem trước phiên bản mới nhất</key>
+    <key alias="returnToPreviewDeclineButton">Xem phiên bản đã xuất bản</key>
+    <key alias="viewPublishedContentHeadline">Xem phiên bản đã xuất bản?</key>
+    <key alias="viewPublishedContentDescription">Bạn đang ở Chế độ xem trước, bạn có muốn thoát để xem phiên bản đã xuất bản của trang web của mình không?</key>
+    <key alias="viewPublishedContentAcceptButton">Xem phiên bản đã xuất bản</key>
+    <key alias="viewPublishedContentDeclineButton">Ở chế độ xem trước</key>
+  </area>
+  <area alias="treeSearch">
+    <key alias="searchResult">mục được trả lại</key>
+    <key alias="searchResults">các mục được trả lại</key>
+  </area>
+</language>

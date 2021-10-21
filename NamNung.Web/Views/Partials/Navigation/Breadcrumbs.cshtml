@@ -5,7 +5,7 @@
     var breadcrumbs = NavigationFactory.GetBreadcrumbs(Model);
 }
 
-<ul class="breadcrumb">
+<ul class="breadcrumb d-print-none">
     @foreach (var breadcrumb in breadcrumbs)
     {
         var nextPoint = breadcrumbs.IndexOf(breadcrumb).Equals(breadcrumbs.Count() - 1);

@@ -19,7 +19,6 @@
 
     <link href="~/css/stylesheet.css" rel="stylesheet">
     <script src="~/js/jquery.plugin.min.js" type="text/javascript"></script>
-    <script src="~/js/jquery.countdown.min.js" type="text/javascript"></script>
     <link href="~/css/owl.carousel.css" type="text/css" rel="stylesheet" media="screen">
     <link href="~/css/owl.theme.css" type="text/css" rel="stylesheet" media="screen">
     <link href="~/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen">
@@ -34,9 +33,16 @@
     <script src="~/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
     <script src="~/js/common.js" type="text/javascript"></script>
     <script src="~/js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+    <style>
+        @@media print {
+            .d-print-none {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="index-head">
+    <div class="index-head d-print-none">
         <div class="banner allmenu">
             <div class="container">
                 <div class="menuTop">
@@ -64,7 +70,7 @@
             </div>
             <div class="container">
                 <div class="blog-detail">
-                    <div class="blog-contenter">
+                    <div class="blog-contenter" id="detailContent">
 
                         @Html.Partial("PageContent/PageContentDetail")
 
@@ -77,7 +83,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="d-print-none">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12 footer-left">
@@ -122,7 +128,7 @@
             </div>
         </div>
     </footer>
-    <a href="/" id="scroll" title="Scroll to Top" style="display: block;">
+    <a href="/" id="scroll" title="Scroll to Top" style="display: block;" class="d-print-none">
         <i class="fa fa-angle-up"></i>
     </a>
 </body>

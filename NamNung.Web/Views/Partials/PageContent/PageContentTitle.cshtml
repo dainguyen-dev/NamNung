@@ -10,10 +10,21 @@
         @pageContentDetail.Title
     </h4>
 
-    @if (!pageContentDetail.CreatedDate.Equals(DateTime.MinValue))
-    {
-        <div class="post-date">
+    <div class="post-date d-print-none">
+        @if (!pageContentDetail.CreatedDate.Equals(DateTime.MinValue))
+        {
             @pageContentDetail.CreatedDate.ToString(Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.FormatDateTime))
-        </div>
-    }
+        }
+
+        <i class="fa fa-print" aria-hidden="true" onclick="window.print()"></i>
+        <i class="fa fa-font" aria-hidden="true" style="font-size:20px" onclick="changeSize('20')"></i>
+        <i class="fa fa-font" aria-hidden="true" style="font-size:14px" onclick="changeSize('14')"></i>
+    </div>
+
+    <script>
+        function changeSize(size) {
+            console.log(document.getElementById("detailContent").style.fontSize);
+            document.getElementById("detailContent").style.fontSize = size + "px";
+        }
+    </script>
 </div>

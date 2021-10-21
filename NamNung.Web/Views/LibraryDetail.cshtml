@@ -1,7 +1,9 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
 @{
     Layout = null;
     Response.StatusCode = 404;
-    Response.Redirect(Model.Parent.Url());
+    var url = Model.Parent.Url() + "?album=" + Model.Id;
+    Response.Redirect(url);
 }
 

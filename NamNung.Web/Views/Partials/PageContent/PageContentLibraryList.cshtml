@@ -7,6 +7,9 @@
 
     var pageSize = Model.Value<int>(NamNung.Web.Constants.Fields.NumberOfItemsPerPage, fallback: Fallback.ToAncestors);
     pageSize = pageSize.Equals(0) ? int.MaxValue : pageSize;
+
+    var album = 0;
+    int.TryParse(Request.QueryString["album"], out album);
 }
 
 @helper RenderItem(KeyValuePair<string, string> data)
@@ -28,7 +31,7 @@
 
 <div class="container album-tab">
     <ul class="nav nav-tabs pro-tab pull-right">
-        <li class="active">
+        <li class="@(album.Equals(0) ? "active" : string.Empty)">
             <a href="#albumall" data-toggle="tab">
                 @Umbraco.GetDictionaryValue(NamNung.Web.Constants.Dictionary.AllLibrary)
             </a>
@@ -37,7 +40,7 @@
         {
             var id = pageContentDetailItem.PublishedContent.Id;
 
-            <li>
+            <li class="@(album.Equals(id) ? "active" : string.Empty)">
                 <a href="#@id" data-toggle="tab">
                     @pageContentDetailItem.Title
                 </a>
@@ -46,7 +49,7 @@
     </ul>
 </div>
 <div class="tab-content pro-nepr">
-    <div class="tab-pane active" id="albumall">
+    <div class="tab-pane @(album.Equals(0) ? "active" : string.Empty)" id="albumall">
         @{
             var allImages = new List<KeyValuePair<string, string>>();
             foreach (var pageContentDetailItem in pageContentDetails)
@@ -86,17 +89,17 @@
 
         var allImagesInAlbumArray = allImagesInAlbum.ToArray();
 
-        <div class="tab-pane" id="@id">
+        <div class="tab-pane @(album.Equals(id) ? "active" : string.Empty)" id="@id">
             <div class="container album-list">
                 <div class="container album-list">
                     <div class="masonry masonry--h">
                         @foreach (var data in allImagesInAlbum)
                         {
-                        <figure class="masonry-brick masonry-brick--h">
-                            <a href="@data.Value" class="fancy-btn open" data-lightbox="album-silder-@data.Key">
-                                <img src="@data.Value" class="masonry-img"><i class="fa fa-search-plus"></i>
-                            </a>
-                        </figure>
+                            <figure class="masonry-brick masonry-brick--h">
+                                <a href="@data.Value" class="fancy-btn open" data-lightbox="album-silder-@data.Key">
+                                    <img src="@data.Value" class="masonry-img"><i class="fa fa-search-plus"></i>
+                                </a>
+                            </figure>
                         }
                     </div>
                 </div>

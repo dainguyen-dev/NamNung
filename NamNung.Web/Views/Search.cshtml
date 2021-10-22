@@ -13,29 +13,26 @@
 
     @Html.Partial("SEO/Metadata")
 
-
-    <script src="~/js/jquery-2.1.1.min.js" type="text/javascript"></script>
     <link href="~/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <script src="~/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="~/js/jquery.elevatezoom.js" type="text/javascript"></script>
     <link href="~/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <link href="~/css/stylesheet.css" rel="stylesheet">
-    <script src="~/js/jquery.plugin.min.js" type="text/javascript"></script>
     <link href="~/css/owl.carousel.css" type="text/css" rel="stylesheet" media="screen">
     <link href="~/css/owl.theme.css" type="text/css" rel="stylesheet" media="screen">
-    <link href="~/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen">
-    <link href="~/css/opencart.css" type="text/css" rel="stylesheet" media="screen">
-    <link href="~/css/magnific-popup.css" type="text/css" rel="stylesheet" media="screen">
-    <link href="~/css/inspirenewsletter.css" type="text/css" rel="stylesheet" media="screen">
-    <script src="~/js/lightbox-2.6.min.js" type="text/javascript"></script>
-    <link href="~/css/lightbox.css" rel="stylesheet" type="text/css">
-    <script src="~/js/custom.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="~/lib/lightbox/css/lightbox.min.css">
+
+    <link rel="stylesheet" href="~/css/lightbox-custom.css">
+    <link href="~/css/stylesheet.css" rel="stylesheet">
+
+    <script src="~/js/jquery-2.1.1.min.js" type="text/javascript"></script>
     <script src="~/js/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="~/js/swiper.jquery.js" type="text/javascript"></script>
-    <script src="~/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-    <script src="~/js/common.js" type="text/javascript"></script>
     <script src="~/js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+
+    <style>
+        @@media print {
+            .d-print-none {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="index-head">
@@ -78,52 +75,45 @@
                                 </td>
                             </tr>
                             <tr>
-                                @{
-                                    if (searchTerm == string.Empty)
-                                    {
-                                        <td colspan="2">
-                                            Nhập chữ để tìm kiếm
-                                        </td>
-                                    }
-                                    else
-                                    {
-                                        <td colspan="2">
-                                            @if (ExamineManager.Instance.TryGetIndex("ExternalIndex", out var index))
-                                            {
-                                                var searcher = index.GetSearcher();
-                                                var searchResults = searcher.Search(searchTerm);
-                                                if (searchResults.Any())
+                                @{ if (searchTerm == string.Empty)
                                                 {
-                                                    <ul>
-                                                        @foreach (var result in searchResults)
-                                                        {
-                                                            try
-                                                            {
-                                                                var data = Umbraco.Content(result.Id);
-                                                                if (data.IsVisible() == false || string.IsNullOrEmpty(data.GetTemplateAlias()))
-                                                                {
-                                                                    continue;
-                                                                }
-
-                                                                <li>
-                                                                    <a href="@data.Url()">@data.Name</a>
-                                                                </li>
-                                                            }
-                                                            catch (Exception ex)
-                                                            {
-
-                                                            }
-                                                        }
-                                                    </ul>
-                                                }
+                                    <td colspan="2">
+                                        Nhập chữ để tìm kiếm
+                                    </td> }
                                                 else
                                                 {
-                                                    <div>Không tìm thấy theo chữ: @searchTerm</div>
-                                                }
-                                            }
-                                        </td>
+                                    <td colspan="2">
+                                        @if (ExamineManager.Instance.TryGetIndex("ExternalIndex", out var index))
+                                        {
+                                            var searcher = index.GetSearcher();
+                                            var searchResults = searcher.Search(searchTerm);
+                                            if (searchResults.Any())
+                                            {
+                        <ul>
+                            @foreach (var result in searchResults)
+                            {
+                                try
+                                {
+                                    var data = Umbraco.Content(result.Id);
+                                    if (data.IsVisible() == false || string.IsNullOrEmpty(data.GetTemplateAlias()))
+                                    {
+                                        continue;
                                     }
+
+    <li>
+        <a href="@data.Url()">@data.Name</a>
+    </li>}
+                                catch (Exception ex)
+                                {
+
                                 }
+                            }
+                        </ul> }
+                                            else
+                                            {
+                        <div>Không tìm thấy theo chữ: @searchTerm</div>}
+                                        }
+                                    </td> } }
                             </tr>
                         </table>
 
@@ -181,5 +171,9 @@
     <a href="/" id="scroll" title="Scroll to Top" style="display: block;">
         <i class="fa fa-angle-up"></i>
     </a>
+
+    <script src="~/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/js/common.js" type="text/javascript"></script>
+    <script src="~/js/custom.js" type="text/javascript"></script>
 </body>
 </html>

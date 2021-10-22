@@ -33,7 +33,10 @@
                                 <div class="doitac-scope">
                                     @{
                                         var groupItem = PageContentFactory.GetPageContentDetail(detail.PublishedContent.Parent);
-                                        @groupItem.Title
+                                        
+                                        <a href="@groupItem.Url">
+                                            @groupItem.Title
+                                        </a>
                                     }
                                 </div>
 

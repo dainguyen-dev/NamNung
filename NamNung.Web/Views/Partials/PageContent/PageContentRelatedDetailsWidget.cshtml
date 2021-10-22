@@ -33,7 +33,10 @@
                                 <div class="post-scope">
                                     @{
                                         var groupItem = PageContentFactory.GetPageContentDetail(detail.PublishedContent.Parent);
-                                        @groupItem.Title
+                                        
+                                        <a href="@groupItem.Url">
+                                            @groupItem.Title
+                                        </a>
                                     }
                                 </div>
                                 @if (!detail.CreatedDate.Equals(DateTime.MinValue))

@@ -10,3 +10,18 @@
   left: -90px;
   opacity: 0.6;
 }
+
+/* On screens that are 1366px wide or less, go from four columns to two columns */
+@media screen and (max-width: 1366px) {
+  .lb-nav a.lb-next{
+ 
+    right: 0px;
+    width: 60px;
+  }
+  .lb-nav a.lb-prev{
+    width: 60px;
+    left: 0px;
+    
+  }
+}
+

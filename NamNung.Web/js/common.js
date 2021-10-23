@@ -488,3 +488,9 @@ $(document).delegate('.agree', 'click', function(e) {
 		});
 	}
 })(window.jQuery);
+
+$('document').ready(function () {
+	if ($('#common-home').on('click', function () {
+		$('.collapse, #mySidenav,.navbar-collapse').removeClass('in');
+	}));
+});

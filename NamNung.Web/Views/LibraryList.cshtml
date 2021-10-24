@@ -1,6 +1,9 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
 @{
     Layout = null;
+    var root = Umbraco.ContentAtRoot().FirstOrDefault();
+    var AssetsVersion = root.Value<string>(NamNung.Web.Constants.Fields.AssetsVersion);
 }
 
 <html dir="ltr" lang="@System.Threading.Thread.CurrentThread.CurrentCulture.Name">
@@ -11,17 +14,17 @@
 
     @Html.Partial("SEO/Metadata")
 
-    <link href="~/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="~/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="~/css/owl.carousel.css" type="text/css" rel="stylesheet" media="screen">
-    <link href="~/css/owl.theme.css" type="text/css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="~/lib/lightbox/css/lightbox.min.css">
+    <link href="~/css/bootstrap.min.css?ver=@AssetsVersion" rel="stylesheet" media="screen">
+    <link href="~/css/font-awesome.min.css?ver=@AssetsVersion" rel="stylesheet" type="text/css">
+    <link href="~/css/owl.carousel.css?ver=@AssetsVersion" type="text/css" rel="stylesheet" media="screen">
+    <link href="~/css/owl.theme.css?ver=@AssetsVersion" type="text/css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="~/lib/lightbox/css/lightbox.min.css?ver=@AssetsVersion">
 
-    <link rel="stylesheet" href="~/css/lightbox-custom.css">
-    <link href="~/css/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/lightbox-custom.css?ver=@AssetsVersion">
+    <link href="~/css/stylesheet.css?ver=@AssetsVersion" rel="stylesheet">
 
-    <script async="" src="~/js/analytics.js"></script>
-    <script async="" src="~/js/bsa.js"></script>
+    <script async="" src="~/js/analytics.js?ver=@AssetsVersion"></script>
+    <script async="" src="~/js/bsa.js?ver=@AssetsVersion"></script>
 </head>
 <body>
     <div class="index-head">
@@ -105,16 +108,16 @@
         <i class="fa fa-angle-up"></i>
     </a>
 
-    <script src="~/js/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <script src="~/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="~/js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
-    <script src="~/lib/lightbox/js/lightbox.min.js" type="text/javascript"></script>
-    <script src="~/js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="~/js/jquery-2.1.1.min.js?ver=@AssetsVersion" type="text/javascript"></script>
+    <script src="~/js/bootstrap.min.js?ver=@AssetsVersion" type="text/javascript"></script>
+    <script src="~/js/jssor.slider-28.1.0.min.js?ver=@AssetsVersion" type="text/javascript"></script>
+    <script src="~/lib/lightbox/js/lightbox.min.js?ver=@AssetsVersion" type="text/javascript"></script>
+    <script src="~/js/owl.carousel.min.js?ver=@AssetsVersion" type="text/javascript"></script>
 
-    <script src="~/js/common.js" type="text/javascript"></script>
-    <script src="~/js/custom.js" type="text/javascript"></script>
+    <script src="~/js/common.js?ver=@AssetsVersion" type="text/javascript"></script>
+    <script src="~/js/custom.js?ver=@AssetsVersion" type="text/javascript"></script>
 
-    <script type="text/javascript" src="~/js/prettify.js" id="bits-prettify-js"></script>
+    <script type="text/javascript" src="~/js/prettify.js?ver=@AssetsVersion" id="bits-prettify-js"></script>
 
     <script type="text/javascript" id="bits-prettify-js-after">
         prettyPrint()

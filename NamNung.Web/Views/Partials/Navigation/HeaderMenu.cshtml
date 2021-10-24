@@ -13,20 +13,25 @@
         </button>
     </div>
     <div id="mySidenav" class="sidenav">
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <div id="Sidenav" class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 @foreach (var headerMenuItem in headerMenuItems)
                 {
                     var moreMenuClass = headerMenuItem.ChildLinks.Any() ? "dropdown moremenu" : "moremenu";
                     var activeMenu = Model.Url().StartsWith(headerMenuItem.Url) && !Model.Id.Equals(1072) ? "active" : string.Empty;
+               
                     <li class="@moreMenuClass @activeMenu">
                         <a href="@headerMenuItem.Url" target="@headerMenuItem.Target">
                             @headerMenuItem.Title
-                            @if (headerMenuItem.ChildLinks.Any())
-                            {
-                                <i class="fa fa-angle-down pull-right enangle"></i>
-                            }
                         </a>
+
+                        @if (headerMenuItem.ChildLinks.Any())
+                        {
+                            <a class="dropdown-toggle header-menu" data-toggle="">
+                                <i class="fa fa-angle-down pull-right enangle"></i>
+                            </a>
+                        }
+
                         @if (headerMenuItem.ChildLinks.Any())
                         {
                             <div class="dropdown-menu">

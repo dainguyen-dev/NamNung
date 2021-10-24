@@ -37,11 +37,14 @@
 					<i class="fa fa-bars"></i></button>
 			</div>
 			<div id="mySidenav" class="sidenav">
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<div id="Sidenav" class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav">
 						<li class="dropdown moremenu">
+							<a href="#">
+								Giới thiệu
+							</a>
 							<a class="dropdown-toggle header-menu" data-toggle="">
-								Giới thiệu <i class="fa fa-angle-down pull-right enangle"></i>
+								<i class="fa fa-angle-down pull-right enangle"></i>
 							</a>
 							<div class="dropdown-menu">
 								<div class="dropdown-inner">
@@ -65,8 +68,11 @@
 							<a href="tintuc.html">Tin tức</a>
 						</li>
 						<li class="dropdown moremenu">
+							<a href="#">
+								Khám phá 
+							</a>
 							<a class="dropdown-toggle header-menu" data-toggle="">
-								Khám phá <i class="fa fa-angle-down pull-right enangle"></i>
+								<i class="fa fa-angle-down pull-right enangle"></i>
 							</a>
 							<div class="dropdown-menu">
 								<div class="dropdown-inner">
@@ -78,8 +84,11 @@
 							</div>
 						</li>
 						<li class="dropdown moremenu">
+							<a href="#">
+								Di sản Nam Nung 
+							</a>
 							<a class="dropdown-toggle header-menu" data-toggle="">
-								Di sản Nam Nung <i class="fa fa-angle-down pull-right enangle"></i>
+								<i class="fa fa-angle-down pull-right enangle"></i>
 							</a>
 							<div class="dropdown-menu">
 								<div class="dropdown-inner">
@@ -94,8 +103,11 @@
 							<a href="album.html">Hình ảnh</a>
 						</li>
 						<li class="dropdown moremenu">
+							<a href="#">
+								Hoạt động 
+							</a>
 							<a class="dropdown-toggle header-menu" data-toggle="">
-								Hoạt động <i class="fa fa-angle-down pull-right enangle"></i>
+								<i class="fa fa-angle-down pull-right enangle"></i>
 							</a>
 							<div class="dropdown-menu">
 								<div class="dropdown-inner">
@@ -107,8 +119,11 @@
 							</div>
 						</li>
 						<li class="dropdown moremenu">
-							<a class="dropdown-toggle header-menu" data-toggle=""> 
-								Đối tác <i class="fa fa-angle-down pull-right enangle"></i>
+							<a href="#"> 
+								Đối tác 
+							</a>
+							<a class="dropdown-toggle header-menu" data-toggle="">
+								<i class="fa fa-angle-down pull-right enangle"></i>
 							</a>
 							<div class="dropdown-menu">
 								<div class="dropdown-inner">
@@ -124,6 +139,25 @@
 				</div>
 			</div>
 		</nav>
+		<script type="text/javascript">
+			function headermenu() {
+				if (jQuery(window).width() < 768) {
+					jQuery('ul.nav li.dropdown a.header-menu').attr("data-toggle", "dropdown");
+				} else {
+					jQuery('ul.nav li.dropdown a.header-menu').attr("data-toggle", "");
+				}
+			}
+			$(document).ready(function() {
+				headermenu();
+			});
+			jQuery(window).resize(function() {
+				headermenu();
+			});
+			jQuery(window).scroll(function() {
+				headermenu();
+			});
+		</script>
+		
 	</div>
 	</div>
 </div>

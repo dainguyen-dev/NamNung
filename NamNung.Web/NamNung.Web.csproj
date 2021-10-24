@@ -811,6 +811,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="js\css\fonts\" />
+    <Folder Include="js\img\" />
+    <Folder Include="js\lib\lightbox\css\" />
+    <Folder Include="js\lib\lightbox\images\" />
+    <Folder Include="js\lib\lightbox\js\" />
     <Folder Include="Views\PageDetail\" />
   </ItemGroup>
   <PropertyGroup>

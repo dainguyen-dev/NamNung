@@ -19,14 +19,15 @@
         <i class="fa fa-print" aria-hidden="true" onclick="window.print()"></i>
         <i class="fa fa-font" aria-hidden="true" style="font-size:20px" onclick="changeSize('20')"></i>
         <i class="fa fa-font" aria-hidden="true" style="font-size:14px" onclick="changeSize('14')"></i>
+    </div>
 
-        @if (pageContentDetail.ReadBody != null)
+    <div class="post-date d-print-none">
+        @if (pageContentDetail.AudioBody != null)
         {
             <audio controls style="height:18px; margin-top:2px;">
-                <source src="@pageContentDetail.ReadBody.Url" type="audio/@pageContentDetail.ReadBody.Type">
+                <source src="@pageContentDetail.AudioBody.Url" type="audio/@pageContentDetail.AudioBody.Type">
             </audio>
         }
-
     </div>
 
     <script>

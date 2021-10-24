@@ -122,8 +122,8 @@ namespace NamNung.Web.Factories
                 Alt = imageItem.Name
             } : pageContentDetail.Images.FirstOrDefault();
 
-            var audioItem = publishedContent.GetSingleMediaPicker(Constants.Fields.ReadBody);
-            pageContentDetail.ReadBody = audioItem != null ? new Audio
+            var audioItem = publishedContent.GetSingleMediaPicker(Constants.Fields.AudioBody);
+            pageContentDetail.AudioBody = audioItem != null ? new Audio
             {
                 PublishedContent = audioItem,
                 Url = audioItem?.Url(),

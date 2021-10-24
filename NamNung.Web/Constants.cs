@@ -63,7 +63,7 @@
             public const string UmbracoHeight = "umbracoHeight";
             public const string UmbracoWidth = "umbracoWidth";
             public const string UmbracoExtension = "umbracoExtension";
-            public const string ReadBody = "readBody";
+            public const string AudioBody = "audioBody";
         }
     }
 }

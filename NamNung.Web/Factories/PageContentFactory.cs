@@ -115,13 +115,20 @@ namespace NamNung.Web.Factories
             };
 
             var imageItem = publishedContent.GetSingleMediaPicker(Constants.Fields.Image);
-
             pageContentDetail.Image = imageItem != null ? new Image
             {
                 PublishedContent = imageItem,
                 Url = imageItem?.Url(),
                 Alt = imageItem.Name
             } : pageContentDetail.Images.FirstOrDefault();
+
+            var audioItem = publishedContent.GetSingleMediaPicker(Constants.Fields.ReadBody);
+            pageContentDetail.ReadBody = audioItem != null ? new Audio
+            {
+                PublishedContent = audioItem,
+                Url = audioItem?.Url(),
+                Type = audioItem.Value<string>(Constants.Fields.UmbracoExtension)
+            } : null;
 
             return pageContentDetail;
         }

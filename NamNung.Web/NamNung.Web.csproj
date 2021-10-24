@@ -703,6 +703,7 @@
     <Compile Include="Factories\Models\BannerWithRichText.cs" />
     <Compile Include="Factories\Models\Banner.cs" />
     <Compile Include="Factories\Models\Breadcrumb.cs" />
+    <Compile Include="Factories\Models\Audio.cs" />
     <Compile Include="Factories\Models\Image.cs" />
     <Compile Include="Factories\Models\LanguageLink.cs" />
     <Compile Include="Factories\Models\Link.cs" />

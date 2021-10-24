@@ -62,6 +62,8 @@
             public const string NumberOfItemsPerPage = "numberOfItemsPerPage";
             public const string UmbracoHeight = "umbracoHeight";
             public const string UmbracoWidth = "umbracoWidth";
+            public const string UmbracoExtension = "umbracoExtension";
+            public const string ReadBody = "readBody";
         }
     }
 }

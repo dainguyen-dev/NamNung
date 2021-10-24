@@ -16,6 +16,7 @@ namespace NamNung.Web.Factories.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public string Body { get; set; }
+        public Audio ReadBody { get; set; }
         public string Url { get; set; }
         public DateTime CreatedDate { get; set; }
         public IEnumerable<Image> Images { get; set; }

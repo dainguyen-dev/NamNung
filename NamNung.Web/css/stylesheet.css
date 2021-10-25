@@ -2458,9 +2458,6 @@ a.thumbnail:hover {
         max-width: 13px;
         margin-top: 3px;
     }
-    #menu .nav>li>a {
-        padding: 30px 10px;
-    }
     .service ul li h4 {
         font-size: 15px;
     }
@@ -4192,3 +4189,4 @@ a {
 .lb-closeContainer{
 	display:none;
 }
+/*** 24/10/2021  ***/

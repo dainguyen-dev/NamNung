@@ -31,12 +31,12 @@ $(document).ready(function () {
 function openNav() {
     $('body').addClass("active");
     document.getElementById("mySidenav").style.width = "250px";
-    jquery('#mySidenav').addCss("display", "block");
+    $('#mySidenav').css("display", "block");
 }
 function closeNav() {
     $('body').removeClass("active");
     document.getElementById("mySidenav").style.width = "0";
-    jquery('#mySidenav').removeCss("display", "none");
+    $('#mySidenav').css("display", "");
 }
 
 

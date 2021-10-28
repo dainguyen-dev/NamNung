@@ -697,6 +697,7 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Controllers\PageDetailController.cs" />
+    <Compile Include="CustomComponents\DashboardCustomComponent.cs" />
     <Compile Include="CustomComponents\SendToPublishComponent.cs" />
     <Compile Include="Extensions\ContentExtention.cs" />
     <Compile Include="Factories\MediaFactory.cs" />

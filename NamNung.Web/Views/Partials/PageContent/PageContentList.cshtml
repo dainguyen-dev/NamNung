@@ -2,7 +2,10 @@
 @inherits Umbraco.Web.Mvc.UmbracoViewPage
 
 @{
-    var pageContentDetails = PageContentFactory.GetAllSubPageDetail(Model).ToArray();
+    var pageContentDetails = PageContentFactory.GetAllSubPageDetail(Model)
+        .Where(detail => !detail.Highlight)
+        .ToArray();
+
     var pageContentDetail = PageContentFactory.GetPageContentDetail(Model);
 }
 
@@ -132,5 +135,5 @@
     </div>
 
     @RenderPagination(page, totalPages)
-    
+
 </div>

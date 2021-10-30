@@ -39,8 +39,8 @@
     <key alias="chooseWhereToCopy">Chọn nơi để sao chép</key>
     <key alias="chooseWhereToMove">Chọn nơi di chuyển</key>
     <key alias="toInTheTreeStructureBelow">đến trong cấu trúc cây bên dưới</key>
-    <key alias="infiniteEditorChooseWhereToCopy ">Chọn nơi sao chép (các) mục đã chọn</key>
-    <key alias="infiniteEditorChooseWhereToMove ">Chọn vị trí để di chuyển (các) mục đã chọn</key>
+    <key alias="infiniteEditorChooseWhereToCopy">Chọn nơi sao chép (các) mục đã chọn</key>
+    <key alias="infiniteEditorChooseWhereToMove">Chọn vị trí để di chuyển (các) mục đã chọn</key>
     <key alias="wasMovedTo">đã được chuyển đến</key>
     <key alias="wasCopiedTo">đã được sao chép vào</key>
     <key alias="wasDeleted">đã bị xóa</key>
@@ -97,14 +97,15 @@
     <key alias="duplicateDomain">Miền đã được chỉ định.</key>
     <key alias="language">Ngôn ngữ</key>
     <key alias="domain">Tên miền</key>
-    <key alias="domainCreate">Tên miền mới '%0%' đã được tạo</key>
+    <key alias="domainCreated">Tên miền mới '%0%' đã được tạo</key>
     <key alias="domainDeleted">Miền '%0%' đã bị xóa</key>
     <key alias="domainExists">Tên miền '%0%' đã được chỉ định</key>
     <key alias="domainUpdated">Tên miền '%0%' đã được cập nhật</key>
     <key alias="orEdit">Chỉnh sửa tên miền hiện tại</key>
     <key alias="domainHelpWithVariants">
       <![CDATA[Tên miền hợp lệ là: "example.com", "www.example.com", "example.com:8080" hoặc "https://www.example.com/". Hơn nữa, 
-      các đường dẫn một cấp trong các miền cũng được hỗ trợ, ví dụ. "example.com/en" hoặc "/ en".]]></key>
+      các đường dẫn một cấp trong các miền cũng được hỗ trợ, ví dụ. "example.com/en" hoặc "/ en".]]>
+    </key>
     <key alias="inherit">Kế thừa</key>
     <key alias="setLanguage">Văn hóa</key>
     <key alias="setLanguageHelp">​​<![CDATA[Đặt văn hóa cho các nút bên dưới nút hiện tại, <br /> hoặc kế thừa văn hóa từ các nút mẹ. Cũng sẽ áp dụng <br /> cho nút hiện tại, trừ khi một miền bên dưới cũng áp dụng.]]></key>
@@ -165,7 +166,7 @@
     <key alias="unpublish">Nội dung chưa được xuất bản</key>
     <key alias="unpublishvariant">Nội dung chưa được xuất bản cho các ngôn ngữ: %0%</key>
     <key alias="publish">Nội dung được xuất bản</key>
-    <key alias="publishingvariant">Nội dung được xuất bản cho các ngôn ngữ: %0%</key>
+    <key alias="publishvariant">Nội dung được xuất bản cho các ngôn ngữ: %0%</key>
     <key alias="save">Nội dung đã lưu</key>
     <key alias="savevariant">Nội dung được lưu cho các ngôn ngữ: %0%</key>
     <key alias="move">Nội dung đã di chuyển</key>
@@ -267,7 +268,7 @@
     <key alias="childItems" version="7.0">Mục con</key>
     <key alias="target" version="7.0">Mục tiêu</key>
     <key alias="scheduledPublishServerTime">Điều này chuyển sang thời gian sau trên máy chủ:</key>
-    <key alias="scheduledPublishDocumentation ">​​<![CDATA[<a href =" https://our.umbraco.com/documentation/Getting-Started/Data/Schedised-Publishing/#timezones "target =" _ blank "rel = "noopener"> Điều này có nghĩa là gì? </a>]]></key>
+    <key alias="scheduledPublishDocumentation">​​<![CDATA[<a href =" https://our.umbraco.com/documentation/Getting-Started/Data/Schedised-Publishing/#timezones "target =" _ blank "rel = "noopener"> Điều này có nghĩa là gì? </a>]]></key>
     <key alias="nestedContentDeleteItem">Bạn có chắc chắn muốn xóa mục này không?</key>
     <key alias="nestedContentDeleteAllItems">Bạn có chắc chắn muốn xóa tất cả các mục không?</key>
     <key alias="nestedContentEditorNotSupported">Thuộc tính %0% sử dụng trình chỉnh sửa%1%không được Nội dung lồng nhau hỗ trợ.</key>
@@ -306,6 +307,7 @@
     <key alias="notReadyToPublish">Chúng tôi chưa sẵn sàng xuất bản</key>
     <key alias="readyToPublish">Sẵn sàng xuất bản?</key>
     <key alias="readyToSave">Sẵn sàng lưu chưa?</key>
+    <key alias="resetFocalPoint">Đặt lại tiêu điểm</key>
     <key alias="sendForApproval">Gửi để phê duyệt</key>
     <key alias="schedulePublishHelp">Chọn ngày và giờ để xuất bản và / hoặc hủy xuất bản mục nội dung.</key>
     <key alias="createEmpty">Tạo mới</key>
@@ -415,8 +417,8 @@
     <key alias="deletedItems">Đã xóa %0% mục</key>
     <key alias="deletedItemOfItem">Đã xóa %0% trong số %1% mục</key>
     <key alias="deletedItemOfItems">Đã xóa %0% trong số %1% mục</key>
-    <key alias="publishedItem ">Đã xuất bản %0% mục</key>
-    <key alias="publishedItems ">Đã xuất bản %0% mục</key>
+    <key alias="publishedItem">Đã xuất bản %0% mục</key>
+    <key alias="publishedItems">Đã xuất bản %0% mục</key>
     <key alias="publishedItemOfItem">Đã xuất bản %0% trong tổng số %1% mục</key>
     <key alias="publishedItemOfItems">Đã xuất bản %0% trong số %1% mục</key>
     <key alias="unpublishedItem">Chưa xuất bản %0% item</key>
@@ -429,7 +431,7 @@
     <key alias="movedItemOfItems">Đã chuyển %0% trong số %1% mục</key>
     <key alias="copiedItem">Đã sao chép %0% mục</key>
     <key alias="copiedItems">Đã sao chép %0% mục</key>
-    <key alias="copiedItemOfItems">Đã sao chép %0% trong số %1% mục</key>
+    <key alias="copiedItemOfItem">Đã sao chép %0% trong số %1% mục</key>
     <key alias="copiedItemOfItems">Đã sao chép %0% trong số %1% mục</key>
   </area>
   <area alias="defaultdialogs">
@@ -505,7 +507,7 @@
     <key alias="selectMemberGroup">Chọn nhóm thành viên</key>
     <key alias="selectMemberType">Chọn loại thành viên</key>
     <key alias="selectNode">Chọn nút</key>
-    <key alias="selectSection">Chọn các phần</key>
+    <key alias="selectSections">Chọn các phần</key>
     <key alias="selectUser">Chọn người dùng</key>
     <key alias="selectUsers">Chọn người dùng</key>
     <key alias="noIconsFound">​​Không tìm thấy biểu tượng nào</key>
@@ -530,13 +532,17 @@
     <key alias="noItems">Không có mục từ điển nào.</key>
   </area>
   <area alias="dictionaryItem">
-    <key alias="description"><![CDATA[
+    <key alias="description">
+      <![CDATA[
     Chỉnh sửa các phiên bản ngôn ngữ khác nhau cho mục từ điển '<em>%0%</em>' bên dưới
-    ]]></key>
+    ]]>
+    </key>
     <key alias="displayName">Tên văn hóa</key>
-    <key alias="changeKeyError">​​<![CDATA[
+    <key alias="changeKeyError">
+      ​​<![CDATA[
     Khóa '%0%' đã tồn tại.
-    ]]></key>
+    ]]>
+    </key>
     <key alias="overviewTitle">Tổng quan về từ điển</key>
   </area>
   <area alias="examineManagement">
@@ -551,7 +557,8 @@
     <key alias="manageIndexes">Quản lý chỉ mục của Kiểm tra</key>
     <key alias="manageIndexesDescription">Cho phép bạn xem chi tiết của từng chỉ mục và cung cấp một số công cụ để quản lý chỉ mục</key>
     <key alias="rebuildIndex">Tạo lại chỉ mục</key>
-    <key alias="rebuildIndexWarning"><![CDATA[
+    <key alias="rebuildIndexWarning">
+      <![CDATA[
       Điều này sẽ khiến chỉ mục được xây dựng lại. <br />
       Tùy thuộc vào lượng nội dung có trong trang web của bạn, việc này có thể mất một lúc. <br />
       Không nên xây dựng lại một chỉ mục trong thời gian có lưu lượng truy cập trang web cao hoặc khi các biên tập viên đang chỉnh sửa nội dung.
@@ -598,7 +605,7 @@
   <area alias="renamecontainer">
     <key alias="renamed">Đã đổi tên</key>
     <key alias="enterNewFolderName">Nhập tên thư mục mới tại đây</key>
-    <key alias="folderWasRename">%0% đã được đổi tên thành%1%</key>
+    <key alias="folderWasRenamed">%0% đã được đổi tên thành%1%</key>
   </area>
   <area alias="editdatatype">
     <key alias="addPrevalue">Thêm giá trị trước</key>
@@ -619,7 +626,7 @@
     <key alias="selectFolder">Chọn thư mục để di chuyển</key>
     <key alias="inTheTree">đến trong cấu trúc cây bên dưới</key>
     <key alias="wasMoved">đã được chuyển xuống bên dưới</key>
-    <key alias="hasReferenceDeleteConsequence">​​<![CDATA[Xóa <strong>%0%</strong> sẽ xóa các thuộc tính và dữ liệu của chúng khỏi các mục sau]]></key>
+    <key alias="hasReferencesDeleteConsequence">​​<![CDATA[Xóa <strong>%0%</strong> sẽ xóa các thuộc tính và dữ liệu của chúng khỏi các mục sau]]></key>
     <key alias="acceptDeleteConsequence">Tôi hiểu rằng hành động này sẽ xóa các thuộc tính và dữ liệu dựa trên Loại dữ liệu này</key>
   </area>
   <area alias="errorHandling">
@@ -675,7 +682,7 @@
     <key alias="comment">Nhận xét</key>
     <key alias="confirm">Xác nhận</key>
     <key alias="constrain">Ràng buộc</key>
-    <key alias="constraintinProportions">Ràng buộc tỷ lệ</key>
+    <key alias="constrainProportions">Ràng buộc tỷ lệ</key>
     <key alias="content">Nội dung</key>
     <key alias="continue">Tiếp tục</key>
     <key alias="copy">Sao chép</key>
@@ -685,7 +692,7 @@
     <key alias="date">Ngày</key>
     <key alias="default">Mặc định</key>
     <key alias="delete">Xóa</key>
-    <key alias="delete">Đã xóa</key>
+    <key alias="deleted">Đã xóa</key>
     <key alias="deleting">Đang xóa ...</key>
     <key alias="design">Thiết kế</key>
     <key alias="dictionary">Từ điển</key>
@@ -702,6 +709,7 @@
     <key alias="findDocument">Tìm</key>
     <key alias="first">Đầu tiên</key>
     <key alias="focalPoint">Tiêu điểm</key>
+    <key alias="generic">Chung</key>
     <key alias="general">Chung</key>
     <key alias="groups">Nhóm</key>
     <key alias="group">Nhóm</key>
@@ -713,7 +721,7 @@
     <key alias="id">Id</key>
     <key alias="import">Nhập</key>
     <key alias="includeFromsubFolders">Bao gồm các thư mục con trong tìm kiếm</key>
-    <key alias="excludeFromSubFolders ">Chỉ tìm kiếm thư mục này</key>
+    <key alias="excludeFromSubFolders">Chỉ tìm kiếm thư mục này</key>
     <key alias="info">Thông tin</key>
     <key alias="innerMargin">Lề trong</key>
     <key alias="insert">Chèn</key>
@@ -806,13 +814,14 @@
     <key alias="other">Khác</key>
     <key alias="articles">Các bài báo</key>
     <key alias="videos">Video</key>
-    <key alias="install">Đang cài đặt</key>
+    <key alias="installing">Đang cài đặt</key>
     <key alias="avatar">Hình đại diện cho</key>
   </area>
   <area alias="colors">
     <key alias="blue">Xanh lam</key>
   </area>
   <area alias="shortcuts">
+    <key alias="addTab">Thêm Tab</key>
     <key alias="addGroup">Thêm nhóm</key>
     <key alias="addProperty">Thêm thuộc tính</key>
     <key alias="addEditor">Thêm trình chỉnh sửa</key>
@@ -820,7 +829,7 @@
     <key alias="addChildNode">Thêm nút con</key>
     <key alias="addChild">Thêm con</key>
     <key alias="editDataType">Chỉnh sửa kiểu dữ liệu</key>
-    <key alias="navigateSection">Điều hướng các phần</key>
+    <key alias="navigateSections">Điều hướng các phần</key>
     <key alias="shortcut">Phím tắt</key>
     <key alias="showShortcuts">hiển thị các phím tắt</key>
     <key alias="toggleListView">Chuyển đổi chế độ xem danh sách</key>
@@ -853,7 +862,8 @@
     <key alias="databaseHeader">Cấu hình cơ sở dữ liệu</key>
     <key alias="databaseInstall">
       <![CDATA[Nhấn nút <strong> cài đặt </strong> để cài đặt cơ sở dữ liệu Admin %0%
-    ]]></key>
+    ]]>
+    </key>
     <key alias="databaseInstallDone">​​<![CDATA[Umbraco %0% hiện đã được sao chép vào cơ sở dữ liệu của bạn. Nhấn <strong> Tiếp theo </strong> để tiếp tục.]]></key>
     <key alias="databaseNotFound">
       ​​<![CDATA[<p> Không tìm thấy cơ sở dữ liệu! Vui lòng kiểm tra xem thông tin trong "chuỗi kết nối" của tệp "web.config" có chính xác không. </p>
@@ -885,7 +895,7 @@
     <key alias="defaultUserPasswordChanged">Mật khẩu đã được thay đổi!</key>
     <key alias="greatStart">Có một khởi đầu tuyệt vời, hãy xem video giới thiệu của chúng tôi</key>
     <key alias="licenseText">Bằng cách nhấp vào nút tiếp theo (hoặc sửa đổi umbracoConfigurationStatus trong web.config), bạn chấp nhận giấy phép cho phần mềm này như được chỉ định trong hộp bên dưới. Lưu ý rằng bản phân phối Umbraco này bao gồm hai giấy phép khác nhau, giấy phép MIT nguồn mở cho khung và giấy phép phần mềm miễn phí Umbraco bao gồm giao diện người dùng.</key>
-    <key alias="none">Chưa được cài đặt.</key>
+    <key alias="None">Chưa được cài đặt.</key>
     <key alias="permissionsAffectedFolders">Tệp và thư mục bị ảnh hưởng</key>
     <key alias="permissionsAffectedFoldersMoreInfo">Thông tin thêm về cách thiết lập quyền cho Admin tại đây</key>
     <key alias="permissionsAffectedFoldersText">Bạn cần cấp quyền sửa đổi ASP.NET cho các tệp / thư mục sau</key>
@@ -964,10 +974,10 @@
     <key alias="theEndHeader">Admin %0% đã được cài đặt và sẵn sàng sử dụng</key>
     <key alias="theEndInstallFailed">
       ​​<![CDATA[Để hoàn tất quá trình cài đặt, bạn cần phải
-            chỉnh sửa thủ công <strong> tệp /web.config </strong> và cập nhật khóa AppSetting <strong> UmbracoConfigurationStatus </strong> ở dưới cùng thành giá trị <strong> '%0%' </strong>.]] >
-          </key>
-          <key alias = "theEndInstallSuccess">
-            ​​<![CDATA[Bạn có thể <strong> bắt đầu ngay lập tức </strong> bằng cách nhấp vào nút "Khởi chạy Admin" bên dưới. <br /> Nếu bạn <strong> mới sử dụng Umbraco </strong>,
+            chỉnh sửa thủ công <strong> tệp /web.config </strong> và cập nhật khóa AppSetting <strong> UmbracoConfigurationStatus </strong> ở dưới cùng thành giá trị <strong> '%0%' </strong>.]]>
+    </key>
+    <key alias = "theEndInstallSuccess">
+      ​​<![CDATA[Bạn có thể <strong> bắt đầu ngay lập tức </strong> bằng cách nhấp vào nút "Khởi chạy Admin" bên dưới. <br /> Nếu bạn <strong> mới sử dụng Umbraco </strong>,
             bạn có thể tìm thấy nhiều tài nguyên trên các trang bắt đầu của chúng tôi.]]>
     </key>
     <key alias="theEndOpenUmbraco">
@@ -1100,7 +1110,7 @@
   </area>
   <area alias="main">
     <key alias="dashboard">Trang tổng quan</key>
-    <key alias="section">Phần</key>
+    <key alias="sections">Phần</key>
     <key alias="tree">Nội dung</key>
   </area>
   <area alias="moveOrCopy">
@@ -1115,7 +1125,7 @@
     <key alias="notAllowedByPath">Không thể di chuyển nút hiện tại đến một trong các trang con của nó</key>
     <key alias="notAllowedAtRoot">Nút hiện tại không thể tồn tại ở gốc</key>
     <key alias="notValid">Hành động này không được phép vì bạn không có đủ quyền đối với 1 hoặc nhiều tài liệu con.</key>
-    <key alias="relateToOriginal ">Liên quan các mục đã sao chép với bản gốc</key>
+    <key alias="relateToOriginal">Liên quan các mục đã sao chép với bản gốc</key>
   </area>
   <area alias="notifications">
     <key alias="editNotifications">​​<![CDATA[Chọn thông báo của bạn cho <strong>%0%</strong>]]></key>
@@ -1215,7 +1225,7 @@
       ​​<![CDATA[<p> Các ngôn ngữ sau đã được sửa đổi: </p> %0%]]>
     </key>
     <key alias="mailSubject">[NamNung - Thông Báo] Thông báo về %1% được thực hiện trên %2%</key>
-    <key alias="notification">Thông báo</key>
+    <key alias="notifications">Thông báo</key>
   </area>
   <area alias="packager">
     <key alias="actions">Hành động</key>
@@ -1231,7 +1241,7 @@
     <key alias="uploadPackage">Tải gói lên</key>
     <key alias="localPackageDescription">Cài đặt gói cục bộ bằng cách chọn gói đó từ máy của bạn. Chỉ cài đặt các gói từ các nguồn bạn biết và tin cậy</key>
     <key alias="uploadAnother">Tải lên một gói khác</key>
-    <key alias="cancelAndUploadAnother ">Hủy và tải lên một gói khác</key>
+    <key alias="cancelAndUploadAnother">Hủy và tải lên một gói khác</key>
     <key alias="accept">Tôi chấp nhận</key>
     <key alias="termsOfUse">điều khoản sử dụng</key>
     <key alias="pathToFile">Đường dẫn đến tệp</key>
@@ -1263,8 +1273,8 @@
     <key alias="packageKarmaPoints">điểm nghiệp</key>
     <key alias="packageInfo">Thông tin</key>
     <key alias="packageOwner">Chủ sở hữu</key>
-    <key alias="packageCreated">Người đóng góp</key>
-    <key alias="packageCreate">Đã tạo</key>
+    <key alias="packageContrib">Người đóng góp</key>
+    <key alias="packageCreated">Đã tạo</key>
     <key alias="packageCurrentVersion">Phiên bản hiện tại</key>
     <key alias="packageNetVersion">. Phiên bản NET</key>
     <key alias="packageDownloads">Tải xuống</key>
@@ -1304,11 +1314,11 @@
     <key alias="installStateDownloading">Đang tải xuống ...</key>
     <key alias="installStateImporting">Đang nhập ...</key>
     <key alias="installStateInstalling">Đang cài đặt ...</key>
-    <key alias="installStateRestart">Đang khởi động lại, vui lòng đợi ...</key>
+    <key alias="installStateRestarting">Đang khởi động lại, vui lòng đợi ...</key>
     <key alias="installStateComplete">Tất cả đã xong, trình duyệt của bạn bây giờ sẽ được làm mới, vui lòng đợi ...</key>
     <key alias="installStateCompleted">Vui lòng nhấp vào 'Hoàn tất' để hoàn tất cài đặt và tải lại trang.</key>
     <key alias="installStateUploading">Đang tải gói lên ...</key>
-    <key alias="verifyToWorkOnUmbracoCloud">Đã xác minh để hoạt động trên Admin Cloud</key>
+    <key alias="verifiedToWorkOnUmbracoCloud">Đã xác minh để hoạt động trên Admin Cloud</key>
   </area>
   <area alias="paste">
     <key alias="doNothing">Dán với định dạng đầy đủ (Không được khuyến nghị)</key>
@@ -1373,8 +1383,8 @@
     <key alias="inProgressCounter">%0% trong số %1% trang đã được xuất bản ...</key>
     <key alias="nodePublish">%0% đã được xuất bản</key>
     <key alias="nodePublishAll">%0% và các trang con đã được xuất bản</key>
-    <key alias="publishingAll">Xuất bản %0% và tất cả các trang con của nó</key>
-    <key alias="publishingHelp">
+    <key alias="publishAll">Xuất bản %0% và tất cả các trang con của nó</key>
+    <key alias="publishHelp">
       ​​<![CDATA[Nhấp vào <em> Xuất bản </em> để xuất bản <strong>%0%</strong> và do đó công bố công khai nội dung của nó. <br/> <br />
 
               Bạn có thể xuất bản trang này và tất cả các trang con của nó bằng cách chọn <em> Bao gồm các trang con chưa được xuất bản </em> bên dưới.]]>
@@ -1488,11 +1498,11 @@
     <key alias="operationCancelledHeader">Đã bị hủy</key>
     <key alias="operationCancelledText">Thao tác đã bị hủy bởi bổ trợ bên thứ 3</key>
     <key alias="contentTypeDublicatePropertyType">Đã tồn tại loại thuộc tính</key>
-    <key alias="contentTypePropertyTypeCreate">Đã tạo loại thuộc tính</key>
-    <key alias="contentTypePropertyTypeCreateText">​​<![CDATA[Tên: %0% <br /> DataType: %1%]]></key>
+    <key alias="contentTypePropertyTypeCreated">Đã tạo loại thuộc tính</key>
+    <key alias="contentTypePropertyTypeCreatedText">​​<![CDATA[Tên: %0% <br /> DataType: %1%]]></key>
     <key alias="contentTypePropertyTypeDeleted">Loại thuộc tính đã bị xóa</key>
     <key alias="contentTypeSavedHeader">Đã lưu loại tài liệu</key>
-    <key alias="contentTypeTabCreate">Đã tạo tab</key>
+    <key alias="contentTypeTabCreated">Đã tạo tab</key>
     <key alias="contentTypeTabDeleted">Đã xóa tab</key>
     <key alias="contentTypeTabDeletedText">Tab có id: %0% đã bị xóa</key>
     <key alias="cssErrorHeader">Biểu định kiểu chưa được lưu</key>
@@ -1589,7 +1599,7 @@
   <area alias="template">
     <key alias="deleteByIdFailed">Không xóa được mẫu có ID %0%</key>
     <key alias="edittemplate">Chỉnh sửa mẫu</key>
-    <key alias="insertSection">Phần</key>
+    <key alias="insertSections">Phần</key>
     <key alias="insertContentArea">Chèn vùng nội dung</key>
     <key alias="insertContentAreaPlaceHolder">Chèn trình giữ chỗ vùng nội dung</key>
     <key alias="insert">Chèn</key>
@@ -1725,6 +1735,7 @@
   <area alias="contentTypeEditor">
     <key alias="compositions">Sáng tác</key>
     <key alias="group">Nhóm</key>
+    <key alias="groupReorderSameAliasError">Bạn không thể di chuyển nhóm %0% sang tab này vì nhóm sẽ nhận được bí danh giống như tab: "%1%". Đổi tên nhóm để tiếp tục.</key>
     <key alias="noGroups">Bạn chưa thêm bất kỳ nhóm nào</key>
     <key alias="addGroup">Thêm nhóm</key>
     <key alias="inheritedFrom">Được kế thừa từ</key>
@@ -1791,6 +1802,14 @@
     <key alias="propertyHasChanges">Bạn đã thực hiện các thay đổi đối với thuộc tính này. Bạn có chắc chắn muốn loại bỏ chúng không?</key>
     <key alias="displaySettingsHeadline">Giao diện</key>
     <key alias="displaySettingsLabelOnTop">Nhãn ở trên (full-width)</key>
+    <key alias="confirmDeleteTabMessage"><![CDATA[Bạn có chắc chắn muốn xóa tab <strong>%0%</strong> không?]]></key>
+    <key alias="confirmDeleteGroupMessage"><![CDATA[Bạn có chắc chắn muốn xóa nhóm <strong>%0%</strong> không?]]></key>
+    <key alias="confirmDeletePropertyMessage"><![CDATA[Bạn có chắc chắn muốn xóa thuộc tính <strong>%0%</strong> không?]]></key>
+    <key alias="confirmDeleteTabNotice">Thao tác này cũng sẽ xóa tất cả các mục bên dưới tab này.</key>
+    <key alias="confirmDeleteGroupNotice">Thao tác này cũng sẽ xóa tất cả các mục bên dưới nhóm này.</key>
+    <key alias="addTab">Thêm tab</key>
+    <key alias="convertToTab">Chuyển đổi sang tab</key>
+    <key alias="tabDirectPropertiesDropZone">Kéo thuộc tính vào đây để đặt trực tiếp trên tab</key>
   </area>
   <area alias="languages">
     <key alias="addLanguage">Thêm ngôn ngữ</key>
@@ -1936,7 +1955,7 @@
     <key alias="access">Truy cập</key>
     <key alias="accessHelp">Dựa trên các nhóm được chỉ định và các nút bắt đầu, người dùng có quyền truy cập vào các nút sau</key>
     <key alias="assignAccess">Chỉ định quyền truy cập</key>
-    <key alias="administrator">Quản trị viên</key>
+    <key alias="administrators">Quản trị viên</key>
     <key alias="categoryField">Trường danh mục</key>
     <key alias="createDate">Người dùng đã tạo</key>
     <key alias="changePassword">Thay đổi mật khẩu của bạn</key>
@@ -1984,13 +2003,13 @@
     <key alias="passwordIsBlank">Mật khẩu mới của bạn không được để trống!</key>
     <key alias="passwordCurrent">Mật khẩu hiện tại</key>
     <key alias="passwordInvalid">Mật khẩu hiện tại không hợp lệ</key>
-    <key alias="passwordIsDiosystem">Có sự khác biệt giữa mật khẩu mới và mật khẩu đã xác nhận. Vui lòng thử lại!</key>
+    <key alias="passwordIsDifferent">Có sự khác biệt giữa mật khẩu mới và mật khẩu đã xác nhận. Vui lòng thử lại!</key>
     <key alias="passwordMismatch">Mật khẩu đã xác nhận không khớp với mật khẩu mới!</key>
     <key alias="permissionReplaceChildren">Thay thế quyền của nút con</key>
     <key alias="permissionSelectedPages">Bạn hiện đang sửa đổi quyền cho các trang:</key>
     <key alias="permissionSelectPages">Chọn các trang để sửa đổi quyền của chúng</key>
     <key alias="removePhoto">Xóa ảnh</key>
-    <key alias="permissionReplaceChildren">Quyền mặc định</key>
+    <key alias="permissionsDefault">Quyền mặc định</key>
     <key alias="permissionsGranular">Quyền chi tiết</key>
     <key alias="permissionsGranularHelp">Đặt quyền cho các nút cụ thể</key>
     <key alias="profile">Hồ sơ</key>
@@ -2004,8 +2023,8 @@
     <key alias="startnodes">Nút bắt đầu nội dung</key>
     <key alias="startnodeshelp">Giới hạn cây nội dung ở các nút bắt đầu cụ thể</key>
     <key alias="updateDate">Người dùng cập nhật lần cuối</key>
-    <key alias="userCreate">đã được tạo</key>
-    <key alias="userCreateSuccessHelp">Người dùng mới đã được tạo thành công. Để đăng nhập vào Admin, hãy sử dụng mật khẩu bên dưới.</key>
+    <key alias="userCreated">đã được tạo</key>
+    <key alias="userCreatedSuccessHelp">Người dùng mới đã được tạo thành công. Để đăng nhập vào Admin, hãy sử dụng mật khẩu bên dưới.</key>
     <key alias="userManagement">Quản lý người dùng</key>
     <key alias="username">Tên</key>
     <key alias="userPermissions">Quyền của người dùng</key>
@@ -2177,8 +2196,8 @@
           -->
     <key alias="checkSuccessMessage">Giá trị được đặt thành giá trị được đề xuất: '%0%'.</key>
     <key alias="rectifySuccessMessage">Giá trị được đặt thành '%1%' cho XPath '%2%' trong tệp cấu hình '%3%'.</key>
-    <key alias="checkErrorMessageDi DifferentEosystemValue">Giá trị mong đợi '%1%' cho '%2%' trong tệp cấu hình '%3%', nhưng đã tìm thấy '%0%'.</key>
-    <key alias="checkErrorMessageUneosystemValue">Đã tìm thấy giá trị không mong muốn '%0%' cho '%2%' trong tệp cấu hình '%3%'.</key>
+    <key alias="checkErrorMessageDifferentExpectedValue">Giá trị mong đợi '%1%' cho '%2%' trong tệp cấu hình '%3%', nhưng đã tìm thấy '%0%'.</key>
+    <key alias="checkErrorMessageUnexpectedValue">Đã tìm thấy giá trị không mong muốn '%0%' cho '%2%' trong tệp cấu hình '%3%'.</key>
     <!-- Các khóa sau nhận các mã thông báo này được chuyển vào:
 
           0: Giá trị hiện tại
@@ -2430,6 +2449,8 @@
   <area alias="logViewer">
     <key alias="deleteSavedSearch">Xóa Tìm kiếm đã Lưu</key>
     <key alias="logLevels">Cấp độ nhật ký</key>
+    <key alias="selectAllLogLevelFilters">Chọn tất cả</key>
+    <key alias="deselectAllLogLevelFilters">Bỏ chọn tất cả</key>
     <key alias="savedSearches">Tìm kiếm đã Lưu</key>
     <key alias="saveSearch">Lưu Tìm kiếm</key>
     <key alias="saveSearchDescription">Nhập tên thân thiện cho truy vấn tìm kiếm của bạn</key>

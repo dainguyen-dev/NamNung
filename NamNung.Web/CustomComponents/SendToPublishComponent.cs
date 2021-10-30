@@ -1,4 +1,5 @@
-﻿using Umbraco.Core;
+﻿using System.Threading;
+using Umbraco.Core;
 using Umbraco.Core.Composing;
 using Umbraco.Core.Events;
 using Umbraco.Core.Models;
@@ -16,15 +17,21 @@ namespace NamNung.Web.CustomComponents
     {
         public void Initialize()
         {
-            ContentService.SentToPublish += ContentService_Publishing;
+            ContentService.SentToPublish += ContentService_SentToPublish;
+            ContentService.Publishing += ContentService_Publishing;
         }
 
-        private void ContentService_Publishing(IContentService sender, SendToPublishEventArgs<IContent> e)
+        private void ContentService_SentToPublish(IContentService sender, SendToPublishEventArgs<IContent> e)
         {
             return;
         }
 
-       
+
+        private void ContentService_Publishing(IContentService sender, ContentPublishingEventArgs e)
+        {
+            return;
+        }
+
         public void Terminate()
         {
         }

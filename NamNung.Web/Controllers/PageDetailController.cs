@@ -52,36 +52,34 @@ namespace NamNung.Web.Controllers
 
             foreach (var content in contents)
             {
-                var publishedContent = Umbraco.Content(content.Id);
-                var publishedContentUpdateDate = publishedContent?.UpdateDate;
-                var contentUpdateDate = content.UpdateDate;
                 var culture = new CultureInfo(isoCode);
-
                 if (userPath.Any() && !userPath.Any(x => content.Path.Contains(x.ToString())))
                 {
                     continue;
                 }
 
-                if (!contentUpdateDate.Equals(publishedContentUpdateDate))
+                if (content.PublishDate.Equals(content.UpdateDate))
                 {
-                    var pageDetail = new PageDetailApi()
-                    {
-                        Id = content.Id.ToString(),
-                        Url = $"content/content/edit/{content.Id}?mculture={isoCode}",
-                        Name = content.Name,
-                        UpdateDate = $"{content.UpdateDate.ToString(culture.DateTimeFormat.LongDatePattern, culture)} {content.UpdateDate.ToString(culture.DateTimeFormat.LongTimePattern, culture)}",
-                        Status = $"{Umbraco.GetDictionaryValue(content.PublishedState.ToString())}"
-                    };
-                   
-                    var categoryId = content.ParentId.Equals(-1) ? content.Id.ToString() : content.Path.Split(',')?[2];
-                    if(categoryId!= null)
-                    {
-                        var categoryItem = Umbraco.Content(categoryId);
-                        pageDetail.Category = categoryItem?.Name;
-                    }
-
-                    pageDetails.Add(pageDetail);
+                    continue;
                 }
+
+                var pageDetail = new PageDetailApi()
+                {
+                    Id = content.Id.ToString(),
+                    Url = $"content/content/edit/{content.Id}?mculture={isoCode}",
+                    Name = content.Name,
+                    UpdateDate = $"{content.UpdateDate.ToString(culture.DateTimeFormat.LongDatePattern, culture)} {content.UpdateDate.ToString(culture.DateTimeFormat.LongTimePattern, culture)}",
+                    Status = $"{Umbraco.GetDictionaryValue(content.PublishedState.ToString())}"
+                };
+
+                var categoryId = content.ParentId.Equals(-1) ? content.Id.ToString() : content.Path.Split(',')?[2];
+                if (categoryId != null)
+                {
+                    var categoryItem = Umbraco.Content(categoryId);
+                    pageDetail.Category = categoryItem?.Name;
+                }
+
+                pageDetails.Add(pageDetail);
             }
 
             var customContentDashBoard = new CustomContentDashBoard()
